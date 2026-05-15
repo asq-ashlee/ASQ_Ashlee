@@ -1,0 +1,453 @@
+ASHLEE GOUZIE
+Topsham, Maine
+ashlee@asqashlee.xyz
+LinkedIn: linkedin.com/in/ashleedoherty
+Portfolio: asqashlee.xyz
+ASQ Ashlee Thinking Studio — a working portfolio of real-world AI applications, system design, and workflow strategy
+
+FULL BACKGROUND RESUME / MASTER CAREER INVENTORY
+
+NOTE
+This is not the primary resume to submit for most jobs.
+Use this as a master source file for tailoring targeted resumes, cover letters, applications, interview prep, and role-specific positioning.
+
+PRIMARY POSITIONING
+
+Marketing, systems, and AI workflow strategist with 15+ years of experience across enterprise marketing, ecommerce, operations, account management, entrepreneurship, event coordination, and AI-assisted workflow design.
+
+Strongest throughline:
+Turning messy, multi-step work into clearer systems that can be understood, improved, repeated, and scaled.
+
+Core professional pattern:
+- Identify where work depends on memory, manual coordination, or invisible judgment
+- Translate scattered inputs into structure
+- Build repeatable systems across people, tools, timelines, vendors, and data
+- Use AI as a thinking partner, technical helper, documentation engine, and workflow design tool
+- Communicate complex work in simple, human language
+
+CORE STRENGTHS
+
+- Systems thinking
+- Workflow design
+- Cross-functional translation
+- Marketing operations
+- Lifecycle and email strategy
+- Salesforce Marketing Cloud
+- Campaign testing and reporting
+- AI-assisted process design
+- Knowledge and context architecture
+- Vendor and fulfillment operations
+- Account and client management
+- Event planning and real-time coordination
+- Customer experience
+- B2B ecommerce
+- Plain-language communication
+- Pattern recognition
+- Documentation and repeatability
+
+CAREER SUMMARY BY LANE
+
+AI / Systems
+- AI workflow design and adoption
+- Agent-style workflow exploration
+- SharePoint / Copilot knowledge systems
+- Prompt and instruction frameworks
+- AI-assisted HTML, SQL logic, documentation, and troubleshooting
+- Salesforce Einstein experimentation
+- Human-in-the-loop system thinking
+- Practical AI deployment in real marketing workflows
+
+Marketing / Lifecycle
+- Salesforce Marketing Cloud email operations
+- Journey Builder
+- Promotional, prospect, survey, newsletter, and sales outreach emails
+- Subject line testing
+- Content testing
+- Einstein Content Selection
+- GA4 and SFMC reporting
+- UTM and Data Asset ID tracking recommendations
+- B2B ecommerce content and UX support
+- SEO and product navigation
+
+Operations / Entrepreneurship
+- Founder of Coffee & a Classic
+- $500K+ annual revenue
+- 11,000+ boxes shipped
+- 100+ themed product systems created
+- 17–20 wholesale vendors managed
+- Demand forecasting, inventory planning, fulfillment, cash flow, margin protection
+- Press-driven demand response
+- Holiday surge logistics
+- Customer service and retention
+
+Account / Client Strategy
+- Agency client services leadership
+- Marketing account management
+- Project and scope management
+- Client communication and training
+- Proposal and CRM process improvement
+- Cross-functional digital project leadership
+
+Event / Experiential
+- Event planning and coordination
+- Budget, timeline, venue, theme, and vendor management
+- Design direction and physical setup
+- Day-of execution and delegation
+- Real-time problem solving
+- Private events, wedding, showers, themed parties, and hospitality work
+
+EXPERIENCE
+
+L.L.Bean for Business
+Marketing & Systems Strategy / Web Content Coordinator
+Freeport, ME | 2023–Present
+
+Scope:
+Support customer-facing B2B marketing, email programs, ecommerce workflows, website content, Salesforce Marketing Cloud operations, performance reporting, and AI-enabled workflow exploration.
+
+Responsibilities and work:
+- Partner across marketing, creative, IS, data, and sales teams to support B2B marketing programs and ecommerce workflows.
+- Support Salesforce Marketing Cloud email operations, including promotional campaigns, prospect outreach, survey emails, journey-based sends, newsletters, testing, QA, and reporting.
+- Helped implement and operationalize Salesforce email marketing workflows after migration from Oracle Responsys to Salesforce Marketing Cloud.
+- Support campaign planning, build, testing, and reporting across newsletter and promotional programs.
+- Build and evaluate email journeys in Salesforce Marketing Cloud.
+- Support customer-facing website content, product navigation, SEO improvements, and user experience updates.
+- Translate complex system behavior into plain-language explanations and practical next steps for cross-functional partners.
+- Selected for L.L.Bean’s generative AI pilot program.
+- Use AI tools including ChatGPT, Claude, Copilot, Gemini, and Salesforce Einstein to support workflow design, documentation, troubleshooting, HTML, SQL logic, reporting, and automation planning.
+
+Email reporting and analytics:
+- Built integrated email performance reporting across Salesforce Marketing Cloud and GA4 to connect engagement, site behavior, conversion, and revenue signals.
+- Analyzed newsletter performance to identify post-click conversion gaps.
+- Shifted recommended next steps from email delivery alone toward landing page performance, audience frequency, offer alignment, and full-funnel tracking.
+- Developed recommendations for granular tracking, including Data Asset IDs, UTM parameters, content block tracking, and audience frequency analysis.
+- Evaluated subject line, content, and personalization performance.
+- Identified stronger engagement patterns around benefit-driven messaging, gifting, travel, urgency, and seasonal relevance.
+- Analyzed Einstein Content Selection results across secondary CTA and tertiary recommendation blocks.
+- Identified high-performing personalized product placements and opportunities for deeper conversion tracking.
+
+AI and systems work:
+- Deconstructed marketing workflows into repeatable tasks, supporting documentation, and structured process layers.
+- Explored how AI could support campaign planning, content creation, execution, and reporting.
+- Structured internal workflows and knowledge systems to support AI-enabled operations.
+- Created folder-based documentation and reusable instruction patterns.
+- Applied Salesforce Einstein capabilities across content selection, send timing, personalization, and testing.
+- Identified where AI improved execution and where stronger workflow structure was still needed.
+- Used AI to draft or support HTML, SQL logic, automation logic, documentation, JIRA/IS request framing, and troubleshooting.
+
+Tools:
+Salesforce Marketing Cloud, Journey Builder, Email Studio, Content Builder, Salesforce Commerce Cloud, Salesforce CRM, Salesforce OMS, Salesforce Einstein, Einstein Content Selection, GA4, UTM tracking, SharePoint, Microsoft Copilot, ChatGPT, Claude, Gemini, Excel, PowerPoint, Outlook, HTML, SQL logic.
+
+Coffee & a Classic
+Founder / Owner / Operator
+South Portland, ME | 2016–2022
+
+Scope:
+Founded and operated a subscription-based ecommerce product business centered on themed book boxes.
+
+Business scale:
+- Built and scaled the business to $500K+ in annual revenue.
+- Shipped 11,000+ boxes.
+- Created 100+ themed product systems.
+- Managed approximately 1,000 units/month at peak.
+- Managed 17–20 wholesale vendors.
+- Featured in Forbes, CNN, BuzzFeed, Good Housekeeping, Cratejoy, and My Subscription Addiction.
+
+Responsibilities and work:
+- Owned full business system: product development, vendor sourcing, procurement, pricing, marketing, customer service, fulfillment, and financial planning.
+- Designed repeatable themed product systems that combined books, drinks, snacks, mugs, bookmarks, printed inserts, and bookish items into cohesive customer experiences.
+- Balanced theme, seasonality, customer experience, vendor reliability, budget, margin, and timeline constraints.
+- Managed wholesale vendor relationships, negotiating pricing, minimums, freight, production timelines, and delivery requirements.
+- Owned demand forecasting, inventory planning, cash-flow management, margin protection, and in-season decision-making.
+- Managed monthly, quarterly, and annual subscription cycles.
+- Coordinated fulfillment and logistics, including inbound freight, labeling, carrier coordination, holiday surges, and press-driven demand spikes.
+- Developed secondary sales channels and promotional strategies through Etsy, Cratejoy, and direct customer communications.
+- Managed customer communications including product updates, promotions, fulfillment messaging, and customer service follow-up.
+- Responded to COVID supply disruptions, vendor delays, freight changes, and rapid demand shifts.
+- Protected sell-through through bundling, promotions, secondary sales channels, and inventory decisions.
+
+Systems demonstrated:
+- Physical product system design
+- Vendor orchestration
+- Budget and timeline management
+- Multi-variable decision-making
+- Repeatable production cycles
+- Customer experience design
+- Fulfillment operations
+- Ecommerce and subscription operations
+
+Event Management / Experiential Work
+Independent / Freelance / Related Experience
+
+Scope:
+Planned and supported private events, themed celebrations, hospitality events, and live experiences requiring coordination across people, vendors, physical spaces, and timelines.
+
+Responsibilities and work:
+- Met with clients to determine budget, date, venue, theme, and event goals.
+- Coordinated and negotiated vendor needs including venue, food, beverage, trash, staffing, and technical support.
+- Designed vision boards and worked with clients to define final creative direction.
+- Created full event timelines and day-of execution plans.
+- Developed design pieces and physical setup plans.
+- Managed day-of help, task delegation, setup, quality assurance, and live problem solving.
+- Translated abstract themes into physical environments and guest experiences.
+
+Representative events:
+- 150-person barn wedding with sage, gold, and cream theme; full event management including budget, timeline, design direction, schedule, venue, vendors, setup, and day-of execution.
+- 50-person themed birthday and private events with design, decoration, setup, and management.
+- 25-person “Friends” themed 30th birthday party with full event management, budget, timeline, venue, vendors, activities, design direction, and execution.
+- 30-person virtual woodland baby shower including budget, timeline, design direction, activities, vendors, shipped boxes to invitees, photography, lighting, and Skype coordination.
+- Additional bridal showers, baby showers, birthday parties, going-away parties, and private events.
+
+Systems demonstrated:
+- Real-time system coordination
+- Vendor management
+- Timeline and dependency planning
+- Live execution under pressure
+- Design-to-execution translation
+- Customer / guest experience design
+
+Energy Circle
+Senior Marketing Account Manager
+Yarmouth, ME | 2016–2017
+
+Scope:
+Managed marketing accounts within a specialized industry, connecting client goals, digital strategy, budget, performance, and execution.
+
+Responsibilities and work:
+- Managed a portfolio of marketing accounts, aligning client goals, budgets, timelines, and performance expectations.
+- Led digital marketing strategy across PPC, content, web improvements, email, and conversion-focused campaigns.
+- Coordinated execution across design, content, web, paid media, and client stakeholders.
+- Implemented data-driven campaigns that improved engagement and retention by 25%.
+- Translated campaign performance into clear recommendations for clients and internal teams.
+- Managed ongoing client communication, reporting conversations, and marketing priorities across multiple accounts.
+- Allocated budgets across PPC, content, and web enhancements to drive measurable ROI.
+- Acted as central coordinator between clients and execution teams.
+
+Systems demonstrated:
+- Marketing account strategy
+- Budget and performance alignment
+- Cross-functional coordination
+- Client communication
+- Digital marketing operations
+- Reporting and recommendations
+
+MainelySEO
+Web Project & Account Manager
+Portland, ME | 2015–2016
+
+Scope:
+Managed client relationships, website projects, and digital marketing strategy from sales through delivery.
+
+Responsibilities and work:
+- Managed client relationships and digital marketing projects from strategy through execution.
+- Developed online marketing, email, SEO, and website strategies to support client growth.
+- Converted leads into long-term clients through consultative project planning and relationship management.
+- Partnered with sales leadership on positioning, proposals, and contract negotiation.
+- Introduced structure, templates, and process improvements to improve delivery consistency.
+- Supported website and marketing refresh initiatives.
+- Provided strategic oversight across SEO, content, and website performance.
+
+Systems demonstrated:
+- Client strategy
+- Project management
+- Sales-to-delivery handoff
+- Digital marketing planning
+- Process improvement
+- Website strategy
+
+iBec Creative
+Client Services Manager
+Portland, ME | 2010–2015
+
+Scope:
+Grew from interactive assistant into client services and operations leadership role, managing digital projects and cross-functional teams.
+
+Responsibilities and work:
+- Led client services, sales support, and project management across a multi-account portfolio.
+- Directed cross-functional teams across design, development, content, and strategy.
+- Managed complex website and marketing projects.
+- Planned navigation, database structure, content organization, and project scope for complex website builds.
+- Implemented CRM systems and proposal frameworks to streamline operations and support revenue growth.
+- Built long-term client relationships through communication, training, and strategic guidance.
+- Helped scale team structure, hiring, and internal processes while aligning business goals with execution.
+- Oversaw client services, sales, and project management teams.
+
+Systems demonstrated:
+- Digital project leadership
+- Client services operations
+- Website architecture planning
+- CRM and proposal process improvement
+- Cross-functional team leadership
+- Relationship management
+
+Hospitality / Bartending / Service Experience
+Earlier Experience
+
+Scope:
+High-volume service, private events, bartending, cocktail service, and customer-facing hospitality work.
+
+Relevant work:
+- Bartender and server roles across Portland-area hospitality environments.
+- High-volume bar service including fast-paced weekend shifts and solo bar responsibilities.
+- Events bartender and cocktail server for private events.
+- Experience with POS systems, speed bartending, drink knowledge, multitasking, customer service, and live problem solving.
+
+Relevant experience:
+- 51 Wharf, Portland, ME — Bartender
+- Bonfire Country Club, Portland, ME — Bartender
+- Otto, Portland, ME — Bartender / Server
+- Glass Lounge / Hyatt Place Portland-Old Port — Events Bartender / Cocktail Server
+- Private events, weddings, wrap parties, and catered events
+
+Systems demonstrated:
+- Customer-facing service under pressure
+- Real-time prioritization
+- Event support
+- Hospitality operations
+- Adaptability and calm execution
+
+SELECTED CASE STUDIES
+
+Case Study 00 — Coffee & a Classic Product System
+Designed and operated a repeatable physical product system that turned themes, vendors, budgets, timelines, and customer preferences into cohesive shipped experiences across 100+ variations.
+
+Core idea:
+A physical product still runs on information. The box was tangible, but the real product was the system that chose, coordinated, timed, budgeted, designed, and delivered everything again and again.
+
+Case Study 01 — Turning Email Marketing Into a System
+Analyzed enterprise email marketing workflows and identified the gap between active execution and a system that could carry learning forward.
+
+Core idea:
+What looked like execution complexity was really structure absence.
+
+Case Study 02 — When AI Agents Hit Reality
+Explored agent-style workflows connected to structured content and identified practical limits around access, scale, memory, state, and orchestration.
+
+Core idea:
+AI works best as part of a system, not as the system itself.
+
+Case Study 03 — Designing Workflows That Can Actually Think
+Reframed workflows as loops with inputs, structure, decisions, support, outputs, and feedback.
+
+Core idea:
+The goal is not just to use AI inside workflows. The goal is to design workflows AI can actually operate inside.
+
+Case Study 04 — Event Systems
+Translated event planning experience into real-time systems work: vendors, timelines, themes, people, dependencies, and live execution.
+
+Core idea:
+A system that works once is execution. A system that works repeatedly under pressure is design.
+
+AI USAGE PATTERNS
+
+How AI is used:
+- Thinking partner
+- Technical helper
+- Documentation engine
+- Research synthesizer
+- Workflow design collaborator
+- Prompt and instruction system partner
+- Pattern recognition support
+- Writing and editing partner
+- SQL / HTML / automation logic assistant
+- Reporting and analysis support
+
+AI tools used:
+- ChatGPT
+- Claude
+- Microsoft Copilot
+- Gemini
+- Grok
+- Salesforce Einstein
+- Canva AI
+- Lovable
+
+AI strengths demonstrated:
+- Context design
+- Prompt and instruction quality
+- Workflow decomposition
+- Role framing
+- Evaluation thinking
+- Model comparison
+- Human-in-the-loop review
+- Responsible AI use
+- Knowing when AI output is a draft, not final authority
+
+AI-related themes:
+- Context matters more than prompting alone.
+- AI adoption fails when workflows are not structured enough to support it.
+- Human judgment remains critical.
+- Tools are less important than the operating system around them.
+- Reusable instructions, documentation, and evaluation loops make AI more useful.
+
+TOOLS & SYSTEMS
+
+Marketing / CRM / Ecommerce:
+- Salesforce Marketing Cloud
+- Journey Builder
+- Email Studio
+- Content Builder
+- Salesforce Commerce Cloud
+- Salesforce CRM
+- Salesforce OMS
+- Salesforce Einstein
+- Einstein Content Selection
+- GA4
+- UTM tracking
+- Data Asset ID tracking concepts
+- Cratejoy
+- Etsy
+- Ecommerce / subscription workflows
+
+AI / Productivity / Documentation:
+- ChatGPT
+- Claude
+- Microsoft Copilot
+- Gemini
+- Grok
+- SharePoint
+- Lovable
+- Canva
+- Microsoft Excel
+- PowerPoint
+- Outlook
+
+Technical / Execution:
+- HTML
+- SQL logic
+- AMPscript concepts
+- Email QA
+- Outlook-safe HTML troubleshooting
+- Reporting analysis
+- Workflow mapping
+- Documentation systems
+
+Marketing / Strategy:
+- Lifecycle marketing
+- Email marketing
+- Subject line testing
+- Content testing
+- Personalization
+- B2B ecommerce
+- SEO
+- Customer experience
+- Sales outreach
+- Campaign planning
+- Competitive analysis
+- UX evaluation
+- Account management
+- Vendor management
+- Event planning
+
+TESTIMONIALS / QUOTES
+
+“A mighty problem-solver, innovative thinker, and influential teammate. She introduced new ways of connecting to and expanding our customer base, presenting thorough research and guiding conversations. Tangible products of her work include improving website content and creating digital tools for our sales team.”
+
+“You were ALWAYS the go-to and you were constantly calm, helpful and willing to sit down. You went out of your way to patiently help whoever needed help and I never once heard you complain about putting in the extra time. You're a true team player.”
+
+EDUCATION
+
+University of Maine, Orono
+Bachelor of Arts in Journalism
+Advertising Concentration, English Minor
+2004–2008

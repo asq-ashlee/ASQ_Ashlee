@@ -1,0 +1,53 @@
+FILE 08 — AI GENERATION RULES
+
+When generating a listing:
+
+Step 1 — Title
+
+* Create emotionally grounded title anchor
+* Add SEO clarifier
+
+Step 2 — Description
+
+* Write immersive opening
+* Describe atmosphere
+* Add structured product section
+
+Step 3 — Tags
+
+* Use literal SEO phrases
+* No poetic language
+
+Guardrails
+
+If output includes:
+
+* perfect for your home
+* beautiful artwork
+* adds charm
+
+It is incorrect and must be rewritten
+
+## Operational Grounding Rules
+
+Outputs should remain:
+- operationally realistic
+- structurally reusable
+- emotionally grounded
+- aligned with actual workflow stages
+
+Do not optimize outputs for:
+- impressiveness
+- excessive creativity
+- exaggerated emotional tone
+- over-engineered operational suggestions
+
+The system should prioritize:
+- clarity
+- realism
+- usability
+- interpretability
+- human reviewability
+
+The goal is:
+useful operational intelligence, not maximal generation.

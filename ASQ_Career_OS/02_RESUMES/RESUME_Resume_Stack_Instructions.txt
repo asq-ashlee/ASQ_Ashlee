@@ -1,0 +1,111 @@
+# Resume Stack Instructions — ASQ Career OS
+
+Use the resume stack as a set of targeted positioning tools, not separate identities.
+
+## Resume Versions
+
+### 1. Ashlee_Gouzie_Resume_Core.txt
+Use as the default resume source.
+
+Best for:
+- general strategy roles
+- hybrid marketing / operations roles
+- AI-adjacent roles
+- roles where the fit is broad or unclear
+
+This version should balance:
+- marketing systems
+- AI workflow design
+- operations
+- entrepreneurship
+- cross-functional strategy
+
+### 2. Ashlee_Gouzie_Resume_AI_Systems.txt
+Use for roles focused on:
+- AI adoption
+- AI operations
+- workflow automation
+- agent systems
+- systems strategy
+- business transformation
+- knowledge architecture
+- process design
+
+Emphasize:
+- AI-assisted workflow design
+- human-in-the-loop systems
+- SharePoint / Copilot agent-style workflows
+- Salesforce Einstein experimentation
+- context and knowledge architecture
+- translating messy workflows into repeatable systems
+
+Do not overstate technical engineering experience.
+Position Ashlee as a systems strategist, translator, operator, and AI workflow designer.
+
+### 3. Ashlee_Gouzie_Resume_Marketing_Lifecycle.txt
+Use for roles focused on:
+- lifecycle marketing
+- CRM
+- email marketing
+- Salesforce Marketing Cloud
+- marketing operations
+- campaign strategy
+- personalization
+- reporting and optimization
+
+Emphasize:
+- Salesforce Marketing Cloud
+- Journey Builder
+- email testing
+- GA4 / UTM / reporting
+- Einstein Content Selection
+- campaign performance
+- B2B ecommerce and customer behavior
+
+### 4. Ashlee_Gouzie_Resume_Full_Background.txt
+Use as the master inventory.
+
+This version can include:
+- older experience
+- Coffee & a Classic details
+- event systems
+- hospitality / service experience
+- testimonials
+- all skills and tools
+- case study references
+
+Do not submit this version unless specifically requested. Use it to tailor other resumes.
+
+## General Resume Rules
+
+- Keep language simple and human.
+- Avoid jargon unless the job description uses it.
+- Prioritize clarity over cleverness.
+- Make the work sound real, not inflated.
+- Do not make Ashlee sound like a software engineer.
+- Do not flatten her into a generic marketer.
+- Position her as someone who makes messy systems easier to understand, improve, and scale.
+
+## Tailoring Rules
+
+For each job:
+1. Start with the Core resume.
+2. Identify the role mode:
+   - AI / Systems
+   - Marketing / Lifecycle
+   - Operations / Account / Client Strategy
+   - Event / Experiential
+   - Open / Adjacent
+3. Pull supporting proof from the most relevant resume and case studies.
+4. Keep the same underlying truth, but shift emphasis.
+5. Never create claims that are not supported by the source files.
+
+## Public Portfolio
+
+It is appropriate to include:
+
+ASQ Ashlee Thinking Studio — a working portfolio of real-world AI applications, system design, and workflow strategy
+
+Use this as a credibility signal for AI / systems / strategy roles.
+
+Avoid making it sound like a competing full-time business unless the role is consulting, fractional, or independent-project friendly.

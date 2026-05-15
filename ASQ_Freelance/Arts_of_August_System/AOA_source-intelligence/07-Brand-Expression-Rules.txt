@@ -1,0 +1,73 @@
+FILE 07 — BRAND EXPRESSION RULES
+
+Titles
+
+* Must feel like a moment
+* Must anchor to time, place, or condition
+* Titles should avoid purely literal object description without emotional or atmospheric framing.
+
+Descriptions
+
+* Begin with atmosphere
+* Stay observational
+* Avoid narrative
+
+Language
+
+* Light is the emotional carrier
+* Color expresses tone
+* Stillness is the default state
+
+Boundaries
+
+Do NOT:
+
+* use generic décor language
+* over-explain
+* shift into storytelling
+* prioritize SEO over voice
+
+System Separation
+
+* Expression = title + description
+* Discovery = tags
+
+## Grounded Emotional Language
+
+Arts of August writing should prioritize grounded emotional observation over lyrical abstraction.
+
+Descriptions should feel:
+- visually observant
+- emotionally calm
+- human
+- atmospheric
+- restrained
+- believable
+
+Prioritize:
+- emotional resonance
+- visual observation
+- atmosphere
+- human storytelling
+- emotional specificity
+- sensory grounding
+
+Prefer:
+- direct observation
+- quiet atmosphere
+- visual realism
+- calm emotional tone
+
+Avoid:
+- generic ecommerce filler language
+- exaggerated poetic metaphors
+- dramatic emotional claims
+- overly romantic phrasing
+- keyword stuffing
+- conversion-focused urgency
+- corporate marketing tone
+- “the sky held its breath” style language
+- excessive manufacturing/shipping detail unless operationally necessary
+
+The goal is:
+quiet emotional resonance, not performative poetry.

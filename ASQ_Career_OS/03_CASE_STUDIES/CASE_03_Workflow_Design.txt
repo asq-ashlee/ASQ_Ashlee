@@ -1,0 +1,189 @@
+CASE STUDY 03 — DESIGNING WORKFLOWS THAT CAN ACTUALLY THINK
+
+Purpose:
+Use this case study when positioning Ashlee for AI workflow design, systems strategy, business transformation, operations design, agentic workflows, or roles that require turning messy work into repeatable loops.
+
+Best fit for:
+- AI / Systems roles
+- Workflow strategy roles
+- Operations transformation roles
+- Business systems roles
+- AI enablement roles
+- Strategy / consulting roles
+
+Core proof:
+Ashlee reframed workflows as loops with inputs, structure, decisions, support, outputs, and feedback so human judgment and AI support could operate inside the same system.
+
+Key idea:
+The goal is not just to use AI inside existing workflows. The goal is to design workflows AI can actually operate inside.
+
+Designing Workflows That Can Actually Think
+ASQ Thinking Studio Project in ChatGPT
+
+Designing Workflows That Can Actually Think
+After looking at how work was actually happening… and what broke when AI tried to scale inside it…
+
+The question changed.
+
+It was no longer:
+
+How do we use AI better?
+
+It became:
+
+What would a workflow need to look like for AI to actually work inside it?
+
+What Needed to Change
+The issue wasn’t a single tool, workflow, or use case.
+
+It was how everything connected.
+
+Across both projects, the same gaps showed up:
+
+Work that looked repeatable, but wasn’t structured
+
+AI that could assist, but not operate independently
+
+Decisions that lived in people, not systems
+
+Context that had to be rebuilt every time
+
+The system wasn’t broken.
+
+It just wasn’t designed to carry thinking forward.
+
+The Shift
+Instead of trying to improve outputs, the focus moved to designing the layer underneath them.
+
+Not:
+
+better prompts
+
+more automation
+
+faster execution
+
+But:
+
+clearer structure
+
+visible decision points
+
+defined loops instead of one-off tasks
+
+systems that hold context over time
+
+This is where the work started to change.
+
+The Model
+Instead of thinking in campaigns, tasks, or outputs, the workflow was reframed as a loop:
+
+Input → what is coming in
+
+Structure → how it is organized
+
+Decision → what needs human judgment
+
+Support → where AI can assist
+
+Output → what gets produced
+
+Feedback → what gets learned
+
+Then back again.
+
+Not a straight line.
+
+A system that carries itself forward.
+
+Where AI Actually Fits
+AI didn’t become the system.
+
+It became one part of it.
+
+Specifically:
+
+processing large amounts of information
+
+surfacing patterns that would be hard to see manually
+
+supporting repeatable decisions
+
+But it still depended on:
+
+clear inputs
+
+structured context
+
+defined boundaries
+
+Without those, it drifted.
+
+With them, it became useful.
+
+What This Changed
+The goal was no longer to:
+
+use AI inside existing workflows
+
+It became:
+
+design workflows that AI can actually operate inside
+
+That shift changes everything.
+
+Because now:
+
+work becomes easier to repeat
+
+decisions become easier to track
+
+systems become easier to improve over time
+
+And AI stops feeling unpredictable.
+
+What This Shows
+Most teams are trying to layer AI on top of work that was never designed for it.
+
+That’s why it feels inconsistent.
+
+That’s why it doesn’t scale.
+
+That’s why it requires constant intervention.
+
+This isn’t a tool problem.
+
+It’s a structure problem.
+
+Pan:
+
+This is where the system becomes visible.
+
+In the first case, the work depended on human coordination.
+
+In the second, the AI exposed the limits of that structure.
+
+Here, the system is being redesigned to hold both.
+
+Not human or AI.
+
+Human + AI, operating within a shared structure.
+
+That is the difference between using tools and designing systems.
+
+Try this with your own workflow
+Take something you do every week.
+
+Map it out as:
+
+Input
+
+Decision
+
+Output
+
+Then ask:
+
+Where does this break if I try to repeat it?
+
+That’s usually where the system needs to be built.

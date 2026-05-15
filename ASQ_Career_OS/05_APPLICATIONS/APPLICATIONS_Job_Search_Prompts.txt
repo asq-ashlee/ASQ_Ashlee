@@ -1,0 +1,34 @@
+## Daily Job Lead Scout Prompt
+
+Find me 10 job leads using Career OS.
+
+Separate results into:
+
+1. Verified Postings
+- Only include roles with a direct, specific job posting link.
+
+2. Leads to Verify
+- Include roles that look promising but need manual link verification.
+
+For any lead without a verified direct posting link, give me the exact Google search query to find it.
+
+Focus on:
+- AI / Systems
+- Marketing / Lifecycle
+- Marketing Operations
+- Operations / Account / Client Strategy
+- Open / Adjacent
+
+For each result, include:
+- Role
+- Company
+- Link or “needs verification”
+- Suggested search query, if needed
+- Remote/location
+- Salary, if listed
+- Role Mode
+- First-pass Opportunity Type
+- First-pass Fit Estimate
+- Why it may fit
+- Concern
+- Recommendation: evaluate now / save / skip

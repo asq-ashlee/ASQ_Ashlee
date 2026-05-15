@@ -1,0 +1,124 @@
+FILE 05 — PRODUCT SYSTEM
+
+Core Truth
+
+Product structure is driven by:
+
+* aspect ratio
+* size mapping
+* production constraints
+
+Rules
+
+* NEVER crop artwork
+* Map artwork to compatible sizes only
+* Maintain consistent ratio groups
+
+Pricing Logic
+
+Pricing is influenced by:
+- size
+- format
+- production cost
+- fulfillment method
+- special dimensions
+- market positioning
+- comparable market pricing
+
+Pricing should not be driven primarily by:
+- emotional narrative
+- exaggerated scarcity
+- artificial luxury framing
+
+Product Types
+
+* Originals
+* Canvas prints (Printful)
+
+## Product Operational Structure
+
+Arts of August products operate across multiple operational layers.
+
+Each layer represents a different operational responsibility.
+
+### Product Specifications
+Defines what the product IS.
+
+Authoritative sources:
+- Printful for print-on-demand products
+- Artist/manual records for original artwork
+
+Examples:
+- canvas size
+- print material
+- artwork dimensions
+- medium
+- available formats
+
+### Fulfillment
+Defines how the customer receives the product.
+
+Fulfillment methods may include:
+- Printful fulfillment
+- manual shipping
+- local pickup
+
+A Printful product may still be fulfilled manually for:
+- in-person events
+- galleries
+- markets
+- local inventory sales
+
+### Shipping Logic
+Defines how shipping pricing and shipping rules are handled.
+
+Examples:
+- Printful shipping systems for POD fulfillment
+- Etsy shipping profiles for manually fulfilled products
+
+### Sales Channels
+Defines where the product is sold or distributed.
+
+Examples:
+- Etsy
+- markets
+- galleries
+- website
+- in-person events
+
+Sales channels are not product sources-of-truth.
+
+### Emotional Positioning
+AI may assist with:
+- emotional positioning
+- product naming
+- merchandising suggestions
+- pricing exploration
+- sales-channel fit
+- product grouping concepts
+
+Human review remains required.
+
+AI should NOT fabricate:
+- manufacturing specifications
+- shipping guarantees
+- operational vendor details
+- unsupported fulfillment capabilities
+
+## Product Recommendation Constraints
+
+Only recommend products that align with:
+- current operational capability
+- existing fulfillment workflows
+- realistic production methods
+- actual sales strategy
+
+Avoid:
+- speculative fulfillment recommendations
+- overly broad product expansion
+- products not currently supported operationally
+
+Recommendations should reflect:
+- real-world business operations
+- current Arts of August workflows
+- manageable product complexity

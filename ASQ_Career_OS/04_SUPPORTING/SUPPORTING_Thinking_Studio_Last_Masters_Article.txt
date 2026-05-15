@@ -1,0 +1,188 @@
+The Last Masters
+Why Your Intuition Might Be the Most Valuable Thing You Have
+
+The Last Masters
+The Last Masters: Why Your Intuition Might Be the Most Valuable Thing You Have
+
+What are we actually giving away when we use AI to think out loud?
+
+I didn’t think about “ownership of mind” at the time.
+
+It just felt like a normal job.
+Clear lines. Clean exchange.
+
+You do your job.
+The company owns the work.
+You go home with your skills.
+
+Simple.
+
+Until something about it… wasn’t.
+
+We were building a website for a locally famous comedian.
+
+Our graphic designer, Leah, was also a photographer. Not part of her role—just something she had spent years getting really good at.
+
+I asked her, as a favor, to take a few photos for the homepage. She said yes. Easily.
+
+When our boss found out, she was furious.
+
+Not because the photos were bad.
+Because the transaction hadn’t gone through the company.
+
+And Leah’s reaction was immediate.
+
+To her, the line was clear:
+Just because she worked there didn’t mean her eye belonged to them.
+
+She wasn’t protecting her camera.
+
+She was protecting the thing behind it—
+the instinct.
+the decisions.
+the way she saw.
+
+I keep coming back to this idea:
+
+Are we all Leah now?
+
+Because it doesn’t feel like we’re protecting that line anymore.
+
+It feels like we’re crossing it constantly.
+Quietly.
+Without really noticing.
+
+The Shift
+Something about the equation of work feels like it’s changing.
+
+It used to be:
+Time + Effort → Output
+
+Now it looks more like:
+Time + Effort + Thinking Patterns → Output + something that stays behind
+
+When you explain how you think to an AI—
+how you prioritize, decide, refine—
+
+you’re not just producing work.
+
+You’re externalizing the way you think.
+
+And that part… doesn’t necessarily leave with you.
+
+Three Layers of Value
+I’ve been thinking about work in three layers:
+
+1. Labor — the output
+The thing you’re paid to produce
+
+2. Execution — the process
+The systems, workflows, and repeatable steps
+
+3. Judgment — the why
+The instinct
+The taste
+The decision-making
+
+The part that’s hardest to explain—and the most valuable when you can.
+
+We’ve already seen what happens to the first two layers.
+
+Labor gets automated.
+Execution gets systemized.
+
+But Judgment is different.
+
+It’s not just what you do.
+It’s how you see.
+
+This is the part I’m still trying to figure out…
+
+When I use AI, I can feel a difference between:
+
+→ getting help
+→ and giving something away
+
+But I don’t fully know where that line is yet.
+
+The Apprentice Question
+There’s a common response to this idea:
+
+“We’ve always trained our replacements.”
+
+And that’s true.
+
+But something about this feels different.
+
+When you mentor a person:
+they learn, adapt, evolve
+they become the next version of the craft
+
+When you train a system:
+it doesn’t grow into an expert
+it becomes an asset
+
+So the question becomes:
+
+If fewer junior roles exist…
+what happens to the apprenticeship model?
+
+Where does Judgment come from
+if fewer people are learning it over time?
+
+The 15-Minute Ghost
+I tested this recently.
+
+I asked my AI to move three years of my thinking—
+brand work, frameworks, patterns—
+from one account to another.
+
+It couldn’t.
+
+It offered me a workaround instead:
+export the data
+summarize the thinking
+rebuild it manually
+
+And something about that stuck with me.
+
+Because a summary of your thinking
+is not the same as your thinking.
+
+It’s the outline.
+Not the engine.
+
+A version of it…
+but not the thing itself.
+
+So What Do You Do With That?
+I don’t think this is something to solve yet.
+
+But I do think it’s something to notice.
+
+Here’s how I’ve been thinking about it—
+not rules, just direction:
+
+→ I’m starting to separate where I think vs. where I deliver
+→ I’m paying more attention to what feels like “me” vs. what feels transferable
+→ I’m letting AI handle more execution—but holding onto the parts that feel like judgment
+
+Not perfectly.
+Not consistently.
+
+Just… more consciously.
+
+Because I think the real question is:
+
+what part of your thinking actually belongs to you?
+
+And what are you okay turning into data?
+
+The machine can replicate the work.
+
+But the reason behind the work—
+the instinct, the taste, the “why”—
+
+still feels like the part that matters most.
+
+This piece was tested across a multi-model environment. Drafted with Pan (ChatGPT), stress-tested for bias with Grok, synthesized for data-accuracy with Gemini, and deployed via Lovable. A true exercise in thinking with—and through—AI.

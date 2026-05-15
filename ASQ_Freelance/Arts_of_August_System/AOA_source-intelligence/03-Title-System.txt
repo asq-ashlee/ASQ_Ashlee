@@ -1,0 +1,39 @@
+FILE 03 — TITLE SYSTEM
+
+Structure
+
+[Poetic Anchor] + [SEO Clarifier]
+
+Poetic Anchor (Required)
+
+Must:
+
+* reference time, place, or condition
+* feel like a moment, not a label
+
+Examples:
+
+* A Place to Return
+* Five at Dawn
+* Where the Water Wanders
+
+SEO Clarifier (Required for Etsy)
+
+Follows the poetic title:
+
+* Maine Coastal Cottage Canvas Print
+* Rowboat Wall Art
+* Coastal Landscape Painting
+
+Rules
+
+Titles MUST:
+
+* begin with poetic anchor
+* remain grounded
+
+Titles MUST NOT:
+
+* start with keywords
+* describe object literally
+* include emotional labels

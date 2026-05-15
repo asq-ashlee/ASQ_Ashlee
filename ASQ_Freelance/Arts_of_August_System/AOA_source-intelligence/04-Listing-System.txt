@@ -1,0 +1,53 @@
+FILE 04 — LISTING SYSTEM
+
+Structure
+
+1. Immersive opening (brand voice)
+2. Scene + atmosphere
+3. Artist context
+4. Product details
+5. Palette & mood
+6. Production & shipping
+7. About the artist
+
+Opening Paragraph Rules
+
+* Start with the moment or condition
+* Avoid: “This painting features…”
+* Focus on light, stillness, time of day
+
+Product Section Rules
+
+* Clear, structured, repeatable
+* No voice styling needed
+
+Palette & Mood
+
+* Reinforces emotional tone
+* Can use light emotional language (controlled)
+
+Separation Rule (critical)
+
+* Description = brand expression
+* Tags = SEO
+
+Never mix them
+
+## Layered Listing Construction
+
+Arts of August listings combine information from multiple operational systems.
+
+Examples:
+- Product specifications → Printful or artist records
+- Shipping logic → Etsy shipping profiles or Printful systems
+- Emotional positioning → AI + human review
+- Product imagery → artist photography, Printful mockups, Canva assets
+
+AI may assist with:
+- listing structure
+- emotional storytelling
+- product positioning
+- title exploration
+- readability improvements
+
+AI should not invent operational product details that belong to authoritative systems.

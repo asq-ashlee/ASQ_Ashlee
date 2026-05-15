@@ -1,0 +1,28 @@
+FILE 06 — WORKFLOW SYSTEM
+
+Core Workflow
+
+1. Artwork created (human)
+2. Artwork interpreted (AI)
+3. Product options generated (AI + rules)
+4. Listing generated (AI)
+5. Content generated (AI)
+6. Human review
+7. Publish
+
+AI Role
+
+AI assists in:
+
+* description writing
+* title formatting
+* tag generation
+* product mapping
+
+Human Role
+
+Human is responsible for:
+
+* taste
+* final voice alignment
+* artwork itself

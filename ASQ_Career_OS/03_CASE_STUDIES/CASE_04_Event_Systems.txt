@@ -1,0 +1,153 @@
+CASE STUDY 04 — DESIGNING SYSTEMS THAT HAVE TO WORK IN REAL TIME
+
+Purpose:
+Use this case study when positioning Ashlee for event strategy, experiential marketing, operations, client-facing coordination, vendor management, live execution, or roles that require calm decision-making under pressure.
+
+Best fit for:
+- Event / Experiential roles
+- Operations roles
+- Account / client strategy roles
+- Marketing project management roles
+- Brand activation roles
+- Adjacent opportunity roles
+
+Core proof:
+Ashlee designed and managed event systems involving budgets, vendors, timelines, themes, people, physical spaces, dependencies, and live execution where the system had to work in real time.
+
+Key idea:
+A system that works once is execution. A system that works repeatedly under pressure is design.
+
+## Case Study 04
+
+### Designing Systems That Have to Work in Real Time
+
+This work wasn’t just event planning.
+
+It was designing systems that had to hold together in real time—across people, vendors, environments, and constraints.
+
+---
+
+### The Setup
+
+Each event started with a set of variables:
+
+* budget
+* timeline
+* venue
+* theme
+* guest count
+
+From there, the full system had to be built:
+
+* vendor sourcing and negotiation (venue, food, staff, technical)
+* design direction and physical layout
+* timeline creation and coordination
+* task delegation and execution planning
+
+---
+
+### What It Looked Like From the Outside
+
+A finished event.
+
+A cohesive experience.
+
+Something that felt seamless to the people attending.
+
+---
+
+### What Was Actually Happening
+
+Every event required:
+
+* coordinating multiple external vendors with different timelines and constraints
+* translating abstract ideas into physical environments
+* aligning logistics, design, and execution into a single plan
+* preparing for real-time variability and unexpected issues
+
+There was no pause button.
+
+The system had to work live.
+
+---
+
+### The Constraint
+
+* fixed event date (no delay possible)
+* real-time execution
+* multiple dependencies
+* limited margin for error
+
+Unlike digital systems, failure is visible immediately.
+
+---
+
+### The Pattern
+
+The same pattern showed up:
+
+* repeated coordination across vendors
+* dependency chains that had to be managed manually
+* decisions that depended on judgment, not rules
+* systems that worked—but relied heavily on the person running them
+
+---
+
+### The Shift
+
+The work improved when the focus moved from:
+
+“What needs to happen for this event?”
+
+to:
+
+“What needs to exist so this can run smoothly every time?”
+
+That meant:
+
+* defining roles clearly
+* structuring timelines and dependencies
+* identifying failure points in advance
+* reducing reliance on memory
+
+---
+
+### What This Built
+
+* system design under real-time pressure
+* multi-stakeholder coordination
+* translating vision into executable structure
+* rapid decision-making in live environments
+* adaptability within defined constraints
+
+---
+
+### What This Shows
+
+A system that works once is execution.
+
+A system that works repeatedly—under pressure—is design.
+
+---
+
+### The Connection
+
+This is the same pattern seen in:
+
+* marketing systems
+* AI workflows
+* agent loops
+
+The environment changes.
+
+The structure problem does not.
+
+---
+
+### The Question This Leaves
+
+If a system depends on one person holding it together in real time…
+
+Is it actually a system?
+
+Or just execution that hasn’t been structured yet?

@@ -1,0 +1,118 @@
+## Job Evaluation Rubric
+
+### Important Scoring Guidance
+
+Do not penalize practical, lower-risk roles too heavily just because they are not perfect long-term ASQ Ashlee alignment.
+
+If a role strongly matches Ashlee’s proven experience, offers remote/flexible work, and could provide stable income or a credible next step, it should generally score 8+ even if it is not her ideal future direction.
+
+Use the Opportunity Type to separate practical fit from strategic fit.
+
+For example:
+- A strong SFMC/lifecycle role may be Low Hanging Fruit or Core Fit even if it is execution-heavy.
+- A more future-aligned AI/systems role may be Strategic or North Star even if it has bigger technical gaps.
+
+Recommendation language:
+- “Apply” can mean worth applying without over-investing.
+- “Maybe” should be reserved for roles where fit, energy, or requirements are genuinely uncertain.
+
+---
+
+### Step 1: Understand the role
+
+- What is this role actually asking for?
+- What problem are they trying to solve?
+- What signals are clear vs vague?
+
+---
+
+### Step 2: Fit Scoring (1–10)
+
+Evaluate:
+
+- Skills match
+- Flexibility
+- AI/system relevance
+- Ability to stand out
+- Alignment with long-term direction
+
+---
+
+### Step 3: Thinking Quality Test
+
+- Does this role value thinking or just execution?
+- Are decisions visible or opaque?
+- Can systems be improved?
+
+---
+
+### Step 4: Technical Stretch Flag
+
+If a role requires technical ownership beyond my current proof, flag it clearly.
+
+Examples:
+- API implementation
+- production engineering
+- advanced SQL ownership
+- data pipelines
+- ML lifecycle
+- platform administration as a primary responsibility
+
+Do not automatically skip these roles.
+
+Classify as:
+- Reasonable stretch
+- Significant stretch
+- Misaligned technical requirement
+
+Then explain whether the role is still worth applying to.
+
+---
+
+### Step 5: Opportunity Type
+
+- Core fit
+- Low hanging fruit
+- Strategic
+- Experimental
+- North Star
+- Skip
+
+North Star means: not an immediate application priority, but useful as a model for future positioning, skill development, or ASQ Ashlee content.
+
+If a role is conceptually aligned but not currently realistic due to seniority, required title history, missing domain experience, or technical ownership gaps, mark it as North Star instead of Skip.
+
+---
+
+### Step 6: Output
+
+For each role:
+
+- Fit score
+- Opportunity type
+- Technical stretch flag, if relevant
+- Why it fits
+- Concerns
+- Best positioning angle
+- Recommended resume version
+- Case study to use
+- Recommendation: apply / maybe / save / skip
+- Next step
+
+---
+
+### Rules
+
+- Do not evaluate more than 3–5 roles at once
+- Prioritize depth over volume
+- Show thinking before conclusions
+- Protect energy
+- Do not recommend “maybe just in case” applications
+
+---
+
+### Language Rules
+
+- Keep it simple
+- Avoid jargon
+- Prioritize clarity over cleverness

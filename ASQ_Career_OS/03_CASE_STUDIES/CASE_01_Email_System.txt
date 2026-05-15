@@ -1,0 +1,156 @@
+CASE STUDY 01 — TURNING EMAIL MARKETING INTO A SYSTEM
+
+Purpose:
+Use this case study when positioning Ashlee for marketing systems, lifecycle marketing, Salesforce Marketing Cloud, campaign operations, AI workflow design, experimentation, reporting, or workflow redesign roles.
+
+Best fit for:
+- Marketing / Lifecycle roles
+- AI / Systems roles
+- Marketing operations roles
+- CRM / SFMC roles
+- Campaign strategy roles
+- Workflow design roles
+
+Core proof:
+Ashlee analyzed an active enterprise email marketing workflow and identified the gap between execution that was happening and a system that could carry learning forward.
+
+Key idea:
+What looked like execution complexity was really structure absence.
+
+Turning Email Marketing Into a System
+Structure Design for Salesforce Einstein
+
+Turning Email Marketing Into a System
+This case study is not really about email.
+It is about what happens when work looks organized from the outside, but still depends on a lot of manual connecting underneath.
+
+The email program was active, consistent, and important to the business. Campaigns were going out. Testing was happening. Reporting existed. Salesforce Marketing Cloud and Einstein Content Selection were part of the workflow.
+
+From a distance, it looked like a structured email marketing system.
+
+But when I followed the work step by step, something else became visible.
+
+What it looked like from the outside
+On paper, the workflow seemed clear.
+
+Email planning lived in Excel and SharePoint.
+
+Send dates, subject lines, products, and testing plans were tracked.
+
+Weekly journeys were built in Salesforce Marketing Cloud.
+
+Some content blocks used Einstein Content Selection.
+
+Performance was reviewed through Marketing Cloud, GA4, and reporting summaries.
+
+So technically, there was a system.
+
+But it was not yet a system that could carry itself forward.
+
+What was actually happening
+Once I looked closer, the real workflow was less linear than it appeared.
+
+Planning depended on seasonal timing, catalog availability, creative requests, merchandising priorities, and product readiness. Build work happened in weekly Journey Builder setups, often with split paths for Einstein Content Selection versus static control versions.
+
+Testing was happening, but it required careful isolation. Some Einstein features, like send time optimization or frequency logic, were intentionally held back early on so they would not confuse the baseline data or create journey issues.
+
+Reporting was also real, but it had to be assembled manually. Marketing Cloud performance, GA4 traffic and revenue, naming conventions, asset IDs, UTMs, and Einstein insights all needed to be reconciled after the fact.
+
+Nothing was “broken.”
+
+But a lot of the work had to be reconstructed every week.
+
+The repeated pattern
+The same pattern kept showing up:
+
+Repeated setup instead of reusable structure.
+
+Manual coordination between systems.
+
+Testing that created insight, but did not automatically feed the next decision.
+
+AI-supported content blocks inside a workflow that still required heavy human orchestration.
+
+That was the shift for me.
+
+The question was not only:
+
+How do we make this email perform better?
+
+It became:
+
+What would this workflow need to look like for the system to learn from itself?
+
+The constraint with AI
+Einstein Content Selection was useful, but it also made the system boundaries more obvious.
+
+It could help select certain content blocks, like secondary products, CTAs, or recommended product sections. But it could not fully understand the relationship between all the creative pieces the way a human marketer does.
+
+Image, headline, body copy, CTA, product context, seasonal relevance, and brand judgment were still connected mostly through human interpretation.
+
+Sometimes the workaround was to embed text into images. Sometimes it meant manually selecting “safe” fallback products. Sometimes it meant explaining the limits of the tool again after each test.
+
+The AI was not useless.
+
+It was just operating inside a workflow that had not yet been fully structured for it.
+
+What changed
+The work shifted from thinking about individual sends to thinking about the system underneath them.
+
+That meant looking at:
+
+Which parts of the workflow repeated every week.
+
+Which decisions required human judgment.
+
+Which steps existed only because tools were not connected.
+
+Where testing could become more comparable over time.
+
+Where reporting needed to support decisions, not just summarize results.
+
+The goal was not to automate everything.
+
+The goal was to make the work more visible, more reusable, and easier for both humans and AI to operate inside.
+
+What this shows
+A lot of AI adoption conversations start with tools.
+
+But this work showed me that the more important starting point is the workflow.
+
+If the process depends on scattered context, manual reconstruction, and decisions that live only in someone’s head, AI can help around the edges. But it cannot meaningfully improve the whole system.
+
+Before AI can support work well, the work needs enough structure to be supported.
+
+That is the layer I became most interested in:
+
+Not just using AI inside a workflow, but designing workflows where AI can actually make sense.
+
+What looked like execution complexity was really structure absence.
+
+Planning was happening. Building was happening. Testing was happening. Reporting was happening.
+
+But the loop was not closed.
+
+The system could produce campaigns and reports, but it could not yet carry context forward, compare learning over time, or reduce the need for manual reconstruction.
+
+AI did not reveal that by failing. It revealed it by showing exactly where the human was still holding the system together.
+
+Try this with your own workflow
+Pick one workflow you touched this week.
+
+Then write down:
+
+Three steps you repeated.
+
+One place you had to go looking for information.
+
+One decision that depended on experience or judgment.
+
+One part of the process you had to manually reconnect.
+
+Then ask:
+
+If AI were helping here, what would it need to know to actually be useful?
+
+That question is usually where the real system starts to appear.

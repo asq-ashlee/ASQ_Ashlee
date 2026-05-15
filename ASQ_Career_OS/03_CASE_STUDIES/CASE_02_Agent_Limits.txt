@@ -1,0 +1,144 @@
+CASE STUDY 02 — WHEN AI AGENTS HIT REALITY
+
+Purpose:
+Use this case study when positioning Ashlee for AI adoption, AI operations, workflow automation, knowledge systems, agent design, context architecture, or roles that need practical judgment about where AI works and where it breaks.
+
+Best fit for:
+- AI / Systems roles
+- AI adoption roles
+- Knowledge management roles
+- Operations innovation roles
+- Workflow automation roles
+- Agent / Copilot / internal enablement roles
+
+Core proof:
+Ashlee tested agent-style workflows against real internal content systems and identified practical limits around access, scale, memory, state, context, and orchestration.
+
+Key idea:
+AI works best as part of a system, not as the system itself.
+
+When AI Agents Hit Reality
+Agent Ecosystem for Enterprise Email Marketing with M365 Copilot
+
+When AI Agents Hit Reality
+There’s a version of AI agents that exists in demos… and then there’s what happens when you actually try to use them inside real work.
+
+This case started as an exploration: What if AI agents could help organize, extract, and make sense of large volumes of internal content?
+
+Not just one document. Not just one prompt. But systems that could actually scale.
+
+The Setup
+The goal was to move beyond one-off AI use and start building something reusable.
+
+Instead of asking AI questions manually, the idea was to:
+
+Connect agents to structured content (SharePoint folders)
+
+Extract themes across large sets of files
+
+Turn unstructured documents into usable outputs
+
+Create repeatable workflows instead of starting from scratch
+
+This was the shift from:
+
+“Can AI help me?” → “Can AI do this reliably, at scale?”
+
+Where It Started to Break
+On the surface, everything worked.
+
+Agents could:
+
+Read documents
+
+Summarize content
+
+Follow instructions
+
+But as soon as the scope expanded, new problems showed up.
+
+1. Access Wasn’t Consistent
+Some files worked perfectly. Others returned nothing — even when access should have been identical.
+
+The difference wasn’t permissions alone. It was how the files were linked and surfaced.
+
+Same folder. Same access. Different results.
+
+This made bulk workflows unreliable and hard to trust.
+
+2. Agents Didn’t Scale the Way You’d Expect
+At a single-document level, agents performed well.
+
+But when asked to:
+
+Analyze hundreds of files
+
+Extract patterns across folders
+
+Act like a batch processor
+
+Performance dropped quickly.
+
+Agents were good at deep focus — not wide ingestion.
+
+The assumption that agents could replace structured data workflows didn’t hold.
+
+3. Memory Was the Real Bottleneck
+Even when the logic was right, continuity broke.
+
+Conversations hit limits
+
+Context was lost mid-process
+
+Systems couldn’t be “finished” in one pass
+
+This wasn’t a prompting issue.
+
+It was a state problem.
+
+Stateless interactions made system-level design fragile.
+
+4. AI Skipped Ahead Too Fast
+Instead of helping define the problem, AI often jumped straight to a solution.
+
+Outputs looked complete — even when they weren’t grounded.
+
+It sounded right… before it actually was right.
+
+This created a subtle risk: moving forward with something that felt finished, but wasn’t fully thought through.
+
+What This Actually Revealed
+This project didn’t fail.
+
+It clarified where the real boundaries are.
+
+Agents are not full automation systems
+
+Context matters more than capability
+
+Memory and structure matter more than prompts
+
+Scale introduces entirely different problems than single use
+
+Most importantly:
+
+The bottleneck wasn’t what AI could do. It was how it was being orchestrated.
+
+AI works best as part of a system — not as the system itself.
+
+Pan:
+
+This is the moment most people miss.
+
+When AI “doesn’t work,” the instinct is to adjust the prompt.
+
+But what you were actually uncovering was something deeper:
+
+→ the difference between a tool and a system
+→ the limits of stateless thinking
+→ and the need for structure around intelligence
+
+You weren’t just using AI. You were starting to design with it.
+
+The Question This Leaves
+If AI agents aren’t the system… what does the system actually need to look like?

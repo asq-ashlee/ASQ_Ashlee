@@ -1,0 +1,130 @@
+ASHLEE GOUZIE
+Topsham, Maine
+[ashlee@asqashlee.xyz](mailto:ashlee@asqashlee.xyz)
+LinkedIn: linkedin.com/in/ashleedoherty
+Portfolio: asqashlee.xyz
+ASQ Ashlee Thinking Studio — a working portfolio of real-world AI applications, system design, and workflow strategy
+
+# MARKETING, SYSTEMS & AI WORKFLOW STRATEGIST
+
+## SUMMARY
+
+Marketing and systems strategist with 15+ years of experience turning complex workflows into clear, repeatable systems across enterprise marketing, ecommerce, operations, and AI-assisted work.
+
+I bridge the gap between strategy and execution—connecting business goals, customer behavior, tools, and teams so work becomes easier to understand, improve, and scale.
+
+My background includes Salesforce Marketing Cloud, lifecycle marketing, B2B ecommerce, vendor and fulfillment operations, account management, and hands-on AI workflow design. I’m especially strong in environments where the work is messy, cross-functional, and dependent on translating real-world needs into usable systems.
+
+## CORE CAPABILITIES
+
+* Marketing Systems & Lifecycle Strategy
+* Salesforce Marketing Cloud / Journey Builder
+* AI-Assisted Workflow Design
+* Cross-Functional Translation
+* Process Design & Documentation
+* Campaign Performance & Optimization
+* B2B Ecommerce & Customer Experience
+* Vendor, Inventory & Fulfillment Operations
+* Account / Client Management
+* Systems Thinking & Operational Clarity
+
+## EXPERIENCE
+
+### L.L.Bean for Business
+
+**Marketing & Systems Strategy / Web Content Coordinator**
+Freeport, ME | 2023–Present
+
+* Partner across marketing, creative, IS, data, and sales teams to support customer-facing B2B marketing programs and ecommerce workflows.
+* Support Salesforce Marketing Cloud email operations, including promotional campaigns, prospect outreach, survey emails, journey-based sends, testing, and reporting.
+* Helped implement and operationalize Salesforce email marketing workflows, improving structure around campaign execution, quality assurance, and performance review.
+* Built integrated email performance reporting across Salesforce Marketing Cloud and GA4 to connect engagement, site behavior, conversion, and revenue signals.
+* Analyzed newsletter performance to identify post-click conversion gaps, shifting recommended next steps from email delivery toward landing page performance, audience frequency, offer alignment, and full-funnel tracking.
+* Developed recommendations for granular tracking, including Data Asset IDs, UTM parameters, content block tracking, and audience frequency analysis.
+* Evaluated subject line, content, and Einstein personalization performance to identify stronger engagement patterns around benefit-driven messaging, gifting, travel, urgency, and seasonal relevance.
+* Analyzed Einstein Content Selection results across secondary CTA and tertiary recommendation blocks, identifying high-performing personalized product placements and opportunities for deeper conversion tracking.
+* Support customer-facing website content, product navigation, SEO improvements, and user experience updates for the L.L.Bean for Business channel.
+* Selected for L.L.Bean’s generative AI pilot program, exploring practical applications of AI for operational efficiency, workflow support, and decision-making.
+* Use AI tools including ChatGPT, Claude, Copilot, and Gemini to support HTML, SQL logic, automation planning, documentation, troubleshooting, and workflow design.
+* Translate complex system behavior into plain-language explanations and practical next steps for cross-functional partners.
+
+### Coffee & a Classic
+
+**Founder / Owner / Operator**
+South Portland, ME | 2016–2022
+
+* Founded and scaled a subscription-based product business to $500K+ in annual revenue, shipping 11,000+ boxes across 100+ themed product systems.
+* Designed and operated the full business system, including product development, vendor sourcing, procurement, pricing, marketing, customer service, fulfillment, and financial planning.
+* Managed 17–20 wholesale vendor relationships, negotiating pricing, minimums, freight, production timelines, and delivery requirements.
+* Built repeatable product planning systems that balanced theme, seasonality, customer experience, vendor reliability, budget, and timeline constraints.
+* Owned demand forecasting, inventory planning, cash-flow management, margin protection, and in-season decision-making across monthly, quarterly, and annual subscription cycles.
+* Coordinated fulfillment and logistics, including inbound freight, labeling, carrier coordination, holiday surges, and press-driven demand spikes.
+* Developed secondary sales channels and promotional strategies through Etsy, Cratejoy, and direct customer communications.
+* Featured in Forbes, CNN, BuzzFeed, Good Housekeeping, Cratejoy, and My Subscription Addiction.
+
+### Energy Circle
+
+**Senior Marketing Account Manager**
+Yarmouth, ME | 2016–2017
+
+* Managed a portfolio of marketing accounts within a specialized industry, aligning client goals, budgets, timelines, and performance expectations.
+* Led digital marketing strategy across PPC, content, web improvements, email, and conversion-focused campaigns.
+* Coordinated execution across design, content, web, paid media, and client stakeholders.
+* Implemented data-driven campaigns that improved engagement and retention by 25%.
+* Translated campaign performance into clear recommendations for clients and internal teams.
+
+### MainelySEO
+
+**Web Project & Account Manager**
+Portland, ME | 2015–2016
+
+* Managed client relationships and digital marketing projects from strategy through execution.
+* Developed online marketing, email, SEO, and website strategies to support client growth.
+* Converted leads into long-term clients through consultative project planning and relationship management.
+* Partnered with sales leadership on positioning, proposals, and contract negotiation.
+* Introduced structure, templates, and process improvements to improve delivery consistency.
+
+### iBec Creative
+
+**Client Services Manager**
+Portland, ME | 2010–2015
+
+* Grew from interactive assistant into a client services and operations leadership role, managing complex web and marketing projects.
+* Led client services, sales support, and project management across a multi-account portfolio.
+* Directed cross-functional teams across design, development, content, and strategy.
+* Planned navigation, database structure, content organization, and scope for complex website builds.
+* Implemented CRM systems and proposal frameworks to streamline operations and support revenue growth.
+* Built long-term client relationships through communication, training, and strategic guidance.
+
+## SELECTED SYSTEMS & AI WORK
+
+### AI-Assisted Email Marketing System
+
+Deconstructed enterprise email marketing work into repeatable tasks, documentation, and folder-based workflows to explore how AI could support campaign planning, content creation, execution, and reporting.
+
+### Salesforce Marketing Cloud & Einstein Experimentation
+
+Applied Salesforce Marketing Cloud and Einstein capabilities across email journeys, content selection, send-time optimization, personalization, testing, and reporting. Identified where AI improved execution and where stronger workflow structure was still needed.
+
+### Integrated Email Performance Reporting
+
+Built newsletter reporting that connected Salesforce Marketing Cloud and GA4 data to evaluate engagement, traffic, conversion, and revenue. Used the analysis to identify post-click conversion issues and recommend tracking, frequency, and landing-page improvements.
+
+### Coffee & a Classic Product System
+
+Designed a repeatable physical product system that turned themes, vendors, budgets, timelines, and customer preferences into cohesive shipped experiences across 100+ variations.
+
+### ASQ Ashlee Thinking Studio
+
+Built an independent working portfolio focused on practical AI adoption, workflow design, agent systems, and question-led thinking.
+
+## TOOLS & SYSTEMS
+
+Salesforce Marketing Cloud, Journey Builder, Email Studio, Content Builder, Salesforce Commerce Cloud, Salesforce CRM, Salesforce OMS, Salesforce Einstein, Einstein Content Selection, GA4, UTM tracking, Microsoft Copilot, SharePoint, ChatGPT, Claude, Gemini, Canva, Lovable, Etsy, Cratejoy, Microsoft Excel, PowerPoint, Outlook, HTML, SQL logic
+
+## EDUCATION
+
+University of Maine, Orono
+Bachelor of Arts in Journalism
+Advertising Concentration, English Minor
+2004–2008

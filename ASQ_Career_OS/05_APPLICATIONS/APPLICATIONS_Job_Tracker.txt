@@ -1,0 +1,82 @@
+# Job Tracker — ASQ Career OS
+
+Use this file to track roles being evaluated, applied to, saved, or skipped.
+
+## Status Options
+
+- New
+- Evaluating
+- Apply
+- Applied
+- Follow Up
+- Interview
+- Waiting
+- Skip
+- Closed
+
+## Opportunity Types
+
+- Core Fit
+- Low Hanging Fruit
+- Strategic
+- Experimental
+- Skip
+
+## Role Modes
+
+- AI / Systems
+- Marketing / Lifecycle
+- Operations / Account / Client Strategy
+- Event / Experiential
+- Open / Adjacent
+
+---
+
+## Active Opportunities
+
+### Role:
+Company:
+Link:
+Date Added:
+Role Mode:
+Opportunity Type:
+Fit Score:
+Status:
+Resume Version:
+Next Action:
+Notes:
+
+Why it fits:
+
+Concerns:
+
+Best positioning angle:
+
+Case study to use:
+
+Follow-up date:
+
+---
+
+## Applied Opportunities
+
+### Role:
+Company:
+Link:
+Date Applied:
+Resume Version:
+Cover Letter / Note:
+Status:
+Follow-up date:
+Notes:
+
+---
+
+## Skipped Opportunities
+
+### Role:
+Company:
+Link:
+Date Reviewed:
+Reason skipped:
+Notes:
