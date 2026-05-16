@@ -95,6 +95,11 @@ If agents remove the quest, they may also remove
 part of what makes shopping satisfying.
 
 https://podcasts.apple.com/us/podcast/who-cares-about-consumer-ai/id1680633614?i=1000766507145
+```
+
+---
+
+## 4. First 30 Days
 
 In my first 30 days, I would start by studying how AIDB listeners already share: what they forward, what context they add, and where it lands. I'd want to understand what Company Champions are already doing and where the friction is — they're the highest-signal distribution path AIDB has. Then I'd run one small experiment on a recent episode — identify three to five high-signal moments, score them for specificity, novelty, and actionability, and package the strongest one as a Slack-ready team prompt or a short briefing card.
 
