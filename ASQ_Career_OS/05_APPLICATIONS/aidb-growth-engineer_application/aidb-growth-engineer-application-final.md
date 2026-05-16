@@ -65,7 +65,7 @@ AI will absolutely change employment. But letting it become
 a convenient alibi makes it harder to see what's actually happening.
 
 Worth the 20 minutes:
-[link]
+https://podcasts.apple.com/us/podcast/who-cares-about-consumer-ai/id1680633614?i=1000766507145
 ```
 
 ---
@@ -94,18 +94,13 @@ and assuming they'll work for the second?
 If agents remove the quest, they may also remove
 part of what makes shopping satisfying.
 
-[link]
-```
-
----
-
-## 4. First 30 Days
+https://podcasts.apple.com/us/podcast/who-cares-about-consumer-ai/id1680633614?i=1000766507145
 
 In my first 30 days, I would start by studying how AIDB listeners already share: what they forward, what context they add, and where it lands. I'd want to understand what Company Champions are already doing and where the friction is — they're the highest-signal distribution path AIDB has. Then I'd run one small experiment on a recent episode — identify three to five high-signal moments, score them for specificity, novelty, and actionability, and package the strongest one as a Slack-ready team prompt or a short briefing card.
 
 I'd test it with real people in real channels — not a survey, an actual send — and track what I can: clicks, forwards, and replies. Early on I'd also just ask: did you share this? A direct reply saying "I sent this to my team" or "we talked about this" is the qualitative signal I'm designing toward. That's when I know the idea traveled somewhere decisions happen.
 
-The goal in 30 days isn't a system. It's one repeatable thing that works. I've designed the first experiment here: [LINK]
+The goal in 30 days isn't a system. It's one repeatable thing that works. I've designed the first experiment here: https://github.com/asq-ashlee/ASQ_Ashlee/tree/main/ASQ_Career_OS/05_APPLICATIONS/aidb-growth-engineer_application
 
 ---
 
