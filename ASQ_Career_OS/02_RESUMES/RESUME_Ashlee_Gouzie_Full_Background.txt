@@ -338,6 +338,11 @@ Translated event planning experience into real-time systems work: vendors, timel
 Core idea:
 A system that works once is execution. A system that works repeatedly under pressure is design.
 
+Case Study 05 — From Resume Rewrite to Career Source of Truth
+Documents creating ASQ Career OS: turning the resume-rewrite problem into source-truth files and a custom GPT operator.
+Core idea:
+Making lived experience legible to AI so it can match roles, surface proof points, and support better career decisions.
+
 AI USAGE PATTERNS
 
 How AI is used:

@@ -1,0 +1,311 @@
+# ASQ Career OS Case Study: From Resume Rewrite to Career Source of Truth
+
+- Purpose: Documents the creation of ASQ Career OS — from resume-rewrite problem, to source-truth files, to custom GPT operator.
+
+Use CASE_05_Career_OS when:
+- the role involves AI systems, workflow design, career technology, personalization, or AI adoption
+- the application asks for an example of building with AI
+- the application asks how I use AI to solve messy human/work problems
+- the strongest proof point is the process of turning unstructured career context into a reusable decision system
+- I need to explain ASQ Ashlee as both a brand and a working AI-native system
+
+## Purpose
+
+This case study documents the process of creating **ASQ Career OS**: a career source-truth system and custom GPT operator built from resume history, writing samples, work-pattern analysis, career-fit exploration, and structured source files.
+
+The goal was not simply to create a better resume or a job-search chatbot.
+
+The goal was to make my experience, judgment, working style, constraints, and career direction legible to AI so it could help me evaluate opportunities, tailor applications, and make better decisions about what kind of work fits my life now.
+
+---
+
+## The Problem
+
+I started with what looked like a resume problem.
+
+My old resume was accurate. It showed years of marketing, operations, client strategy, ecommerce, email, and business-building experience. But it was also written in the language of the roles I had already held.
+
+That created a deeper problem: when your resume is framed around the wrong version of your experience, you do not just describe yourself inaccurately — you start applying to the wrong jobs.
+
+Not bad jobs. Not jobs I was unqualified for. In many cases, the opposite.
+
+I was highly qualified for roles that matched my past. But I had to ask a harder question:
+
+**Are these the jobs that fit my life, my brain, my energy, and my future now?**
+
+That question was daunting, because if the answer was no, then the next question was even bigger:
+
+**Then what?**
+
+How do you redefine your work experience for a role you have never formally sought out before?
+
+How do you shape years of marketing, systems, operations, creative strategy, AI experimentation, and business ownership into a new direction that feels motivating, sustainable, inspiring, balanced, and financially rewarding?
+
+I did not just need a better resume.
+
+I needed a way to find the pattern underneath my experience.
+
+---
+
+## The Shift
+
+The old resume showed what I had done.
+
+The source files showed how I work.
+
+Career OS turned both into a decision system.
+
+A traditional resume can list experience, but it does not always explain judgment, process, constraints, strengths, working style, or direction. It can show where you have been without helping you decide where you should go next.
+
+So the work changed.
+
+The goal was no longer to simply rewrite my resume. The goal was to build a career source of truth that could answer:
+
+- What kind of work actually fits me now?
+- What roles should I stop applying for, even if I am qualified?
+- What parts of my experience are most relevant to AI-native work?
+- What language describes my real strengths?
+- What proof points support a new direction?
+- What role categories are worth exploring?
+- What does “good fit” mean beyond title, salary, or familiarity?
+
+That is what became **ASQ Career OS**.
+
+It started as a resume problem, but became a system-design problem.
+
+---
+
+## Why AI Helped
+
+AI was valuable because it could see across more context than I could hold in my head at once.
+
+Over time, I had used AI thinking partners for far more than job searching: creative ideas, toddler activities, business projects, marriage conversations, household planning, AI learning, marketing systems, website builds, and career exploration.
+
+That ongoing work created something unexpectedly useful: a large body of lived context.
+
+Not a personality quiz. Not a one-time career assessment. A long-running record of how I think, what drains me, what energizes me, how I solve problems, where I get stuck, what I return to, and what kinds of work make me come alive.
+
+The more I worked with AI across real life and real projects, the more it could help reflect patterns back to me:
+
+- I turn ambiguity into structure.
+- I ask better questions before rushing to answers.
+- I build systems when work gets too messy to manage manually.
+- I translate between creative, technical, operational, and human needs.
+- I care about whether a process is actually usable.
+- I am motivated by work that has a learning loop, not just a task list.
+- I need work that gives me enough structure to function and enough novelty to stay engaged.
+
+Those patterns were hard to see from inside my own life.
+
+AI helped make them visible.
+
+---
+
+## Creating the Source Files
+
+The most important part of ASQ Career OS was not the GPT.
+
+It was the source files behind it.
+
+I started collecting and structuring the materials that usually stay hidden behind a resume:
+
+- years of real job tasks and project work
+- detailed examples of how I solve problems
+- old writing samples from journalism, business, and project documentation
+- business communication examples from running Coffee and a Classic
+- project requirement documents from custom web builds
+- AI-generated reflections on what it is like to work with me
+- months of career-fit exploration
+- role evaluations across marketing, AI, systems, operations, and consulting
+- case studies from L.L.Bean, Coffee and a Classic, Arts of August, and ASQ Ashlee
+
+These materials became source files that defined:
+
+- professional positioning
+- work patterns
+- writing style
+- role-fit logic
+- anti-fit logic
+- resume strategy
+- case-study matching
+- application voice
+- GPT behavior
+- output formats
+
+The source files gave the system something deeper than a resume to work from.
+
+They gave it context.
+
+---
+
+## Rebuilding the Resume
+
+The new resume was not created by polishing old bullets.
+
+It was created by finding the patterns underneath years of work.
+
+My old resume reflected a traditional marketing path. It showed campaign work, ecommerce experience, email marketing, client strategy, and business ownership. Those things were true, but they did not fully explain the way I operate.
+
+The new resume needed to show the thread across all of it:
+
+- translating messy business needs into usable systems
+- breaking ambiguous work into repeatable workflows
+- connecting strategy, operations, creative, data, and execution
+- using AI to accelerate thinking, documentation, testing, and decision-making
+- building structure where none exists
+- understanding how work actually happens inside imperfect tools and teams
+- creating systems people can actually use
+
+Instead of only asking, “What responsibilities did I have?” the process asked:
+
+**What patterns show up across everything I have done?**
+
+That changed the resume from a list of past roles into a clearer argument for future work.
+
+---
+
+## Defining My Writing Style
+
+Writing style also became part of the system.
+
+I went back through old examples of how I actually write and communicate, including:
+
+- articles I wrote for *The Maine Campus*
+- detailed project requirement documents from custom web builds
+- business communication examples from running Coffee and a Classic
+- professional messages and pitch notes
+- ASQ Ashlee writing experiments
+- feedback on what sounded like me and what felt generic
+
+The goal was not to make the AI sound polished.
+
+The goal was to make it sound accurate.
+
+The writing source files helped define a voice that is:
+
+- clear
+- instinct-led
+- lightly editorial
+- human-first
+- practical but thoughtful
+- question-led
+- warm without being fluffy
+- compressed but not cold
+- honest about uncertainty
+- non-cringey about AI
+- structured enough to be useful, but still recognizably mine
+
+That matters because career content can become generic very quickly. The system needed to help me write applications, resumes, notes, and case studies in a voice that felt like me.
+
+---
+
+## Career Fit as a System
+
+ASQ Career OS also came out of months of trying to answer a more personal question:
+
+**What kind of career actually works for my brain, my skills, my current life, and the kind of work I want to be doing next?**
+
+The system had to account for more than job titles.
+
+It had to consider:
+
+- remote and flexible work
+- AI systems roles
+- marketing operations roles
+- lifecycle / CRM / SFMC roles
+- consulting and freelance paths
+- internal AI transformation roles
+- client strategy roles
+- the difference between “I can do this job” and “I should do this job”
+- roles that look good on paper but would drain me
+- roles that make use of my strengths but need better framing
+
+That work became the role-fit logic inside Career OS.
+
+The system looks for opportunities that match not only experience, but energy, direction, motivation, lifestyle, and growth.
+
+---
+
+## The GPT Layer
+
+Once the source files were defined, I turned the system into a custom GPT: **ASQ Career OS Operator**.
+
+The GPT is the interface.
+
+The methodology is the system.
+
+The GPT can respond to prompts like:
+
+- “Find job leads using Career OS.”
+- “Evaluate this role.”
+- “Tailor my resume.”
+- “Prepare the short paste-ready note.”
+- “Answer this application question.”
+- “What is the next action?”
+
+But the important part is that it is not starting from scratch each time. It is operating from a structured source of truth.
+
+---
+
+## What ASQ Career OS Does Now
+
+ASQ Career OS can:
+
+- find aligned job leads
+- separate verified postings from leads that need manual verification
+- evaluate job descriptions
+- assign fit scores
+- classify opportunity types
+- flag risks and technical stretch
+- recommend apply / save / skip
+- choose the right resume angle
+- match the strongest case study to the role
+- draft tailored application answers
+- create tracker-ready entries
+- help move from interest to action
+
+For a role evaluation, it can return:
+
+- recommendation
+- fit score
+- opportunity type
+- technical-stretch notes
+- best resume version
+- strongest proof points
+- recommended case study
+- concerns
+- next action
+- tracker-ready entry
+
+---
+
+## Why It Matters
+
+The interesting part is not that I made a chatbot.
+
+The interesting part is that I made my career context legible to AI.
+
+A resume tells the market where you have been.
+
+A career operating system helps you decide where you should go next.
+
+By building the source files first, the GPT could operate from a deeper understanding of my experience, judgment, constraints, writing style, and career direction.
+
+This is the ASQ Ashlee thesis in practice:
+
+**AI becomes more useful when it has structured context, clear operating rules, and a source of truth.**
+
+---
+
+## Public GPT Link
+
+ASQ Career OS Operator:  
+https://chatgpt.com/g/g-69f1839a24b88191b8103368b478fbc8-asq-career-os-operator
+
+---
+
+## Website CTA
+
+Interested in building something like this for your own career, team, or messy decision process?
+
+**What would change if your experience, judgment, and working style were organized into a system AI could actually use?**

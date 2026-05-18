@@ -16,6 +16,7 @@ This repository documents the systems I am building and testing across:
 ASQ Career OS is a GPT-assisted career decision system I built to evaluate roles, pressure-test fit, choose application strategy, and structure career materials around signal, proof of work, taste, and role-specific relevance.
 
 - Source/context folder: https://github.com/asq-ashlee/ASQ_Ashlee/tree/main/ASQ_Career_OS
+- Case studies: ASQ_Career_OS/03_CASE_STUDIES/ (proof points for applications)
 - Public GPT operator: https://chatgpt.com/g/g-69f1839a24b88191b8103368b478fbc8-asq-career-os-operator
 
 ### Arts of August System
