@@ -8,5 +8,6 @@ This folder contains short, focused case studies used for resume proof, applicat
 - CASE_03_Workflow_Design.txt — Designing Workflows That Can Actually Think (AI-native workflows)
 - CASE_04_Event_Systems.txt — Event Systems (real-time operations)
 - CASE_05_Career_OS.txt — From Resume Rewrite to Career Source of Truth (career OS & GPT operator)
+ - CASE_06_Arts_GEO.txt — Arts of August GEO Optimization: Making a creative business more legible to AI search (GEO, entity optimization & AI-readable website strategy)
 
 When tailoring applications, pick the single strongest case study and pull 1–3 proof points.

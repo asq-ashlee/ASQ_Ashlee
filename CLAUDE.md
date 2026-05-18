@@ -67,6 +67,7 @@ Purpose:
 Read:
 - asq-career-os_context.md
 - Case studies: ASQ_Career_OS/03_CASE_STUDIES/ (including CASE_05_Career_OS.txt)
+ - Case studies: ASQ_Career_OS/03_CASE_STUDIES/ (including CASE_05_Career_OS.txt and CASE_06_Arts_GEO.txt)
 
 ---
 

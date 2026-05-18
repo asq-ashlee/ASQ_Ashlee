@@ -104,12 +104,12 @@ For each job:
 
 It is appropriate to include:
 
-ASQ Ashlee Thinking Studio — a working portfolio of real-world AI applications, system design, and workflow strategy
+ASQ Ashlee Thinking Studio — a working portfolio of real-world AI systems, strategy, and implementation work.
 
-Use this as a credibility signal for AI / systems / strategy roles.
+Available case studies to reference: CASE_00 through CASE_06.
 
-Available case studies to reference: CASE_00 through CASE_05.
+Use the case studies as credibility signals for AI, systems, strategy, workflow design, marketing operations, creative business, and GEO / AI search visibility roles.
 
 When tailoring, choose the single strongest case study and pull 1–3 proof points. Do not mention every case study unless the application specifically asks for multiple examples.
 
-Avoid making it sound like a competing full-time business unless the role is consulting, fractional, or independent-project friendly.
+Avoid making it sound like a competing full-time business unless the application context supports it.

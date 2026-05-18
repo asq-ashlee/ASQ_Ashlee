@@ -1,0 +1,403 @@
+# Arts of August GEO Optimization Case Study: Making a Creative Business More Legible to AI Search
+
+Purpose: Documents GEO / generative engine optimization work directed for Arts of August, a Maine-based coastal art studio by artist Kaleigh Anderson. Use this case study when explaining AI search visibility, entity optimization, structured data, small business website strategy, creative business systems, or the shift from traditional SEO to AI-readable source truth.
+
+Use CASE_06_Arts_GEO when:
+- the role involves AI search, GEO, SEO, content strategy, website strategy, or entity optimization
+- the application asks for an example of improving a business website for AI visibility
+- the application asks how I translate messy business context into structured, machine-readable systems
+- the strongest proof point is small business strategy plus technical implementation guidance
+- I need to explain how ASQ Ashlee helps creative businesses become clearer to both humans and AI systems
+
+## Project Overview
+
+Arts of August is a Maine-based coastal art studio by artist Kaleigh Anderson. The brand includes original oil paintings, fine art prints, gold foil / gold leaf details, coastal scenes, commissions, and Maine- and Martha’s Vineyard-inspired artwork.
+
+This project focused on improving the website’s visibility and extractability for generative search engines and AI answer engines, including ChatGPT, Perplexity, Claude, Google AI Overviews, and Bing Copilot.
+
+The goal was not just traditional SEO.
+
+The goal was to make Arts of August easier for AI systems to understand, cite, summarize, and recommend.
+
+## The Challenge
+
+Small creative businesses often have beautiful work, loyal customers, and meaningful stories, but their websites do not always explain those signals clearly enough for search engines or AI systems.
+
+For Arts of August, the substance was there:
+
+- a real artist
+- a recognizable coastal point of view
+- original oil-on-canvas work
+- gold foil and gold leaf process details
+- Maine and Martha’s Vineyard place-based inspiration
+- commissions
+- art markets and showings
+- Etsy listings
+- customer reviews
+- local credibility
+
+But much of that context was either too light, too scattered, or not structured in a way that AI systems could confidently extract.
+
+The project became a translation problem:
+
+How do you make a creative business understandable to both humans and machines without flattening the art into keywords?
+
+## Why GEO Matters for Creative Businesses
+
+GEO — generative engine optimization — is the practice of making a brand, business, or website easier for AI-powered search and answer systems to understand.
+
+Traditional SEO often focuses on rankings, keywords, backlinks, and page structure.
+
+GEO adds another layer:
+
+- Can an AI system understand who the artist is?
+- Can it identify the studio as a real entity?
+- Can it extract accurate facts about materials, process, products, locations, events, and commissions?
+- Can it distinguish supported claims from vague marketing language?
+- Can it cite the website as a useful source?
+- Can it answer a customer’s question clearly using the site’s content?
+
+For a creative business, this matters because customers are increasingly using AI tools to ask questions like:
+
+- “Find Maine coastal artists who sell prints.”
+- “Who paints Martha’s Vineyard-inspired artwork?”
+- “Where can I buy original coastal oil paintings?”
+- “What local artists are showing work near Portland, Maine?”
+- “Can I commission a custom painting of a meaningful place?”
+
+If the website does not clearly answer those questions, AI systems may skip over it, even if the business is a perfect match.
+
+## Audit Findings
+
+The Arts of August website already had a strong foundation.
+
+Several important elements were already in place:
+
+- `llms.txt` file at `/llms.txt`
+- LocalBusiness JSON-LD schema on the homepage
+- FAQPage JSON-LD schema
+- FAQ section with clear Q&A content
+- Quality Promise / trust-building language
+- Artist bio and basic studio information
+- Meta title, meta description, canonical tags, and Open Graph tags
+- Crawlable site structure
+- Existing `og:image`
+
+The site was not starting from zero.
+
+But the GEO audit identified several gaps that could limit AI visibility and citation quality:
+
+- no Person schema for Kaleigh Anderson
+- no WebSite schema
+- no BreadcrumbList schema
+- no Product JSON-LD for individual Etsy listings
+- `llms.txt` was too thin and needed richer extractable studio facts
+- About content was too light for AI citation
+- materials and process details were not specific enough
+- events and showings were not structured clearly
+- testimonials and reviews were not yet prepared for trust signals or Review schema
+- third-party corroboration opportunities needed to be identified
+
+The opportunity was to strengthen Arts of August as an entity: artist, studio, location, materials, process, products, events, reviews, and third-party credibility.
+
+## Technical GEO Improvements
+
+The first layer of work focused on structured data and AI-readable site architecture.
+
+The site now includes:
+
+- Person schema for Kaleigh Anderson
+- WebSite schema
+- BreadcrumbList schema
+- Article schema on the dedicated About page
+- ImageObject schema
+- Review schema tied to a real Etsy review
+- Event schema for upcoming events and showings
+- Product JSON-LD for every Etsy listing in `ShopEtsy.tsx`
+- Product schema including name, image, URL, price, currency, brand, material, country of origin, and manufacturer details
+- Expanded `llms.txt` with richer extractable facts about the studio, materials, shipping/returns, commissions, and contact details
+- Page metadata, canonical tags, and sitemap entry for the new About page
+
+We also preserved what was already working:
+
+- existing LocalBusiness schema
+- existing FAQPage schema
+- existing Open Graph image
+- crawlable page structure
+
+The goal was not to over-engineer the site.
+
+The goal was to give AI systems clearer facts in formats they already know how to read.
+
+## Content & Entity Strategy
+
+The second layer of work focused on content.
+
+For AI search, structured data is helpful, but it is not enough. AI systems also need substantive prose that explains the business clearly and accurately.
+
+We developed a content strategy focused on entity-building:
+
+- who Kaleigh Anderson is
+- what Arts of August is
+- where the studio is rooted
+- what materials are used
+- how the paintings are created
+- what places inspire the work
+- what products are available
+- what commissions are accepted
+- where the work has been shown
+- what customers have said
+
+This content was designed to be useful for humans first, while also making the brand more extractable for AI systems.
+
+## Artist / About Page Development
+
+A major part of the project was creating a dedicated `/about` page that could serve as a richer source of truth for Arts of August.
+
+The page includes:
+
+- full artist bio
+- pull quote
+- Materials & Process section
+- Commissions section
+- Events & Showings section
+- past placements
+- Kristen’s real Etsy review
+- closing commission / inquiry CTA
+- structured metadata and schema to support AI extraction
+
+The page establishes Kaleigh Anderson as the artist behind Arts of August and connects the work to:
+
+- Scarborough, Maine
+- Scarborough marsh
+- the Maine coast
+- Martha’s Vineyard
+- Aquinnah
+- Lucy Vincent Beach
+- coastal travel
+
+It also explains:
+
+- her training under Susan Roux at Roux & Cyr International Fine Art Gallery in Portland, Maine
+- her oil-on-canvas practice
+- her gold foil / gold leaf process
+- that much of her work begins with photographs but is interpreted by hand
+- that she adjusts composition, color, lighting, layering, and brushwork rather than copying directly
+
+The About page moved from a basic introduction to a more complete source of truth.
+
+## Materials & Process Content
+
+We developed more specific language around materials and process.
+
+Key facts prepared for the website included:
+
+- primary medium: oil on canvas
+- select works include gold foil or gold leaf
+- gold foil is applied directly to the canvas and painted into the surface
+- most works begin from photograph references
+- the photograph becomes a starting point, not a copy
+- Kaleigh interprets images through composition, color, lighting, layering, and brushwork
+- original paintings often take around 30–40 hours, depending on size, detail, drying time, and materials
+- varnish is part of the finishing process, but specific varnish naming should be confirmed before making a permanent materials claim
+
+Gamblin Satin Varnish appeared in social content, but should not be stated globally unless confirmed.
+
+Good GEO is not just about adding more claims. It is about making claims that are accurate, supportable, and safe to repeat.
+
+## Commission Content
+
+We prepared commission content that explained what kinds of custom work Arts of August accepts.
+
+The recommended positioning focused on select commissions for:
+
+- meaningful places
+- coastal scenes
+- personal gifts
+- nurseries
+- family homes
+- special occasions
+- Martha’s Vineyard-inspired pieces
+- personally significant places
+
+The commission CTA:
+
+“Inquire About a Commission”
+
+The goal was to help both customers and AI systems understand when Arts of August is a good fit for custom work.
+
+## Product & Review Schema
+
+Product visibility was another important part of the GEO strategy.
+
+Because Arts of August sells through Etsy, the website needed to make product data easier to understand and connect back to live listings.
+
+Product JSON-LD was added for individual Etsy listings, including:
+
+- product name
+- image
+- URL
+- price
+- currency
+- brand
+- material
+- country of origin
+- manufacturer details
+
+Product schema helps connect Etsy listings back to the Arts of August brand.
+
+We also identified review and trust-building opportunities.
+
+A real Etsy review for *Tethered by the Tide* was prepared as social proof. The review included a 5-star rating and praised color, detail, seller communication, shipping speed, and overall experience.
+
+Review schema was added carefully using a real Etsy review.
+
+Key review principles:
+
+- no fabricated review data was used
+- Review schema was only used where connected accurately to the product/review
+- informal or family-related comments should not be turned into formal Review schema unless permission and accuracy are confirmed
+
+Trust signals only work if they are true.
+
+## Local and Event-Based Authority
+
+Arts of August also had real-world credibility that needed to be structured more clearly.
+
+We added a substantial Events & Showings section to the dedicated About page and structured the events with Event schema.
+
+Upcoming events included:
+
+- May 30, 2026 — Farmers Market at The Downs, Scarborough, ME
+- June 5, 2026 — Two Perspectives, One Shore — First Friday Art Walk, The Downtown Social, Portland, ME
+- June 27, 2026 — Farmers Market at The Downs, Scarborough, ME
+- July 25, 2026 — Farmers Market at The Downs, Scarborough, ME
+- August 8, 2026 — Art in the Park, South Portland, ME
+- August 29, 2026 — Farmers Market at The Downs, Scarborough, ME
+- September 26, 2026 — Farmers Market at The Downs, Scarborough, ME
+
+Past events and placements included:
+
+- Commissions on Martha’s Vineyard — Martha’s Vineyard, MA — August 2025
+- L.L.Bean Artist Showcase — L.L.Bean Headquarters, Freeport, ME — September 2025
+- Debut Showcase — The Downtown Social, Portland, ME — November 2025
+- Yarmouth Art Alliance — Yarmouth Library, Yarmouth, ME — November 2025
+- Rosemont Old Port Holiday Market — Portland, ME — December 2025
+- The Downs Open House with Scoville Foley Team — Scarborough, ME — December 2025
+- Maine Street Design Co — Bath, ME — December 2025
+- Merry and Bright Night Fair — Biddeford, ME — December 2025
+
+For a small creative business, these details matter.
+
+They help establish the business as local, active, real, and connected to place.
+
+## Image and Alt Text Strategy
+
+We created descriptive alt text guidance for artist, process, and product images.
+
+Examples included:
+
+- “Kaleigh Anderson painting outdoors on Martha’s Vineyard near the Aquinnah cliffs”
+- “Oil painting of Lucy Vincent Beach in progress on an easel”
+- “Arts of August coastal oil painting with gold foil detail”
+- “Maine rowboat oil painting by Kaleigh Anderson”
+- “Coastal cottage painting interpreted from a photograph by Arts of August”
+
+The goal was not to stuff keywords into images.
+
+The goal was to describe what the image actually shows in a way that supports accessibility, search, and AI understanding.
+
+## Entities Strengthened
+
+The work intentionally reinforced the people, places, materials, and concepts most central to Arts of August:
+
+- Kaleigh Anderson
+- Arts of August
+- Maine artist
+- Scarborough Maine artist
+- coastal oil paintings
+- Maine coastal art
+- Scarborough marsh
+- Martha’s Vineyard art
+- Aquinnah
+- Lucy Vincent Beach
+- oil on canvas
+- gold foil painting
+- gold leaf painting
+- commissioned coastal artwork
+- custom paintings
+- Maine art markets
+- Art in the Park South Portland
+- Farmers Market at The Downs
+- The Downtown Social Portland Maine
+- Susan Roux
+- Roux & Cyr International Fine Art Gallery
+
+This is where GEO becomes different from basic SEO.
+
+The site is not just trying to rank for isolated keywords. It is trying to become understandable as a connected entity in a larger knowledge environment.
+
+## Final Implementation Update
+
+After the initial GEO audit, the site was updated with several additional AI-readability improvements:
+
+- Dedicated `/about` page added as a deeper artist and studio source of truth
+- Navigation updated to include About and Events
+- Homepage About section updated with a “Read the full story” link
+- TL;DR summary lines added under key H2 sections to improve extractability
+- Product JSON-LD expanded to include material and country of origin
+- Event schema added for upcoming events
+- Review schema added using a real Etsy review
+- Sitemap updated to include the new About page
+
+This moved the project from strategy and recommendations into a more complete implementation: structured data, human-readable content, AI-readable summaries, and clearer entity signals working together.
+
+## Expected Impact
+
+This work does not guarantee rankings, traffic, or AI visibility.
+
+It gives the site a stronger foundation for AI search visibility and answer-engine readiness.
+
+The site is now better positioned to:
+
+- be understood by AI systems
+- support more accurate AI-generated summaries
+- surface for relevant artist, location, commission, and coastal art queries
+- connect product listings to the Arts of August brand
+- make artist and process details easier to cite
+- strengthen trust through real reviews and event history
+- support future growth through clearer source-of-truth content
+
+This kind of work does not guarantee instant visibility in AI search. But it gives the website a much stronger foundation for being found, understood, and recommended.
+
+## What This Shows About ASQ Ashlee’s Approach
+
+This project was not just SEO cleanup.
+
+It was GEO and entity optimization for a small creative business.
+
+The work combined:
+
+- structured data
+- richer artist content
+- product schema
+- process documentation
+- local and geographic signals
+- trust-building content
+- review readiness
+- event and exhibition structure
+- AI-readable `llms.txt` content
+- human-readable storytelling
+
+The ASQ approach starts with the real business, not the tool.
+
+For Arts of August, the goal was not to make the website sound more optimized. The goal was to make the artist, work, process, products, and credibility easier to understand — for humans and for AI systems.
+
+Generative search does not just reward websites with keywords. It rewards businesses that can explain who they are, what they do, where they belong, and why they can be trusted.
+
+## Related Public Assets
+
+Website: https://artsofaugust.org/
+
+Recommended cover image rule:
+Do not use generated artwork that imitates coastal paintings or appears to represent Kaleigh Anderson’s work. Use only real Arts of August artwork/product imagery from approved site assets, or use an abstract/editorial systems graphic with schema cards, llms.txt notes, entity signal cards, website/browser frames, coastal palette, gold foil texture accents, and typography.
