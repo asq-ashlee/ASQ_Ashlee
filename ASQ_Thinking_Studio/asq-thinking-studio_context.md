@@ -1,5 +1,8 @@
 # ASQ Thinking Studio — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 ASQ Thinking Studio is the research, experimentation, and framework-development workspace inside the ASQ ecosystem.

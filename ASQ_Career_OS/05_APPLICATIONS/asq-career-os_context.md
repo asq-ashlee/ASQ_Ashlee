@@ -1,5 +1,8 @@
 # ASQ Career OS — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 ASQ Career OS is an AI-assisted career evaluation and operational methodology focused on helping people navigate modern work with greater clarity.

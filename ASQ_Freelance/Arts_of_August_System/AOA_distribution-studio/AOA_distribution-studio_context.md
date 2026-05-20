@@ -1,5 +1,8 @@
 # AOA Distribution Studio — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 The Distribution Studio manages:

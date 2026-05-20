@@ -1,5 +1,8 @@
 # Operations — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 Operations is the internal business infrastructure workspace within the ASQ ecosystem.

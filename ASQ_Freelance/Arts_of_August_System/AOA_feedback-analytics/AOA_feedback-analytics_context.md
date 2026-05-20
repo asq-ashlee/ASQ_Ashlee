@@ -1,5 +1,8 @@
 # AOA Feedback + Analytics — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 This workspace captures operational learning from:

@@ -1,5 +1,8 @@
 # ASQ Ashlee — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 ASQ Ashlee is an AI-native operational methodology and consulting ecosystem focused on helping humans and businesses think more clearly, structure workflows, and collaborate effectively with AI.
 

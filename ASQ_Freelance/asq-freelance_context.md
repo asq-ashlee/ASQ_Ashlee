@@ -1,5 +1,8 @@
 # ASQ Freelance — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 ASQ Freelance is the client implementation and consulting workspace within the ASQ ecosystem.

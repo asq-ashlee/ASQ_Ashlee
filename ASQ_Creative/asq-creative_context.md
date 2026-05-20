@@ -1,5 +1,8 @@
 # ASQ Creative — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 ASQ Creative is the experiential and community-focused workspace within the ASQ ecosystem.

@@ -1,5 +1,8 @@
 # AOA Product Studio — CONTEXT
 
+Last updated: 2026-05-20
+Status: active
+
 ## Purpose
 
 The Product Studio is responsible for transforming artwork into operational product systems.
