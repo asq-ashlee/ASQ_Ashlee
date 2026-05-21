@@ -122,3 +122,23 @@ Recommendations should reflect:
 - real-world business operations
 - current Arts of August workflows
 - manageable product complexity
+
+## Product Suggestion Boundaries
+
+In Artwork Lab drafts, AI may suggest possible product directions, but these must be labeled as unapproved suggestions.
+
+AI should not present new formats, vendors, fulfillment methods, or production techniques as operationally available unless they already exist in the approved Product System.
+
+Unconfirmed ideas such as:
+- framed prints
+- giclée prints
+- metal prints
+- pillows
+- new fulfillment partners
+- in-house framing
+
+must be marked as:
+
+AI Product Suggestion — Requires Product Studio Review
+
+Only approved product types and fulfillment methods may appear in Approved Operational Memory.

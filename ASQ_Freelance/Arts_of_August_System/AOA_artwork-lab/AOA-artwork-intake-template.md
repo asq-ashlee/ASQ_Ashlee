@@ -1,4 +1,4 @@
-# Artwork Intake Draft
+# Artwork Intake Record
 # Arts of August
 
 ## Source Artwork File
@@ -12,70 +12,85 @@ AI Draft — Pending Human Review
 
 ---
 
-# Title Suggestions
+## AI Draft
+
+### Title Suggestions
+
+-
+
+### Visual Metadata
+
+**Category:**
+
+**Orientation:**
+
+**Size:**
+
+**Subject:**
+
+**Location:**
+
+**Time of Day:**
+
+### Mood / Light / Color Notes
+
+**Mood:**
+
+**Light Description:**
+
+**Colors:**
+
+### Description Draft
+
+### Tags
+
+### Product Opportunity Suggestions
+
+*AI Product Suggestion — Requires Product Studio Review*
+
+-
+
+### Content Opportunity Suggestions
+
+*AI Content Suggestion — Requires Distribution Studio Review*
 
 -
 
 ---
 
-# Metadata
+## Owner-Reviewed Corrections
 
-## Category
+### Confirmed Facts
 
-## Orientation
+### Rejected AI Assumptions
 
-## Size
+### Voice Corrections
 
-## Mood
-
-## Colors
-
-## Tags
-
-## Subject
-
-## Location
-
-## Time of Day
-
-## Primary Use
-
-## Light Description
+### Product/Channel Corrections
 
 ---
 
-# Description
+## Approved Operational Memory
+
+### Approved Title
+
+### Approved Metadata
+
+### Approved Description
+
+### Approved Tags
+
+### Approved Product Relationships
+
+### Approved Content Relationships
+
+### Final Workflow Status
 
 ---
 
-# Story
+## Approval Status
 
----
-
-# Product Opportunities
-
----
-
-# Suggested Fulfillment Methods
-
----
-
-# Suggested Sales Channels
-
----
-
-# Suggested Content Opportunities
-
----
-
-# Human Review Notes
-
-(To be completed during review)
-
----
-
-# Approval Status
-
-- Pending
-- Approved
-- Needs Revision
+- [ ] AI Draft
+- [ ] Needs Revision
+- [ ] Owner Reviewed
+- [ ] Approved for Operational Memory

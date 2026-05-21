@@ -173,7 +173,15 @@ This moment arrives briefly, unexpectedly. It's not the gentle fading light of d
 
 # Human Review Notes
 
-(To be completed during review)
+Status: Needs Revision Before Approval Into Operational Memory
+
+Review notes:
+- AI interpretation is useful, especially color and light metadata.
+- Tone is currently too dramatic/marketing-forward for approved Arts of August memory.
+- Product opportunities include unconfirmed formats and fulfillment methods.
+- Marketing/content claims should remain draft-only unless owner confirms them.
+- Owner must confirm artwork facts, emotional positioning, product suitability, and final voice before this record becomes operational memory.
+- Keep as Artwork Lab draft until owner-reviewed corrections are added.
 
 ---
 
@@ -181,7 +189,7 @@ This moment arrives briefly, unexpectedly. It's not the gentle fading light of d
 
 - [ ] Pending
 - [ ] Approved
-- [ ] Needs Revision
+- [x] Needs Revision
 
 ---
 

@@ -26,3 +26,56 @@ Human is responsible for:
 * taste
 * final voice alignment
 * artwork itself
+
+## Review State Requirements
+
+All AI-generated operational drafts must clearly separate:
+
+1. AI Draft
+2. Owner-Reviewed Corrections
+3. Approved Operational Memory
+
+AI Draft may include:
+- generated interpretation
+- title suggestions
+- metadata suggestions
+- mood/color/light observations
+- product opportunity ideas
+- content opportunity ideas
+
+Owner-Reviewed Corrections must include:
+- confirmed facts
+- rejected AI assumptions
+- corrected language
+- owner-approved emotional positioning
+- owner-approved workflow status
+
+Approved Operational Memory must include only:
+- owner-confirmed artwork facts
+- owner-approved title
+- owner-approved description or summary
+- confirmed metadata
+- confirmed product/channel relationships
+- approved workflow status
+
+AI drafts should never be treated as operational memory until the owner has reviewed and approved them.
+
+## Notion Dataset Placement
+
+Final approved operational content may be entered into one of the three Notion datasets:
+
+- Art Pieces
+- Products
+- Content
+
+Use these datasets only for owner-reviewed, approved records.
+
+Drafts, AI suggestions, unconfirmed interpretations, and unapproved product ideas should remain in workspace draft files until reviewed.
+
+Dataset routing:
+
+- Approved artwork-level memory → Art Pieces
+- Approved product-level records → Products
+- Approved audience-facing content → Content
+
+The Notion datasets are structured operational records. They should not become a dumping ground for raw AI drafts.
