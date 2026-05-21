@@ -1,6 +1,10 @@
 # Claude Code local settings — contains API tokens, never commit
 .claude/settings.local.json
 
+# Environment variables — never commit
+.env
+.env.*
+
 # Temp scripts
 AppData/
 *.tmp
