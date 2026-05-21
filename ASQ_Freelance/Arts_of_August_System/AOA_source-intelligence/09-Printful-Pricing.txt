@@ -1,0 +1,53 @@
+FILE 09 — PRINTFUL PRICING
+Last updated: 2026-05-21
+Source: Printful API (base costs) + Printful shipping rate page (shipping costs)
+
+## Margin Formula
+Retail = (Printful base + shipping) / 0.40, rounded to nearest $5
+Target margin: 60%
+Free shipping to customer via Printful #PF-FRGFREE profile
+Kaleigh absorbs shipping cost — shipping MUST be included in the retail price calculation
+
+## Product Selection Rule
+If a framed canvas size exists for an artwork → sell framed canvas only
+If framed canvas is NOT available (panoramic artworks) → sell unframed canvas
+Never offer both framed and unframed for the same size
+
+---
+
+## Product 1 — Framed Canvas (in)
+Use for: all standard landscape, portrait, and square ratio artworks
+Orientation: select Horizontal for landscape, Vertical for portrait
+Not available in panoramic sizes — use Canvas (in) unframed for those
+
+| Size  | Frame Color | Printful Base | Shipping | Retail (60% margin) |
+|---|---|---|---|---|
+| 8×10  | White       | $27.80        | $9.49    | $95                 |
+| 8×10  | Brown       | $27.80        | $9.49    | $95                 |
+| 8×10  | Black       | $27.80        | $9.49    | $95                 |
+| 16×20 | White       | $61.20        | $9.49    | $180                |
+| 16×20 | Brown       | $61.20        | $9.49    | $180                |
+| 16×20 | Black       | $61.20        | $9.49    | $180                |
+| 24×32 | White       | $81.60        | $10.49   | $230                |
+| 24×32 | Brown       | $81.60        | $10.49   | $230                |
+| 24×32 | Black       | $81.60        | $10.49   | $230                |
+
+---
+
+## Product 2 — Canvas (in) Unframed
+Use for: panoramic ratio artworks ONLY (framed canvas not available in panoramic sizes)
+Orientation: select Horizontal for landscape panoramic
+
+| Size  | Printful Base | Shipping | Retail (60% margin) |
+|---|---|---|---|
+| 10×20 | $26.01        | $9.99    | $90                 |
+| 12×24 | $28.56        | $9.99    | $100                |
+| 16×32 | $53.55        | $9.99    | $160                |
+
+---
+
+## Existing Product Pricing Note
+Dockside Morning and other existing canvas print products were priced before this formula was established.
+Those products are underpriced relative to this formula.
+A catalog pricing audit is recommended before launching new products
+to decide whether to reprice existing products for consistency.

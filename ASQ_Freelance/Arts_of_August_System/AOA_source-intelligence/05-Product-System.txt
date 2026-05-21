@@ -130,7 +130,6 @@ In Artwork Lab drafts, AI may suggest possible product directions, but these mus
 AI should not present new formats, vendors, fulfillment methods, or production techniques as operationally available unless they already exist in the approved Product System.
 
 Unconfirmed ideas such as:
-- framed prints
 - giclée prints
 - metal prints
 - pillows
@@ -142,3 +141,120 @@ must be marked as:
 AI Product Suggestion — Requires Product Studio Review
 
 Only approved product types and fulfillment methods may appear in Approved Operational Memory.
+
+---
+
+## Printful Orientation Rule
+
+Both Framed Canvas (in) and Canvas (in) unframed require orientation selection at product creation.
+
+- Landscape artworks → select Horizontal
+- Portrait artworks → select Vertical
+- Square artworks → orientation does not apply
+
+Printful catalog sizes are listed in portrait dimensions (e.g. 8×10).
+When Horizontal is selected, the same size renders as landscape (e.g. 10×8).
+Always record the catalog size in the product record, and note the orientation setting.
+
+## Framed vs Unframed — One Product Per Size
+Arts of August does not offer both framed and unframed canvas for the same artwork size.
+If a framed canvas size is available, only the framed version is sold.
+Unframed canvas is offered only where framed canvas has no matching size.
+This applies to all artworks. Do not create both framed and unframed product records for the same size.
+
+## Framed Canvas vs Unframed Canvas — Decision Rule
+
+Use Framed Canvas (in) when:
+- Artwork is landscape, portrait, or square ratio
+- A clean size match exists in the Framed Canvas catalog
+- Customer is purchasing for home display (frame adds perceived value)
+
+Use Canvas (in) Unframed when:
+- Artwork is panoramic ratio (framed canvas does not offer panoramic sizes)
+- No clean size match exists in the Framed Canvas catalog
+- Confirmed cases: 20×10 horizontal, 20×10 vertical use Canvas (in) not Framed Canvas
+
+When uncertain, check the Framed Canvas size list first.
+If the required size is not in the Framed Canvas catalog, default to Canvas (in) unframed.
+
+---
+
+## Approved Product Types (current)
+
+### 1. Original Paintings
+- Medium: Oil on canvas
+- Fulfillment: Artist direct (manual ship or local pickup)
+- Pricing: Based on comparable show prices by size (see pricing logic file)
+- Each original is a single product record — no variants
+
+### 2. Framed Canvas Prints (Printful)
+- Fulfillment: Printful POD
+- Format: Floating frame canvas wrap
+- Frame colors available: White / Brown / Black
+- Variant structure: 1 size × 3 frame colors = 3 product records per size tier
+- Standard set: 3 size tiers = 9 product records per artwork
+
+---
+
+## Printful Product Selection Rules
+
+### Step 1 — Determine ratio family from original dimensions
+
+| Ratio | Family name | Printful canvas sizes |
+|---|---|---|
+| 1:1 | Square | 8×8 / 12×12 / 20×20 |
+| 4:3 | Standard landscape | 16×12 / 20×16 / 24×18 |
+| 3:4 | Standard portrait | 12×16 / 16×20 / 18×24 |
+| 5:4 | Standard wide | 10×8 / 20×16 / 30×24 |
+| 2:1 | Panoramic landscape | 10×20 / 12×24 / 16×32 |
+| 1:2 | Panoramic portrait | 20×10 / 24×12 / 32×16 |
+
+### Step 2 — Select sizes within the ratio family
+
+Use all three standard sizes unless ratio limits clean options.
+If only 2 clean sizes exist without crop, offer 2. Do not force a third.
+Maximum acceptable crop: 0.5 inches on the longest side, subject to artist approval.
+
+### Step 3 — Apply format constraint by ratio
+
+Framed canvas wraps (floating frame) are available in Standard and Square ratios only.
+Framed canvas wraps are NOT available in Panoramic ratios.
+
+For Panoramic artwork:
+- Use unframed canvas wrap (gallery wrap) as the primary print product
+- Mark framed canvas as unavailable for this artwork
+- Do not create framed canvas product records for panoramic originals
+
+### Step 4 — Create product records
+
+Each size × frame color = one product record in AOA_datasets/products/
+Standard set per artwork: 3 sizes × 3 frame colors = 9 records
+Panoramic set per artwork: 3 sizes × 1 format (unframed) = 3 records
+
+### Step 5 — Confirm Printful base costs before setting prices
+
+Always pull actual base costs from Printful dashboard.
+Apply 60% profit margin rule: Price = (Printful base + shipping subsidy) / 0.40
+Round to nearest $5.
+Do not publish product records with TBD prices.
+
+---
+
+## Original Pricing Reference (from debut show data)
+
+| Size | Show price anchor |
+|---|---|
+| 6×6 | $99 |
+| 8×8 | $99–$299 (varies by complexity) |
+| 9×12 | $299–$399 |
+| 10×10 | $199 |
+| 11×14 | $499 |
+| 14×11 | $199–$499 (verify against comparable) |
+| 16×20 | $399–$499 |
+| 20×16 | $399 |
+| 20×20 | $99–$199 |
+| 24×18 | $199 |
+
+Framed originals price at same or higher than unframed at same size.
+Show prices represent floor — online pricing may be set higher.
+Always verify against the most current show dataset before publishing.

@@ -132,3 +132,24 @@ Set Artwork Workflow Status:
 
 If products are ready to begin:
 - Ready for Products
+
+---
+
+## After Approval — Next Steps
+
+When an artwork draft is approved, the post-approval handoff begins.
+
+Read and follow:
+  AOA_connecting-layer/post-approval-handoff.md
+
+That document defines:
+- file renaming convention
+- draft file movement
+- artwork dataset record creation
+- product dataset record creation
+- Google Drive image field population
+- Notion push sequence
+- Product Studio handoff
+
+Do not begin product records, Notion push, or distribution work
+until the post-approval handoff document has been read.

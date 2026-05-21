@@ -13,7 +13,7 @@ Structure
 Opening Paragraph Rules
 
 * Start with the moment or condition
-* Avoid: “This painting features…”
+* Avoid: "This painting features…"
 * Focus on light, stillness, time of day
 
 Product Section Rules
@@ -51,3 +51,90 @@ AI may assist with:
 - readability improvements
 
 AI should not invent operational product details that belong to authoritative systems.
+
+---
+
+## Title System — Repeatable Formula
+
+Every artwork title follows a two-tier structure.
+
+Tier 1 — Site display title (lyrical, short)
+Tier 2 — Etsy listing title (SEO-extended)
+
+### Four-filter test for Tier 1 title
+
+Before approving a title, it must pass all four filters:
+
+1. Literal keyword — does it contain or suggest a word a buyer would actually search?
+2. Emotionally open — does it leave room for the buyer's own meaning without forcing a specific interpretation?
+3. Catalog voice match — does it feel consistent with existing Arts of August titles (short, sensory, non-literal-locational)?
+4. Keyword tail compatible — does it pair cleanly with an SEO clarifier for the Etsy title?
+
+### Title construction process
+
+Step 1 — Identify the hook
+The hook is one emotional focal moment in the painting — not the whole scene.
+Example: in a seascape with clouds, the hook may be the light breaking through, not the bay or the trees.
+
+Step 2 — Name the hook (Tier 1)
+Short. Lyrical. Sensory. Usually 3–5 words.
+Examples: "Light Through the Clouds", "The Violet Hour", "Where the Water Wanders"
+
+Step 3 — Extend for Etsy (Tier 2)
+Format: [Tier 1 title] — [literal product description], [location keyword], [subject keywords], [format keyword]
+Example: "Light Through the Clouds — Original Oil Painting, Coastal Sunset Sky, Maine Seascape Wall Art, Signed by Artist"
+
+### What to avoid in Tier 1 titles
+
+* Literal location names unless essential to the emotional hook (e.g. "Over Penobscot Bay" narrows unnecessarily)
+* Religious or spiritually specific language (e.g. "Heaven's Window") — narrows the buyer pool
+* Generic descriptors (e.g. "Beautiful Sunset") — does not pass catalog voice filter
+* Over-long phrases — Tier 1 title should be memorable and speakable
+
+---
+
+## GEO / AI Search Rules
+
+GEO (Generative Engine Optimization) is how Arts of August content surfaces in AI-powered search results (ChatGPT, Gemini, Perplexity) when buyers search in natural language.
+
+AI search engines read alt text, descriptions, and structured data differently from keyword-based search. They favor complete, natural-language sentences that describe the image accurately.
+
+### Alt text formula
+
+Every artwork must have a GEO-optimized alt text field.
+
+Format:
+[Title] — [medium] of [literal visual description including subject, colors, lighting, place] by [artist full name and location].
+
+Example:
+"Light Through the Clouds — original oil painting of sun rays breaking through lavender and peach clouds over a calm Maine coastal bay at sunset, by Maine artist Kaleigh Anderson."
+
+Rules:
+* Always include medium (oil on canvas, framed fine art print, canvas print)
+* Always include a literal visual description — describe what is physically in the image
+* Always include artist full name
+* Always include location (Maine, Maine coast, Scarborough Maine)
+* Never use the story or emotional hook language here — this field is literal and descriptive
+* Never use vague descriptors like "beautiful" or "stunning"
+
+### Alt text vs Story field
+
+These are two different fields with two different jobs.
+
+| Field | Audience | Language | Job |
+|---|---|---|---|
+| Story | Human shoppers | Lyrical, emotional, one sentence | Emotional hook — why this painting exists, what it feels like |
+| Alt text | Screen readers + AI search | Literal, descriptive, one sentence | Describe what is visually in the image + artist + place |
+
+Never use story language in alt text. Never use alt text language in story.
+
+### Natural language search phrases to target
+
+When writing descriptions and alt text, consider that buyers search in natural language:
+* "oil painting of sun through clouds over water"
+* "Maine coastal art for living room"
+* "original painting of evening light on the ocean"
+* "framed coastal wall art Maine artist"
+* "atmospheric seascape painting"
+
+The alt text and description should contain the words and phrases that appear naturally in these queries.

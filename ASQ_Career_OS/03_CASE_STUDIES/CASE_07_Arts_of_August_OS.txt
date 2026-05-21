@@ -1,0 +1,193 @@
+# Arts of August: Building an AI-Native Operating System for a Solo Artist
+
+## Project Overview
+
+Arts of August is a Maine-based coastal art studio by artist Kaleigh Anderson. The brand includes original oil paintings, fine art prints, Etsy sales, in-person markets and galleries, and commissions.
+
+When this project began, Kaleigh had the art. She had the shows. She had customers who loved the work.
+
+What she did not have was a system.
+
+No product pipeline. No content workflow. No operational memory. No way to take a finished painting and turn it into a live product listing, a marketing campaign, and a record she could build on — without spending hours on work that had nothing to do with painting.
+
+This project built that system from scratch.
+
+---
+
+## The Problem
+
+Kaleigh's situation is common for solo creative businesses.
+
+The work is real. The talent is real. The audience is real.
+
+But the operational gap between "I finished a painting" and "it is live on Etsy, on the website, in an email, and on social" is enormous — and it falls entirely on one person.
+
+For most artists, that gap never closes cleanly. Products go up late or not at all. Show momentum doesn't convert to online sales. Marketing is inconsistent. Nothing connects.
+
+The deeper problem is not just effort. It is structure.
+
+Without a system, every new painting starts from zero. Every product decision gets made again. Every caption gets written from scratch. Every launch is a scramble.
+
+The question this project set out to answer was:
+
+**What would it look like if a solo artist had an operating system — one that remembered everything, followed consistent rules, and reduced the distance between finished artwork and live product?**
+
+---
+
+## The Approach
+
+The ASQ approach starts with source truth, not tools.
+
+Before anything gets automated, it has to be defined. Before a system can generate a listing, it needs to know what the brand sounds like, what the product rules are, how titles are built, what goes to Notion and what stays in the repo, and what human review is required at every stage.
+
+That definition work became the foundation of the Arts of August system.
+
+### Source Intelligence Files
+
+Eight source intelligence files define how the system thinks about Arts of August:
+
+- Brand Foundation — who Arts of August is and what it stands for
+- Voice and Language Guide — how the brand sounds and what it never says
+- Title System — how every artwork title is built using a hook-first, two-tier formula
+- Listing System — the seven-part structure every Etsy listing follows
+- Product System — how artwork maps to print products, sizes, and fulfillment
+- Workflow System — the staged pipeline from intake to operational memory
+- Brand Expression Rules — what creative boundaries apply to all output
+- AI Generation Rules — what AI may assist with and what requires human review
+
+These files are not prompts. They are persistent intelligence — the rules the system operates from every time it runs, regardless of which session or which model.
+
+### The Pipeline
+
+The operational pipeline has five stages:
+
+**Artwork Lab** — A new painting arrives. AI interprets the artwork, generates metadata, title suggestions, mood and color notes, product opportunities, and content hooks. Everything is labeled as a draft. Nothing moves forward without human review.
+
+**Product Studio** — Approved artwork metadata maps to print products. Size tiers are determined by aspect ratio. Printful product variants are generated. Pricing is calculated using a consistent margin formula. Product records are written to the dataset.
+
+**Distribution Studio** — Approved products generate content. Etsy listing copy, Instagram captions, email hooks, launch language. All built from the same approved source record.
+
+**Operational Memory** — Approved records push to three Notion databases: Artworks, Products, Content. These are the system's memory — clean, structured, and portable.
+
+**Feedback and Analytics** — Sales data, engagement, show results, and customer response feed back into the system. What worked informs the next artwork.
+
+### Human Review at Every Stage
+
+The most important design decision in the system is one that does not get automated away.
+
+Every AI draft is labeled as a draft. Every stage has a defined review gate. Nothing becomes operational memory until the owner has reviewed, corrected, and approved it.
+
+This is not a limitation of the system. It is the point.
+
+AI can interpret a painting and generate strong metadata. But only Kaleigh knows whether the emotional positioning is accurate. Only Kaleigh can confirm the title feels right. Only Kaleigh can verify that a product size works for her original canvas dimensions.
+
+The system is designed to reduce the work between finished painting and live product — not to remove the artist from the decisions that require an artist.
+
+---
+
+## What the System Produces
+
+For each new artwork, the system generates:
+
+**Artwork record** — approved title, metadata, mood, colors, light description, tags, description, story, and workflow status — stored in the artworks dataset and Notion.
+
+**Product records** — one record per variant. For a standard landscape painting, that means nine framed canvas print variants (three sizes × three frame colors) plus the original painting listing. Each record includes product name, size, frame color, fulfillment method, and calculated retail price.
+
+**Website entry** — a complete `artworks.ts` object ready to drop into the Lovable site, including title, alt text, story, description, Etsy URL, and tags.
+
+**Etsy listing** — title formatted as Poetic Anchor + SEO Clarifier, seven-part description, and 13 SEO tags.
+
+**Content assets** — Instagram series concept, email subject line and hook, Pinterest keywords, launch copy, and seasonal positioning.
+
+All of it built from one approved artwork record. All of it consistent with the brand rules. All of it ready for human review before anything goes live.
+
+---
+
+## The GEO Layer
+
+The system also addresses how Arts of August shows up in AI-powered search.
+
+Generative Engine Optimization — GEO — is about making a business understandable to AI systems like ChatGPT, Perplexity, and Google AI Overviews, not just traditional search engines.
+
+For Arts of August, that meant:
+
+- Structured JSON-LD schema for the artist, the business, individual products, events, and reviews
+- GEO-optimized alt text on every artwork image — literal, descriptive, and designed for AI extraction
+- An expanded `llms.txt` file with richer studio facts
+- A dedicated About page establishing Kaleigh Anderson as a named entity connected to Maine, Scarborough, the coast, oil on canvas, and gold foil process
+- Product schema connecting Etsy listings back to the Arts of August brand
+
+The distinction that matters here: alt text and story fields do two completely different jobs. The story field is lyrical — it sells the feeling of the painting to a human shopper. The alt text is literal — it tells AI systems and screen readers exactly what is in the image, who painted it, and where. Mixing those two up is one of the most common GEO mistakes small creative businesses make.
+
+The system enforces the separation at the data level.
+
+---
+
+## The Pricing Logic
+
+One of the more precise pieces of the system is the pricing framework.
+
+Original painting prices are set by comparing to a catalog of 80+ paintings from Kaleigh's debut show, matched by size and medium. An 11×14 original anchors at $499 based on confirmed comparable sales. A 6×6 original anchors at $99. The logic is documented and reusable for every new artwork.
+
+Print prices are calculated using a consistent margin formula: Printful base cost divided by 0.40, rounded to the nearest $5. Free shipping is handled through a Printful shipping profile, so the formula applies to base cost only.
+
+The formula is not invented per artwork. It runs once from the source intelligence file and produces a complete pricing table. Every product record has a calculated price before it gets reviewed.
+
+---
+
+## What This Shows About the Approach
+
+This project was not about automation for its own sake.
+
+It was about reducing the operational distance between Kaleigh's creative work and its commercial life — without replacing her judgment, her voice, or her taste.
+
+The system handles the parts that don't require an artist:
+- metadata generation
+- product mapping
+- size and ratio logic
+- pricing calculation
+- listing structure
+- content drafting
+- dataset management
+
+Kaleigh handles the parts that do:
+- title approval
+- emotional positioning
+- description voice
+- product selection
+- final sign-off before anything goes live
+
+The result is a system that scales with her — not one she has to keep up with.
+
+---
+
+## Why It Matters Beyond Arts of August
+
+Arts of August is the proof of concept for a larger idea.
+
+Solo creative businesses — artists, makers, independent designers — have always faced the same operational gap. The work is strong. The systems aren't there. And building them from scratch, alone, isn't realistic.
+
+This system is designed to be replicated.
+
+Every source intelligence file is a template. Every workflow is documented. Every decision rule is written down. The next artist who comes through this system gets a faster start, a cleaner setup, and the same operational capability — without having to build it from zero.
+
+The goal is not to give one artist a system.
+
+The goal is to make this kind of system accessible to the solo creative businesses that need it most and have historically had the least access to it.
+
+---
+
+## Related Assets
+
+Website: https://artsofaugust.org/
+Etsy: https://www.etsy.com/shop/ArtsofAugust
+
+---
+
+## Use This Case Study When
+
+- The work involves AI workflow design, operational systems, or creative business infrastructure
+- The audience is solo business owners, artists, or makers who need operational leverage
+- The conversation is about what AI-native systems look like in practice for small businesses
+- The project requires an example of human-in-the-loop AI design done correctly
+- The proof point needed is building a system that scales without removing human judgment

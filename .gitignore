@@ -1,0 +1,6 @@
+# Claude Code local settings — contains API tokens, never commit
+.claude/settings.local.json
+
+# Temp scripts
+AppData/
+*.tmp

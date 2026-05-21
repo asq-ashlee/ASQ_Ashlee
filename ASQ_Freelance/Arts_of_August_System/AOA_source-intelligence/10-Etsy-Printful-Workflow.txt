@@ -1,0 +1,125 @@
+FILE 10 — ETSY + PRINTFUL PRODUCT WORKFLOW
+Last updated: 2026-05-21
+Status: active
+
+## Overview
+
+Arts of August uses a two-channel distribution model:
+- Printful print products → Etsy only
+- Original paintings → Lovable website only
+
+No product is listed on both channels simultaneously.
+International shipping is not offered.
+
+---
+
+## Money Flow — Printful Print Products
+
+Customer pays retail → Stripe account → Kaleigh's bank (payout every 2 days)
+Separately: Printful charges Kaleigh their base cost + shipping from card on file or Printful Wallet
+Printful prints and ships directly to customer
+Kaleigh keeps the margin (retail minus Stripe fee minus Printful charge)
+
+Stripe fee: 2.9% + $0.30 per transaction
+Example at $95 retail: $95 - $2.76 (Stripe) - $37.29 (Printful base + shipping) = $54.95 net
+
+Printful and Stripe are completely separate billing relationships.
+The customer never sees Printful. Printful never touches the customer's payment.
+Kaleigh is the merchant of record.
+
+---
+
+## Printful Wallet
+
+Recommended: prefund Printful Wallet with $200–500.
+Orders submit instantly without card-decline risk.
+Set up Printful order failure email alerts.
+If Printful charge fails, order goes On Hold — customer has paid but nothing prints.
+
+---
+
+## Refund Window
+
+Consider holding orders for 1–2 hours before submitting to Printful.
+This gives a window to catch cancellations before Printful charges for the print.
+If Printful has already printed: Kaleigh eats the base cost on refunds.
+If Printful has not printed: cancel the Printful order, no charge.
+
+---
+
+## Creating a Printful Product — Step by Step
+
+### Set in Printful (before Etsy sync):
+- Product type and variant selection (size, frame color, orientation)
+- Artwork file upload (print-ready file from Google Drive)
+- Up to 10 mockup photos — primary photo and order set here
+- Title and description (follow 04-Listing-System.txt rules)
+- Tags (SEO only — no poetic language)
+- Retail price (from 09-Printful-Pricing.txt)
+- Shipping profile: select #PF-FRGFREE for framed canvas prints
+- Processing profile: "Made to order 2-7 days"
+- Section: assign to correct Etsy section
+- Printful generates SKU — never edit the SKU
+
+### Set in Etsy after sync (Printful creates draft, publish done in Etsy):
+- Up to 10 additional photos (beyond Printful's 10) + 1 video
+- Materials field
+- Primary color and secondary color
+- Width and height (Etsy fields)
+- Quantity per variant: set strategically to 15–20 (not the large default from Printful)
+- Toggle ON: Restock requests
+- Toggle ON: Feature this listing (if applicable)
+- Toggle ON: Etsy ads (if applicable)
+- Renewals: set to Automatic
+- How it's made: "I did" (Printful)
+- Tools used: Handheld or hand-guided tools (optional Etsy edit)
+- Publish listing in Etsy (not in Printful)
+
+### Do NOT edit in Etsy (breaks Printful sync):
+- SKU — never edit
+- Printful-generated variant structure
+- Shipping profile assigned by Printful
+
+---
+
+## Shipping Profiles Reference
+
+| Profile | Code | Who manages | Customer pays | Use for |
+|---|---|---|---|---|
+| Printful free shipping | #PF-FRGFREE | Printful | $0 | All framed canvas prints |
+| Original art shipping | Custom Etsy profile | Etsy/Kaleigh | $30 fixed | Original paintings, US only |
+| Thin/Framed Canvas | #PF-FRG28 | Printful | $0 | Thin canvas variants |
+| International | — | — | — | Not offered |
+
+---
+
+## Originals — Lovable + Stripe
+
+Original paintings are sold exclusively through the Lovable website via Stripe checkout.
+Not listed on Etsy.
+US shipping only. International shipping is not offered.
+
+Money flow:
+Customer pays → Stripe → Kaleigh's bank
+Kaleigh ships the original herself via PirateShip
+Fixed shipping rate: $30 (US only, UPS Ground 1-5 business days)
+
+Stripe handles all transactional emails automatically:
+- Order confirmation
+- Receipt
+- Shipping confirmation (when tracking added)
+- Refund confirmation
+
+Marketing/nurture emails handled by Kit:
+- Post-purchase sequence triggered by Stripe webhook → Kit
+- Thank you, care instructions, Instagram follow, new work preview
+
+---
+
+## Accounting (starting out)
+
+Stripe dashboard: revenue in
+Printful dashboard: cost out
+Difference = profit
+
+Upgrade path when volume grows: QuickBooks or Xero pulling from both dashboards.
