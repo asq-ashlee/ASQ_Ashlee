@@ -80,7 +80,7 @@ Avoid:
 - Structure before automation
 - Pipelines before agents
 
-## Routing Inside This Workspace
+## Routing Inside This System
 
 | Task Type | Workspace |
 |---|---|
@@ -88,3 +88,27 @@ Avoid:
 | Product generation | AOA_product-studio |
 | Marketing + publishing | AOA_distribution-studio |
 | Performance review | AOA_feedback-analytics |
+
+## System Folders
+
+### Workspaces
+
+- `AOA_artwork-lab/` — artwork intake, interpretation, metadata, and artwork readiness
+- `AOA_product-studio/` — product creation, product mapping, product records, and listing readiness
+- `AOA_distribution-studio/` — social, email, website, submissions, platform notes, and audience-facing content
+- `AOA_feedback-analytics/` — performance review, audience response, sales observations, and system learning
+
+### Support Folders
+
+- `AOA_source-intelligence/` — stable brand, voice, product, listing, workflow, and AI-generation rules
+- `AOA_connecting-layer/` — placement rules, schema mapping, channel mapping, design rules, and export logic
+- `AOA_datasets/` — portable structured records mirrored from or pushed to Notion
+- `AOA_exports/` — raw exports, channel-ready files, and publishing/archive snapshots
+
+## Placement Rules
+
+Before adding or moving files, reference:
+
+`AOA_connecting-layer/placement-rules.md`
+
+This file defines where new rules, records, drafts, exports, submissions, platform notes, and workflow materials belong.
