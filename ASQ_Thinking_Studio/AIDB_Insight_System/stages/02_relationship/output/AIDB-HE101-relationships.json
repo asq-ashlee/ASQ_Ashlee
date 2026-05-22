@@ -1,0 +1,74 @@
+[
+  {
+    "relationship_id": "REL-HE101-01",
+    "source_id": "AIDB-2026-04-HE101-007",
+    "target_id": "AIDB-2026-WCCA-[TBD]",
+    "type": "extends",
+    "reasoning": "HE101-007's 'design the environment' reframe for enterprise leaders extends the WCCA episode's argument that enterprise AI adoption is blocked by structural factors — both objects locate the problem above the tool layer.",
+    "compatibility": {
+      "time_delta_days": 14,
+      "claim_type_compatible": true,
+      "confidence_compatible": true,
+      "speaker_intent_compatible": true,
+      "scope_overlap": ["Enterprise AI Adoption", "AI Organizational Design"]
+    },
+    "macro_story": {
+      "arc_id": "ARC-ENTERPRISE-ENV-01",
+      "arc_shape": "argument_emerging",
+      "unresolved_tension": "If the environment determines AI output quality, who in an enterprise is responsible for designing it — and does that role exist yet?"
+    }
+  },
+  {
+    "relationship_id": "REL-HE101-02",
+    "source_id": "AIDB-2026-04-HE101-005",
+    "target_id": "AIDB-2026-04-HE101-004",
+    "type": "extends",
+    "reasoning": "HE101-005's meta-harness argument (the discipline is permanent, the implementation is temporary) extends HE101-004's minimal harness design philosophy — both are Anthropic-sourced and together form a coherent position on where the real engineering work lives.",
+    "compatibility": {
+      "time_delta_days": 0,
+      "claim_type_compatible": true,
+      "confidence_compatible": true,
+      "speaker_intent_compatible": true,
+      "scope_overlap": ["Claude Code", "Harness Engineering", "Anthropic Design Philosophy"]
+    },
+    "macro_story": null
+  },
+  {
+    "relationship_id": "REL-HE101-03",
+    "source_id": "AIDB-2026-04-HE101-003",
+    "target_id": "PLACEHOLDER-PRIOR-MODEL-HYPE",
+    "type": "contradicts",
+    "reasoning": "HE101-003's 'it's a configuration problem not a model problem' directly contradicts the recurring AIDB theme that the next model release will resolve current agent failures. Target ID to be updated when the specific prior object is identified.",
+    "compatibility": {
+      "time_delta_days": null,
+      "claim_type_compatible": true,
+      "confidence_compatible": null,
+      "speaker_intent_compatible": null,
+      "scope_overlap": ["Model Capability", "Agent Performance", "AI Development Cycles"]
+    },
+    "macro_story": {
+      "arc_id": "ARC-MODEL-VS-ENV-01",
+      "arc_shape": "tension_resolving",
+      "unresolved_tension": "Is the field converging on 'configuration over models' or will the next generation of reasoning models make the debate moot again?"
+    }
+  },
+  {
+    "relationship_id": "REL-HE101-04",
+    "source_id": "AIDB-2026-04-HE101-006",
+    "target_id": "PLACEHOLDER-PRODUCT-CONVERGENCE",
+    "type": "confirms",
+    "reasoning": "HE101-006's structural explanation for product convergence (the harness loop is general-purpose) confirms a prior AIDB prediction that every AI product is becoming every other AI product. Target ID to be updated when the specific prior object is identified.",
+    "compatibility": {
+      "time_delta_days": null,
+      "claim_type_compatible": true,
+      "confidence_compatible": null,
+      "speaker_intent_compatible": null,
+      "scope_overlap": ["AI Product Strategy", "Market Structure", "Agentic Architecture"]
+    },
+    "macro_story": {
+      "arc_id": "ARC-PRODUCT-CONVERGENCE-01",
+      "arc_shape": "confirmation_building",
+      "unresolved_tension": "If architecture converges, what actually differentiates the winners — and is proprietary context a defensible moat or a temporary advantage?"
+    }
+  }
+]

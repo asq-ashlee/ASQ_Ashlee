@@ -1,0 +1,204 @@
+# Insight Objects — Harness Engineering 101
+# Stage 02 output — draft
+# Episode: Harness Engineering 101, AI Daily Brief, NLW
+# Date: April 13, 2026
+# Run by: ASQ Ashlee
+
+---
+
+id: AIDB-2026-04-HE101-001
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host)
+  timestamp: ~3:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    NLW frames this as an intentional lineage — prompt engineering → context
+    engineering → harness engineering — and backs it with concrete product
+    examples throughout the episode.
+distortion_risk: >
+  Could be read as "prompt engineering is dead." The actual claim is that
+  the dominant frame of what matters has shifted, not that earlier skills
+  are worthless. NLW explicitly says context engineering is still alive and
+  important.
+claim: >
+  The dominant frame for AI skill has shifted three times. Prompt engineering
+  (2023–2024) gave way to context engineering (2025), which is now giving way
+  to harness engineering — everything you put around the model to help it do
+  what it's meant to do.
+
+---
+
+id: AIDB-2026-04-HE101-002
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host) citing Latent Space post
+  timestamp: ~6:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    NLW attributes the framing explicitly to Latent Space and quotes the
+    "human vs. the seat" analogy directly. The tension is clearly named
+    and sourced.
+distortion_risk: >
+  Could be read as NLW taking a side in the big model vs. big harness debate.
+  He explicitly does not — he presents both sides and says Anthropic's managed
+  agents announcement partially dissolves the debate.
+claim: >
+  The central debate in harness engineering is big model vs. big harness: how
+  much of agent performance comes from the model itself versus the environment
+  built around it? This mirrors the finance debate about the value of the
+  trader versus the value of the seat.
+
+---
+
+id: AIDB-2026-04-HE101-003
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host) citing Kyle at HumanLayer.dev
+  timestamp: ~9:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    Kyle's conclusion — "it's not a model problem, it's a configuration
+    problem" — is drawn from dozens of projects and hundreds of agent
+    sessions. NLW presents this as field evidence, not theory.
+distortion_risk: >
+  Could be read as "models don't matter." The actual claim is more specific:
+  for a given moment in model capability, the configuration layer is where
+  the performance gap lives. Kyle explicitly acknowledges models will keep
+  improving and new failure modes will emerge.
+claim: >
+  Most coding agent failures are not model problems — they are configuration
+  problems. And most people who have used Claude Code, Cursor, or OpenClaw
+  have already been doing harness engineering without calling it that.
+
+---
+
+id: AIDB-2026-04-HE101-004
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host) citing Boris Churnney and Cat Woo, Anthropic
+  timestamp: ~7:30
+claim_type: fact
+confidence:
+  level: high
+  reasoning: >
+    Direct quotes from the creators of Claude Code, attributed by name.
+    Boris: "We literally could not build anything more minimal." Cat: "It
+    is very much the simplest thing I think by design."
+distortion_risk: >
+  Could be read as "Claude Code has no engineering value" or "Anthropic
+  is lazy." The claim is the opposite — minimal harness is a deliberate
+  design philosophy, not an absence of work. The thesis is that the model
+  should carry the weight, not the wrapper.
+claim: >
+  The creators of Claude Code describe its harness as deliberately minimal —
+  a thin wrapper designed to let the model express its full power rather than
+  compensating for model limitations with scaffolding.
+
+---
+
+id: AIDB-2026-04-HE101-005
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host) citing Anthropic managed agents announcement
+  timestamp: ~17:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    NLW quotes Anthropic's announcement directly and draws the meta-harness
+    conclusion himself. The quote "harnesses encode assumptions that go stale
+    as models improve" is from Anthropic's own blog post.
+distortion_risk: >
+  Could be read as "harness engineering doesn't matter because it's temporary."
+  The actual claim is the opposite: harnesses matter so much that building
+  infrastructure to make them disposable is now the serious engineering
+  problem. The discipline is permanent. The specific implementation is not.
+claim: >
+  Anthropic's managed agents is a meta-harness — infrastructure deliberately
+  built to outlast any specific harness implementation, because harnesses
+  encode assumptions that go stale as models improve. The discipline of
+  harness engineering is permanent. Any given harness is temporary.
+
+---
+
+id: AIDB-2026-04-HE101-006
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host)
+  timestamp: ~20:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    NLW builds this conclusion himself from the Etna Labs three-layer
+    architecture and the Nicholas Charier "great convergence" post. It is
+    his editorial synthesis, clearly framed as such.
+distortion_risk: >
+  Could be read as "all AI products are the same." The claim is more precise:
+  the underlying architecture is converging because the harness loop is
+  general-purpose. Product differentiation still exists at the layer of
+  distribution, proprietary context, and workflow positioning.
+claim: >
+  The reason every AI product is starting to look like every other AI product
+  is not lack of imagination — it is that the harness architecture (model +
+  tools + loop) turns out to be general-purpose. The winners will be
+  differentiated by distribution, proprietary context, and workflow
+  positioning — not by novel architecture.
+
+---
+
+id: AIDB-2026-04-HE101-007
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host)
+  timestamp: ~21:00
+claim_type: interpretation
+confidence:
+  level: high
+  reasoning: >
+    This is NLW's direct reframe for enterprise leaders. He states it
+    explicitly and without hedging. It is his editorial conclusion, not
+    a quoted source.
+distortion_risk: >
+  Could be read as "the model you choose doesn't matter." The actual claim
+  is that model selection is necessary but insufficient — the environment
+  you build is the variable that determines output quality.
+claim: >
+  For enterprise leaders, harness engineering reframes AI adoption from
+  "pick the best model" to "design the best environment for agents to work
+  in." The model and the tools are necessary but insufficient. The
+  environment determines output quality.
+
+---
+
+id: AIDB-2026-04-HE101-008
+source:
+  episode: Harness Engineering 101
+  speaker: NLW (host) citing Viv at LangChain
+  timestamp: ~12:00
+claim_type: fact
+confidence:
+  level: high
+  reasoning: >
+    NLW references a specific LangChain post and attributes the
+    three-layer harness breakdown (information layer, execution layer,
+    feedback layer) to Etna Labs. These are clearly sourced structural
+    descriptions, not NLW's own claims.
+distortion_risk: >
+  Low distortion risk — this is a definitional framework, not an argument.
+  Risk is in oversimplifying: the three layers are not equal in maturity
+  or difficulty. The feedback layer (evaluation, tracing, observability)
+  is the hardest and least commonly implemented.
+claim: >
+  A harness has three layers: information (what the agent can see and do —
+  memory, context, tools), execution (how work is decomposed and recovered —
+  orchestration, guardrails), and feedback (how the system improves over
+  time — evaluation, verification, observability). Most current harnesses
+  are strong on information, weak on feedback.
