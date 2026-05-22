@@ -1,0 +1,21 @@
+[
+  {
+    "relationship_id": "REL-WCCA-01",
+    "source_id": "AIDB-2026-05-WCCA-02",
+    "target_id": "AIDB-2026-03-EP05-04",
+    "type": "qualifies",
+    "reasoning": "The WCCA object introduces a task-vs-discovery distinction that narrows the earlier prediction — agents will handle transactions but not discovery-based shopping — without opposing the general claim that agentic commerce is coming.",
+    "compatibility": {
+      "time_delta_days": 42,
+      "claim_type_compatible": true,
+      "confidence_compatible": true,
+      "speaker_intent_compatible": true,
+      "scope_overlap": ["Agentic Commerce", "Consumer Behavior"]
+    },
+    "macro_story": {
+      "arc_id": "ARC-COMMERCE-01",
+      "arc_shape": "argument_emerging",
+      "unresolved_tension": "Can agents handle the discovery quest, or are they structurally limited to the transaction task?"
+    }
+  }
+]

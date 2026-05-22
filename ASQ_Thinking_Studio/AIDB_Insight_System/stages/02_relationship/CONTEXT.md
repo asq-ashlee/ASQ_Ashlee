@@ -15,6 +15,7 @@ This is the stage that turns a set of isolated objects into a connected knowledg
 | Layer 4 (working) | `../01_decomposition/output/[episode-name]-insight-objects.md` | Objects from Stage 01 |
 | Layer 3 (reference) | `../../references/insight-object-schema.md` | Extended fields specification |
 | Layer 3 (reference) | `../../episodes/` | Prior episode objects for cross-episode linking |
+| Layer 3 (reference) | `../../references/relationship-schema.md` | Relationship object structure, type vocabulary, and compatibility check fields |
 
 ---
 
@@ -71,30 +72,11 @@ Any chain of three or more connected objects — within or across episodes — t
 
 ## Outputs
 
-Write to `output/[episode-name]-relationships.md`
+**Draft (per run):** `stages/02_relationship/output/[episode-name]-relationships.json`
+Contains all relationship objects identified in this run, compatibility checks completed, macro-story fields blank until arc review.
 
-Format:
-
-```markdown
-## Within-episode relationships
-
-| Object A | Relationship | Object B | Reasoning |
-|----------|-------------|----------|-----------|
-| [ID] | [type] | [ID] | [one sentence] |
-
-## Cross-episode connections
-
-| This episode object | Relationship | Prior object | Episode | Compatibility check passed |
-|--------------------|-------------|-------------|---------|--------------------------|
-| [ID] | [type] | [ID] | [episode name] | [yes/no — note any failures] |
-
-## Macro-story candidates
-
-### [Working title]
-- Objects: [list of IDs and episodes]
-- Argument shape: [what is being traced]
-- Status: candidate / confirmed
-```
+**Approved archive (after review):** `episodes/[episode-name]/relationships.json`
+Move from draft output after Ashlee reviews and approves connections. Once a relationship object is moved here, treat it as append-only. Do not silently edit approved files. If a connection needs revision, add a new relationship object pointing back to the original with an `updates` or `reverses` type.
 
 ---
 
