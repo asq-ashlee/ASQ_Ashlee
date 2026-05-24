@@ -17,7 +17,7 @@ product_records/AOA_PRD_[XXXX].csv
 - Product Name: full product name including size and frame color where applicable
 
 ### Product Classification
-- Product Type: Original Painting / Canvas Print
+- Product Type: Original Painting / Printful Print
 - Format: Original / Framed Canvas / Canvas Unframed
 - Printful Product: select — Framed Canvas (in) / Canvas (in) / Thin Canvas (in)
 
