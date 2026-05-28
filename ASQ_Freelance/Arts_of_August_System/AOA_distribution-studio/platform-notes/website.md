@@ -40,7 +40,7 @@ An artwork may not appear on the website unless ALL of the following conditions 
 ### Required before sync
 
 - [ ] The actual artwork photograph (not AI-generated, not a placeholder) has been exported and saved to Google Drive
-- [ ] The Etsy listing URL is available (or the artwork is confirmed as website-only with no Etsy link)
+- [ ] `Square Checkout URL` is populated in the artwork record (or `Status` is `coming-soon` — not required until artwork is available for purchase)
 - [ ] The artwork dataset record has been committed to this repository
 
 ### Image rule — no exceptions
@@ -75,9 +75,9 @@ The website gallery shows:
 - Story (one-sentence lyrical note)
 - Dimensions
 - Price
-- Etsy listing link (if available) — "Inquire / buy →"
+- Square Checkout URL — buy button for original purchase (shown when `Status` = `available`)
 
-The website does not process transactions. Etsy handles all sales.
+The website does not process transactions. Square handles original artwork payments via direct checkout links stored in the `Square Checkout URL` field on each artwork record.
 
 ---
 

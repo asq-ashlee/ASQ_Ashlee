@@ -64,15 +64,22 @@ Outputs should align with:
 Generate:
 
 - Title Suggestions
+- Slug (URL-safe version of approved title — lowercase, hyphens, no special characters)
 - Category
 - Orientation
+- Medium (e.g. Oil on canvas, Acrylic on canvas, Gold foil, Mixed media)
 - Mood
 - Colors
 - Tags
 - Description
 - Story
-- Primary Use
+- Alt Text (one literal sentence describing the image — for SEO and accessibility, not poetic)
+- Subject
+- Location (if identifiable)
+- Time of Day
 - Light Description
+- Primary Use
+- Series (suggest if applicable — leave blank if no clear series grouping)
 - Suggested Product Types
 - Suggested Sales Channels
 - Suggested Content Opportunities

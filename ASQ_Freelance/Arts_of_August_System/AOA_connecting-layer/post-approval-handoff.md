@@ -186,7 +186,7 @@ Notify Product Studio that the artwork is ready for:
 - Printful product creation (upload print file, select sizes/colors/orientation)
 - Mockup generation
 - Etsy listing creation
-- Website sync (Notion-to-Lovable, triggered after Etsy listing URL is confirmed)
+- Website sync (Notion-to-Lovable, triggered after Square Checkout URL is confirmed on the artwork record)
 
 The Product Studio receives:
 - The approved artwork dataset record
@@ -202,7 +202,7 @@ Do not trigger a website sync or add any entry to `artworks.ts` until ALL of the
 - [ ] `Image Status` = `Master Image Approved` in the artwork record
 - [ ] `Human Approved` = `Yes` in the artwork record
 - [ ] Master image file is saved in Google Drive and the `Image` field URL is populated
-- [ ] Etsy listing is live and the Etsy URL is confirmed (or the artwork is explicitly marked website-only)
+- [ ] `Square Checkout URL` is populated in the artwork record (or `Status` is `coming-soon` — Square link not required until artwork is available for purchase)
 - [ ] The artwork record has been committed to the AOA dataset
 
 The website is updated via Notion sync only — not by manually editing `artworks.ts` or uploading images directly in Lovable.
