@@ -186,13 +186,28 @@ Notify Product Studio that the artwork is ready for:
 - Printful product creation (upload print file, select sizes/colors/orientation)
 - Mockup generation
 - Etsy listing creation
-- Website entry (`artworks.ts` update)
+- Website sync (Notion-to-Lovable, triggered after Etsy listing URL is confirmed)
 
 The Product Studio receives:
 - The approved artwork dataset record
 - The approved product dataset records
 - The print-ready file (renamed, in Google Drive)
-- The `artworks.ts` entry (generated as part of the artwork record workflow)
+
+---
+
+### Website Hard Stop
+
+Do not trigger a website sync or add any entry to `artworks.ts` until ALL of the following are true:
+
+- [ ] `Image Status` = `Master Image Approved` in the artwork record
+- [ ] `Human Approved` = `Yes` in the artwork record
+- [ ] Master image file is saved in Google Drive and the `Image` field URL is populated
+- [ ] Etsy listing is live and the Etsy URL is confirmed (or the artwork is explicitly marked website-only)
+- [ ] The artwork record has been committed to the AOA dataset
+
+The website is updated via Notion sync only — not by manually editing `artworks.ts` or uploading images directly in Lovable.
+
+See full gate conditions: `AOA_distribution-studio/platform-notes/website.md`
 
 ---
 

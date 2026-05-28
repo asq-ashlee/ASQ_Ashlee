@@ -666,9 +666,9 @@ Crop/geometry notes:
 - [full artwork visible / signature visible / crop loosened / canvas edge removed]
 
 Final image status:
-- AI-assisted edit pending owner review
-- Owner reviewed
-- Approved documentation image
+- Editing in Progress
+- Edit Complete — Pending Review
+- Master Image Approved
 ```
 
 ---
@@ -754,15 +754,11 @@ Final checks:
 Use these status values for image editing:
 
 ```text
-Image Uploaded
-Base Preset Applied
-AI Edit Guidance Provided
-Edited — Pending Owner Review
-Owner Reviewed — Needs Revision
-Approved Documentation Image
-Exported
-Ready for Artwork Metadata
-Ready for Product Studio Review
+Image Received
+Editing in Progress
+Edit Complete — Pending Review
+Master Image Approved
+Image Exported
 ```
 
 ---
@@ -771,13 +767,36 @@ Ready for Product Studio Review
 
 Do not treat the edited image as approved unless the owner confirms it.
 
-Do not use the documentation image as a product source if it crops the artwork, cuts off the signature, or contains major lighting distortion.
+Do not use the master image as a product source if it crops the artwork, cuts off the signature, or contains major lighting distortion.
 
-Do not create product mockups or listing images until the documentation image is approved.
+Do not create product mockups or listing images until the master image is approved.
 
 Do not alter artwork content.
 
 Do not invent color accuracy if the physical artwork was not compared.
+
+---
+
+# Handoff
+
+When editing is complete and the owner has approved the image:
+
+1. Complete the AOA Artwork Image Editing Session Notes template
+2. Export the final file from Lightroom using the export settings in this workflow
+3. Name the file using the artwork ID convention: `AOA_ART_XXXX.jpg`
+4. Set Image Status: `Master Image Approved`
+5. Save the approved file to the artwork's working folder
+
+Then:
+
+Begin `AOA-new-artwork-intake_workflow.md` with the approved image as the source.
+
+Do not begin the intake workflow until:
+
+* the owner has confirmed the image against the physical artwork
+* Image Status = `Master Image Approved`
+* the session notes template is complete
+* the exported file is saved and ready
 
 ---
 

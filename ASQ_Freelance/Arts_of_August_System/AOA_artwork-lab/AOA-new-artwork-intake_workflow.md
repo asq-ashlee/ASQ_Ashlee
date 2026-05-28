@@ -12,6 +12,21 @@ Structured Operational Intelligence
 
 ---
 
+## Required Before Starting
+
+This workflow requires:
+
+* Image Status = `Master Image Approved`
+* AOA Artwork Image Editing Session Notes complete
+* Approved and exported image file saved in the artwork's working folder
+
+Do not generate metadata against an unapproved or unedited source image.
+
+If the image has not been through the editing workflow, begin there first:
+`AOA_artwork-image-editing_workflow.md`
+
+---
+
 ## Read First
 
 Before processing artwork, review:

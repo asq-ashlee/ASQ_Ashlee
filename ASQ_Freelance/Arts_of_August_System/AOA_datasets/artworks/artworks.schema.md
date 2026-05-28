@@ -24,6 +24,7 @@ artworks.csv
 - Mood: restrained emotional tone.
 - Colors: palette notes.
 - Image: source image link or file reference.
+- Image Status: image readiness stage. Values: Image Received / Editing in Progress / Edit Complete — Pending Review / Master Image Approved / Image Exported.
 - Primary Use: intended use or merchandising direction.
 - AI Ready: whether artwork is ready for AI interpretation.
 - Description: approved artwork description.
