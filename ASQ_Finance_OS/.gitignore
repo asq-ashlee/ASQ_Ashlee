@@ -1,0 +1,17 @@
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# private exports and raw financial docs
+*.xlsx
+*.csv
+*.pdf
+*.ofx
+*.qbo
+
+# optional local-only private notes
+local-private-notes.md
+bank-statements/
+tax-returns/
+receipts-raw/

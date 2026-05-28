@@ -1,0 +1,1 @@
+{"id": "fin_decision_001", "date": "2026-05-28", "decision": "Create ASQ Finance Context System", "reason": "Need a low-friction ICM-aligned system for subscriptions, expenses, pricing, taxes, and future P&L reporting.", "impact": "Creates source of truth before QuickBooks/bookkeeper/CPA workflows.", "review_date": "2026-06-28", "notes": "Initial setup decision."}
