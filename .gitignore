@@ -8,3 +8,8 @@
 # Temp scripts
 AppData/
 *.tmp
+
+# Google Drive sync temp files
+.tmp.driveupload
+.tmp.driveupload/
+**/.tmp.driveupload
