@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__notionApi__API-post-search",
+      "mcp__notionApi__API-query-data-source",
+      "mcp__notionApi__API-retrieve-a-data-source",
+      "mcp__notionApi__API-post-page",
+      "Read(//c/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/**)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\c412f069-809e-4b3d-9577-567f113b35f7.jsonl\" -Tail 50 | ForEach-Object { $_ } | Out-String)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\" -Tail 100 | ForEach-Object { try { \\($_ | ConvertFrom-Json\\).message.content | Where-Object { $_.type -eq 'text' -and $_.text -match 'compact|summary|batch|artwork_id|product' } | Select-Object -ExpandProperty text } catch {} } | Where-Object { $_ } | Select-Object -Last 5)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\" | ForEach-Object { try { $msg = $_ | ConvertFrom-Json; $content = $msg.message.content; if \\($content\\) { foreach \\($c in $content\\) { if \\($c.type -eq 'text' -and $c.text -match 'artwork_id|page_id|art-piece'\\) { Write-Output $c.text; break } } } } catch {} } | Select-Object -First 10)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\" | ForEach-Object { try { $obj = $_ | ConvertFrom-Json; $content = $obj.message.content; if \\($content\\) { foreach \\($c in $content\\) { if \\($c.type -eq 'tool_use' -and $c.name -match 'query'\\) { Write-Output \"TOOL: $\\($c.name\\)\"; Write-Output \"INPUT: $\\(\\($c.input | ConvertTo-Json -Compress\\).Substring\\(0, [Math]::Min\\(300, \\($c.input | ConvertTo-Json -Compress\\).Length\\)\\)\\)\"; break } } } } catch {} } | Select-Object -First 40)",
+      "Bash(grep -o 'object\\\\\\\\\\\\\":\\\\\\\\\\\\\"page\\\\\\\\\\\\\",\\\\\\\\\\\\\"id\\\\\\\\\\\\\":\\\\\\\\\\\\\"[^\\\\\\\\]*\\\\\\\\\\\\\"' \"C:/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/c412f069-809e-4b3d-9577-567f113b35f7/tool-results/bhreo9oqi.txt\")",
+      "Bash(grep -o 'object\\\\\\\\\":\\\\\\\\\"page\\\\\\\\\",\\\\\\\\\"id\\\\\\\\\":\\\\\\\\\"[^\\\\\\\\]*\\\\\\\\\"' \"C:/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\")"
+    ]
+  }
+}
