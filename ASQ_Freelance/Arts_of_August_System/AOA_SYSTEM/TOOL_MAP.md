@@ -538,6 +538,160 @@ Primary tools:
 * Markdown
 * External websites or application portals
 
+## Required Context Files by Workflow
+
+Use this section to keep AI tasks bounded.
+
+Before asking ChatGPT, Codex, Claude Code, or another AI tool to work on a workflow, provide only the files needed for that workflow unless the task explicitly requires broader system review.
+
+### Full-System Review
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* `AOA_SYSTEM/POC_DEFINITION_OF_DONE.md`
+* relevant README or system overview file
+
+Use when:
+
+* reviewing the whole AOA system
+* changing system architecture
+* changing source-of-truth rules
+* changing proof-of-concept scope
+* onboarding a new AI agent to the system
+
+### Artwork Intake
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* `AOA_artwork-lab/AOA_artwork-lab_context.md`
+* `AOA_artwork-lab/aoa-artwork-sops/photography-and-master-file-SOP.md`
+* artwork schema file, if available
+* artist voice context file, if available
+
+Use when:
+
+* creating or revising artwork intake workflow
+* turning a finished artwork into a structured record
+* drafting artwork titles, descriptions, tags, or alt text
+* identifying missing artwork information
+
+### Photography and Master File SOP
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* `AOA_artwork-lab/aoa-artwork-sops/photography-and-master-file-SOP.md`
+* any existing photography notes or draft SOPs
+
+Use when:
+
+* revising the photography process
+* updating master file requirements
+* defining image approval standards
+* changing file naming or asset storage rules
+
+### Shop Output
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* shop output context file, if available
+* artwork schema file, if available
+* product schema file, if available
+* approved artwork/product record from Notion
+* approved image or mockup reference
+
+Use when:
+
+* creating shop page copy
+* creating product detail page copy
+* defining Lovable display logic
+* preparing SEO/GEO-ready product content
+* connecting product records to Square checkout links
+
+### Content Workflow
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* content system context file, if available
+* artist voice context file, if available
+* content schema file, if available
+* relevant artwork, product, event, or opportunity record from Notion
+
+Use when:
+
+* drafting social posts
+* drafting emails
+* creating content prompts
+* planning a content batch
+* reviewing or scoring content performance
+
+### Event Workflow
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* event workflow context file, if available
+* event schema file, if available
+* content system context file, if available
+* relevant event record from Notion
+* relevant artwork/product records from Notion
+
+Use when:
+
+* planning event promotion
+* selecting event products
+* drafting event copy
+* creating event prep checklists
+* reviewing post-event results
+
+### Opportunities Workflow
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* opportunities agent context file, if available
+* opportunity schema file, if available
+* artist bio or artist voice context file
+* relevant artwork records or portfolio examples
+
+Use when:
+
+* researching galleries, markets, memberships, juried shows, or press opportunities
+* evaluating opportunity fit
+* drafting application materials
+* creating requirements checklists
+* preparing outreach drafts
+
+### Case Study or Client-Facing Proof of Concept
+
+Read first:
+
+* `AOA_SYSTEM/ICM_RULES.md`
+* `AOA_SYSTEM/TOOL_MAP.md`
+* `AOA_SYSTEM/POC_DEFINITION_OF_DONE.md`
+* relevant workflow files used in the proof of concept
+* approved before/after examples
+* approved client-facing language or ASQ Ashlee voice context
+
+Use when:
+
+* writing the AOA case study
+* preparing a demo for another artist
+* creating an offer page
+* explaining the system in client-facing language
+* documenting proof-of-concept outcomes
+
 ## Tool Decision Rules
 
 If the question is “What should we do?” use ChatGPT.

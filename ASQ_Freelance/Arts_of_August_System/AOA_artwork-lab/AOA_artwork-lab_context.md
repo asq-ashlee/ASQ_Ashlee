@@ -114,6 +114,7 @@ Human review remains essential.
 ## Local Source Files
 
 This workspace may reference:
+- AOA_artwork-lab/aoa-artwork-sops/photography-and-master-file-SOP.md
 - AOA_source-intelligence/00-README-Arts-of-August.md
 - AOA_source-intelligence/01-Brand-Foundation.md
 - AOA_source-intelligence/02-Voice-and-Language-Guide.md
