@@ -24,11 +24,30 @@ Image type (select all that apply):
 
 Physical artwork available for comparison: Yes / No
 
+Photography source type:
+
+- [ ] Older room-light / uneven-light photo
+- [ ] New light box photo
+- [ ] Unsure
+
+Light box source check:
+
+- [ ] Lighting already even
+- [ ] Signature visible
+- [ ] Crop mostly clean
+- [ ] Only light color moderation needed
+- [ ] Older JPEG base preset may overcorrect
+
 ---
 
 ## Editing Session
 
-Base preset applied: AOA Artwork Documentation — JPEG Base — Yes / No
+Base preset used:
+
+- [ ] AOA Artwork Documentation — JPEG Base
+- [ ] AOA Artwork Documentation — Light Box Base
+- [ ] No base preset used
+- [ ] Other:
 
 Global adjustments made:
 

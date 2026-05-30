@@ -108,17 +108,100 @@ Before editing, gather:
 
 ---
 
-## Standard Lightroom Base Preset
+## Photography Source Type
 
-Apply the standard base preset first:
+Before applying any preset, classify the source image as one of:
+
+1. Older room-light / uneven-light photo
+2. New light box photo
+
+### Older Room-Light / Uneven-Light Photo
+
+Use the existing base preset:
 
 ```text
 AOA Artwork Documentation — JPEG Base
 ```
 
-This preset is the neutral starting point for artwork documentation.
+This preset is appropriate when the image has:
 
-It may include:
+* uneven lighting
+* room-light shadows
+* stronger color cast
+* glare or reflection
+* darker side / brighter side imbalance
+* older phone/light-box setup inconsistencies
+
+Continue using the existing correction patterns in this workflow for:
+
+* blue-heavy coastal images
+* gold foil / metallic highlights
+* pink-purple sunsets
+* red/green architectural scenes
+* misty gray atmospheric scenes
+* uneven lighting masks
+* crop/geometry issues
+
+### New Light Box Photo
+
+Do not automatically apply the older JPEG base preset as the default.
+
+New light box images should use a gentler preset because the source images are already more evenly lit and closer to accurate.
+
+Use:
+
+```text
+AOA Artwork Documentation — Light Box Base
+```
+
+Suggested starting settings:
+
+```text
+Light
+Exposure: 0 to +0.05
+Contrast: -3 to -5
+Highlights: -15 to -25
+Shadows: +5 to +10
+Whites: 0 to +5
+Blacks: -3 to -5
+
+Effects
+Texture: +8 to +12
+Clarity: +2 to +4
+Dehaze: 0
+
+Color
+Vibrance: 0 to +3
+Saturation: 0 or -2
+
+Optics
+Remove Chromatic Aberration: On
+Enable Lens Corrections: On, if appropriate
+```
+
+Use the existing artwork-documentation sharpening and noise settings unless the image looks over-sharpened.
+
+For new light box images, start with smaller color adjustments:
+
+```text
+Blue Saturation: -3 to -5 only if blues look too electric
+Purple Saturation: -3 to -5 only if purples look too saturated
+Magenta Saturation: -3 to -6 only if pinks look too candy-colored
+Green Saturation: -2 to -4 only if greens look too intense
+```
+
+Keep the older JPEG base preset for legacy images or any new image with uneven lighting.
+
+## Lightroom Base Preset Rules
+
+Use the preset that matches the photography source type:
+
+```text
+Older room-light / uneven-light photos → AOA Artwork Documentation — JPEG Base
+New light box photos → AOA Artwork Documentation — Light Box Base
+```
+
+The selected preset may include:
 
 * Profile
 * Light
@@ -141,7 +224,7 @@ It should not include:
 
 ## Base Editing Logic
 
-After applying the preset, do not adjust every setting by default.
+After selecting and applying the appropriate preset, do not adjust every setting by default.
 
 Only correct what the specific image is exaggerating or failing to capture accurately.
 
@@ -462,13 +545,16 @@ The artwork feels clear but not digitally sharpened.
 
 Use this sequence for every artwork image.
 
-## Step 1 — Apply Base Preset
+## Step 1 — Classify Source and Apply the Appropriate Base Preset
 
-Apply:
+First classify the photography source type.
 
 ```text
-AOA Artwork Documentation — JPEG Base
+Older room-light / uneven-light photos → AOA Artwork Documentation — JPEG Base
+New light box photos → AOA Artwork Documentation — Light Box Base
 ```
+
+Do not automatically apply the older JPEG base preset to new light box images. If the source image is already evenly lit and close to accurate, start with the gentler light-box preset and make smaller adjustments.
 
 Do not apply additional style presets.
 
@@ -651,7 +737,11 @@ Image Editing Notes
 Suggested structure:
 
 ```text
-Base preset applied: AOA Artwork Documentation — JPEG Base
+Photography source type:
+- [older room-light / uneven-light photo / new light box photo / unsure]
+
+Base preset applied:
+- [AOA Artwork Documentation — JPEG Base / AOA Artwork Documentation — Light Box Base / no base preset / other]
 
 Primary correction type:
 - [blue-heavy coastal / gold foil / pink-purple sunset / red-green architectural / misty gray / uneven lighting / crop-edge correction]
@@ -679,13 +769,17 @@ When assisting with artwork image editing, the agent should respond as an editin
 
 The agent should:
 
-1. identify the likely image type
-2. name the main risk in the photo
-3. suggest restrained Lightroom adjustments
-4. tell the owner what not to overcorrect
-5. review updated versions and say when to stop
-6. prioritize full artwork visibility and accuracy
-7. keep human review central
+1. ask or infer whether the image was photographed with the new light box setup
+2. check whether lighting is already even and only light color moderation is needed
+3. consider whether the older JPEG base preset is likely to overcorrect the image
+4. identify the likely image type
+5. name the main risk in the photo
+6. suggest restrained Lightroom adjustments
+7. recommend smaller adjustments for new light box images and avoid heavy correction
+8. tell the owner what not to overcorrect
+9. review updated versions and say when to stop
+10. prioritize full artwork visibility and accuracy
+11. keep human review central
 
 The agent should not:
 
@@ -706,10 +800,16 @@ Use this structure when reviewing a new artwork image:
 ```text
 This image looks like: [image type]
 
+Photography source type:
+[older room-light / uneven-light photo / new light box photo / unsure]
+
+Recommended base preset:
+[AOA Artwork Documentation — JPEG Base / AOA Artwork Documentation — Light Box Base / no base preset]
+
 Main thing to watch:
 [short explanation]
 
-After applying the base preset, try:
+After applying the appropriate base preset, try:
 
 Light:
 - [settings]
@@ -805,6 +905,7 @@ Do not begin the intake workflow until:
 For better source images, photograph artwork with:
 
 * even indirect light
+* the light box setup when available
 * no overhead glare
 * camera parallel to artwork
 * extra space around all four edges
@@ -814,3 +915,5 @@ For better source images, photograph artwork with:
 * separate angled detail photos for metallic/foil pieces
 
 This reduces the amount of correction needed in Lightroom and improves consistency across artwork records.
+
+New light box photos should generally need gentler editing than older room-light or uneven-light photos. Keep the older JPEG base preset available for legacy images and for any new source image that still shows uneven lighting.
