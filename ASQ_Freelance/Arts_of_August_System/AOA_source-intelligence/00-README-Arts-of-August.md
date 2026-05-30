@@ -23,3 +23,5 @@ When generating anything:
 3. Apply the **Listing Structure**
 4. Apply **Product Logic**
 5. Keep **SEO separate** (tags only)
+
+- System rules: see `../AOA_SYSTEM/ICM_RULES.md` for Arts of August ICM rules, source-of-truth guidance, context loading rules, approval gates, and tool roles.
