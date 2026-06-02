@@ -50,7 +50,7 @@ AI tools draft, structure, review, and assist — but humans approve public-faci
 
 The Arts of August Notion system should use five primary databases:
 
-1. Art Pieces
+1. Artwork
 2. Products
 3. Content
 4. Events
@@ -59,13 +59,13 @@ The Arts of August Notion system should use five primary databases:
 ## Database Relationship Model
 
 ```text
-Art Pieces
+Artwork
   ↓
 Products
   ↓
 Shop / Etsy / Square / Lovable
 
-Art Pieces
+Artwork
   ↓
 Content
 
@@ -77,7 +77,7 @@ Opportunities
   ↓
 Events, if accepted or confirmed
 
-Art Pieces
+Artwork
   ↓
 Events, if artwork is shown or sold at an event
 
@@ -88,11 +88,11 @@ Events, if prints/products are brought to an event
 
 ---
 
-# 1. Art Pieces Database
+# 1. Artwork Database
 
 ## Purpose
 
-The Art Pieces database is the source of truth for original artworks.
+The Artwork database is the source of truth for original artworks.
 
 Each record represents one original work by Kaleigh Anderson / Arts of August.
 
@@ -111,7 +111,7 @@ This database supports:
 
 ## What belongs here
 
-Use Art Pieces for:
+Use Artwork for:
 
 * original artwork identity
 * stable artwork ID
@@ -128,7 +128,7 @@ Use Art Pieces for:
 
 ## What does not belong here
 
-Do not use Art Pieces for:
+Do not use Artwork for:
 
 * every print size or variant
 * Etsy listing variants
@@ -153,7 +153,9 @@ Those belong in Products, Events, Content, or markdown.
 | AI Draft Complete    | Checkbox             | Indicates AI-generated context has been drafted.                                                         |
 | Image Status         | Select               | Master image workflow status.                                                                            |
 | Image                | URL or Files & Media | Approved master image reference. Use the current Google Drive architecture unless intentionally changed. |
-| Medium               | Select               | Example: `Oil on canvas`.                                                                                |
+| Medium               | Multi-select         | Valid values: Oil, Gold Leaf, Silver Leaf. Default: Oil.                                                 |
+| Support              | Text                 | Always Canvas unless explicitly told otherwise.                                                          |
+| Source               | Text                 | Records where the artwork data came from.                                                                |
 | Dimensions           | Text                 | Example: `20" × 20"`.                                                                                    |
 | Orientation          | Select               | `landscape`, `portrait`, `square`.                                                                       |
 | Price (Original)     | Number               | Raw number. Currency formatting is fine if stored as number.                                             |
@@ -268,7 +270,7 @@ Use Products for:
 * print/product variants
 * Etsy listing URLs
 * Printful records
-* format, size, frame, product type
+* finish, size, frame, product type
 * channel-specific status
 * product-level pricing
 * product mockups
@@ -285,7 +287,7 @@ Do not use Products for:
 * artwork-level medium
 * public original availability
 
-Those belong in Art Pieces.
+Those belong in Artwork.
 
 ## Required fields
 
@@ -293,10 +295,10 @@ Those belong in Art Pieces.
 | ------------------- | -------------------- | ------------------------------------------------------------------------ |
 | Product Name        | Title                | Product/listing name.                                                    |
 | product_id          | Text                 | Stable product ID if used.                                               |
-| Source Artwork      | Relation             | Relation to Art Pieces.                                                  |
-| artwork_id          | Rollup or Text       | Pull from related Art Piece if possible.                                 |
+| Source Artwork      | Relation             | Relation to Artwork.                                                  |
+| artwork_id          | Rollup or Text       | Pull from related Artwork if possible.                                 |
 | Product Type        | Select               | Original, Canvas Print, Framed Print, Paper Print, Card, Digital, Other. |
-| Format              | Select               | Canvas, framed canvas, paper, etc.                                       |
+| Finish              | Select               | Frame (Original), Gallery Wrap (Original), Floating Frame (Printful), Canvas Unframed (Printful). |
 | Size                | Text                 | Example: `16" × 20"`.                                                    |
 | Price               | Number               | Product price.                                                           |
 | Sales Channels      | Multi-select         | Etsy, Printful, Lovable, Square, In-person, Other.                       |
@@ -354,7 +356,7 @@ Those belong in Art Pieces.
 ### Product is website-ready when
 
 * Source Artwork relation exists
-* related Art Piece is approved
+* related Artwork is approved
 * Product Status is Active or Ready for Website
 * Mockup is approved if displayed
 * sales channel is clear
@@ -369,7 +371,7 @@ The Content database is the output planning layer.
 
 It stores reusable drafts and published content generated from:
 
-* Art Pieces
+* Artwork
 * Products
 * Events
 * Opportunities
@@ -408,7 +410,7 @@ Those belong in the related databases or markdown.
 | Name              | Title         | Internal content item name.                                                                            |
 | Title             | Text          | Public or draft content title/headline.                                                                |
 | Source Type       | Select        | Artwork, Product, Event, Opportunity, Brand, Process.                                                  |
-| Art Piece         | Relation      | Optional relation to Art Pieces.                                                                       |
+| Artwork         | Relation      | Optional relation to Artwork.                                                                       |
 | Product           | Relation      | Optional relation to Products.                                                                         |
 | Event             | Relation      | Optional relation to Events.                                                                           |
 | Opportunity       | Relation      | Optional relation to Opportunities.                                                                    |
@@ -525,7 +527,7 @@ Unconfirmed applications belong in Opportunities.
 | Ticket price         | Text                 | Free, $25, etc.                                                                |
 | Ticket URL           | URL                  | If different from RSVP.                                                        |
 | Map URL              | URL                  | Google Maps or venue map link.                                                 |
-| Art Pieces Shown     | Relation             | Relation to Art Pieces.                                                        |
+| Artwork Shown     | Relation             | Relation to Artwork.                                                        |
 | Products Available   | Relation             | Relation to Products.                                                          |
 | Content Linked       | Relation             | Relation to Content.                                                           |
 | Source Opportunity   | Relation             | Relation to Opportunities, if applicable.                                      |
@@ -663,7 +665,7 @@ Confirmed logistics belong in Events. Strategy belongs in markdown.
 | Commission %                 | Number        | If sales commission applies.                                                                                         |
 | Requirements                 | Rich Text     | Submission rules, image specs, materials, contract notes.                                                            |
 | Application Materials Needed | Multi-select  | Bio, artist statement, images, W9, inventory list, price list, contract, payment, other.                             |
-| Submitted Artworks           | Relation      | Relation to Art Pieces.                                                                                              |
+| Submitted Artworks           | Relation      | Relation to Artwork.                                                                                              |
 | Related Products             | Relation      | Optional relation to Products.                                                                                       |
 | Related Event                | Relation      | Relation to Events if opportunity becomes confirmed.                                                                 |
 | Application Draft            | Rich Text     | Draft outreach/submission copy.                                                                                      |
@@ -740,9 +742,9 @@ Confirmed logistics belong in Events. Strategy belongs in markdown.
 
 # Operating Views
 
-## Art Pieces views
+## Artwork views
 
-* All Art Pieces
+* All Artwork
 * Intake Needed
 * Needs Master Image
 * Needs Artist Review
@@ -869,11 +871,11 @@ Human approval is required for:
 
 ## Priority 1 — Stabilize existing databases
 
-* Clean up Art Pieces field names and statuses.
-* Confirm original/Square fields live on Art Pieces.
+* Clean up Artwork field names and statuses.
+* Confirm original/Square fields live on Artwork.
 * Confirm Etsy/Printful fields live on Products.
 * Add readiness fields and key views.
-* Update Content schema so it can relate to Art Pieces, Products, Events, and Opportunities.
+* Update Content schema so it can relate to Artwork, Products, Events, and Opportunities.
 
 ## Priority 2 — Create Events database
 
@@ -891,7 +893,7 @@ Human approval is required for:
 
 ## Priority 4 — Select POC records
 
-* Choose 3–5 Art Pieces.
+* Choose 3–5 Artwork.
 * Link Products.
 * Create Content examples.
 * Connect at least one Event and one Opportunity.

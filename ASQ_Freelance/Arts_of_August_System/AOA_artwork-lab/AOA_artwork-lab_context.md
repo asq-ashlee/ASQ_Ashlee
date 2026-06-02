@@ -59,6 +59,9 @@ Each artwork should eventually contain:
 - Category
 - Orientation
 - Size
+- Medium
+- Support
+- Source
 - Mood
 - Colors
 - Tags

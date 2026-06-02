@@ -57,7 +57,7 @@ This rule applies regardless of whether a TypeScript entry, a Notion record, or 
 
 When triggered manually:
 
-1. Query Notion Art Pieces database — filter: `Status = available`, `Human Approved = Yes`, `Image Status = Master Image Approved`
+1. Query Notion Artwork database — filter: `Status = available`, `Human Approved = Yes`, `Image Status = Master Image Approved`
 2. For each matching artwork:
    - Download the master image from the Google Drive URL in the `Image` field
    - Save to `src/assets/[artwork-id]-[title-slug]-web.[ext]`

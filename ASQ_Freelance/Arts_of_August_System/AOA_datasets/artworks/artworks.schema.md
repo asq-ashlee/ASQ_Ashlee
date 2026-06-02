@@ -4,7 +4,7 @@
 Portable record of Arts of August artwork metadata.
 
 ## Source
-Originally exported from Notion Art Pieces database.
+Originally exported from Notion Artwork database.
 
 ## Primary File
 artworks.csv

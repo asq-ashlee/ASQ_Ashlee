@@ -34,6 +34,22 @@ Not available in panoramic sizes — use Canvas (in) unframed for those
 
 ---
 
+## Product 1b — Framed Canvas (in) Square
+Use for: square ratio artworks (1:1)
+Orientation: does not apply for square
+Available sizes: 12×12 and 16×16 (confirmed 2026-06-02 — 8×8 and 20×20 are NOT available in Printful framed canvas)
+
+| Size  | Frame Color | Printful Base | Shipping | Retail (60% margin) |
+|---|---|---|---|---|
+| 12×12 | White       | $46.92        | $9.49    | $145                |
+| 12×12 | Brown       | $46.92        | $9.49    | $145                |
+| 12×12 | Black       | $46.92        | $9.49    | $145                |
+| 16×16 | White       | $57.12        | $9.49    | $170                |
+| 16×16 | Brown       | $57.12        | $9.49    | $170                |
+| 16×16 | Black       | $57.12        | $9.49    | $170                |
+
+---
+
 ## Product 2 — Canvas (in) Unframed
 Use for: panoramic ratio artworks ONLY (framed canvas not available in panoramic sizes)
 Orientation: select Horizontal for landscape panoramic

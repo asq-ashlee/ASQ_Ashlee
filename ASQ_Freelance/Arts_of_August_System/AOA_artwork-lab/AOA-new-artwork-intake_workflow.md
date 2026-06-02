@@ -67,7 +67,9 @@ Generate:
 - Slug (URL-safe version of approved title — lowercase, hyphens, no special characters)
 - Category
 - Orientation
-- Medium (e.g. Oil on canvas, Acrylic on canvas, Gold foil, Mixed media)
+- Medium (multi-select: Oil / Gold Leaf / Silver Leaf — default: Oil)
+- Support (text — always Canvas unless explicitly told otherwise)
+- Source (text — record where the artwork data came from)
 - Mood
 - Colors
 - Tags

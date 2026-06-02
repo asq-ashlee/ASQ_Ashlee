@@ -1,6 +1,6 @@
 # AOA Post-Approval Handoff
 # Arts of August — Connecting Layer
-Last updated: 2026-05-21
+Last updated: 2026-06-02
 Status: active
 
 ---
@@ -22,7 +22,20 @@ Without this document, the post-approval path is undefined and the system cannot
 This handoff is triggered when:
 - An artwork intake draft has been reviewed by the owner
 - Approval Status is set to: Approved for Operational Memory
-- The draft file is in `AOA_artwork-lab/aoa-ai-drafts/`
+- The draft file is in `C:\Users\ajsc1\OneDrive\Desktop\ASQ_Ashlee\ASQ_Freelance\Arts_of_August_System\AOA_artwork-lab\aoa-ai-drafts\`
+
+---
+
+## Notion Access
+
+Claude has a live MCP connection to the Notion API.
+
+This means Claude can:
+- Query the Artwork database to look up existing artwork IDs (Step 1)
+- Push new records to the Artwork and Products databases (Step 6)
+- Patch Workflow Status on existing Notion pages (Step 7)
+
+Human approval is still required before any push or status update executes.
 
 ---
 
@@ -34,8 +47,8 @@ When an artwork is approved, rename all associated files to match the approved a
 
 The artwork ID is sourced from Notion — not generated locally.
 
-- If the artwork already has a record in the Art Pieces database: use the number from that record (e.g. the `0002` in `AOA-ART-0002`)
-- If the artwork is new: check the Art Pieces database in Notion for the highest existing number and use the next one
+- If the artwork already has a record in the Artwork database: use the number from that record (e.g. the `0002` in `AOA-ART-0002`)
+- If the artwork is new: Claude can query the Artwork database in Notion via MCP to retrieve the highest existing `artwork_id` and determine the next number — confirm the result before proceeding
 
 The full ID format is always: `AOA-ART-[four-digit-number]` (e.g. `AOA-ART-0026`)
 
@@ -71,7 +84,7 @@ After approval:
 
 After approval, move the AI draft file from the drafts folder to the approved folder.
 
-From: `AOA_artwork-lab/aoa-ai-drafts/[artwork-name]-ai-draft.md`
+From: `C:\Users\ajsc1\OneDrive\Desktop\ASQ_Ashlee\ASQ_Freelance\Arts_of_August_System\AOA_artwork-lab\aoa-ai-drafts\[artwork-name]-ai-draft.md`
 To: `AOA_artwork-lab/aoa-approved/[artwork-id]-[title-slug]-approved.md`
 
 Example:
@@ -89,12 +102,15 @@ Transfer approved metadata from the draft file into the artworks dataset.
 File: `AOA_datasets/artworks/artwork_records/AOA_ART_[XXXX].csv`
 
 Fields to populate from the approved draft:
-- artwork_id (sourced from Notion — use the existing record number, or the next unused number in the Art Pieces database)
+- artwork_id (sourced from Notion — use the existing record number, or the next unused number in the Artwork database)
 - Title (approved title only — not title suggestions)
 - Status: approved
 - Category
 - Orientation
 - Size (original canvas dimensions)
+- Medium
+- Support
+- Source
 - Original Available
 - Base Price (from pricing logic — 05-Product-System.txt)
 - Date Created
@@ -154,9 +170,11 @@ This is the last field that may remain as a placeholder after initial record cre
 
 Once artwork record and product records are complete and the Image field is populated:
 
+Claude can execute this push directly via MCP. Review the records before confirming — Claude does not push until you approve.
+
 Push the following to the three Notion databases:
 
-**Art Pieces database:**
+**Artwork database:**
 - One row per artwork
 - All fields from the artwork dataset record
 - Image field populated with Google Drive URL
@@ -164,7 +182,7 @@ Push the following to the three Notion databases:
 **Products database:**
 - One row per product record
 - All fields from the product dataset records
-- Link each product row to its parent artwork row in Art Pieces
+- Link each product row to its parent artwork row via the Source Artwork relation field
 
 **Content database:**
 - Content records are created in a separate workflow (Distribution Studio)
@@ -175,12 +193,15 @@ Push the following to the three Notion databases:
 - Notion is operational memory — not a draft space
 - Do not push AI Draft content, TBD fields, or unconfirmed data
 - If any required field is missing, resolve it before pushing
+- Human must confirm before Claude executes the push via MCP
 
 ---
 
 ## Step 7 — Update Workflow Status
 
 After Notion push is confirmed:
+
+Claude can patch the Workflow Status property on the Notion artwork page directly via MCP.
 
 Update the artwork record:
 - Workflow Status: `Products Ready` (if product records are complete)
@@ -241,10 +262,10 @@ Use this checklist for every artwork from approval to Notion:
 
 - [ ] Draft marked Approved for Operational Memory
 - [ ] Source files renamed to convention
-- [ ] Draft file moved from aoa-ai-drafts/ to aoa-approved/
+- [ ] Draft file moved from `C:\Users\ajsc1\OneDrive\Desktop\ASQ_Ashlee\ASQ_Freelance\Arts_of_August_System\AOA_artwork-lab\aoa-ai-drafts\` to aoa-approved/
 - [ ] Artwork dataset record written and committed
 - [ ] Product dataset records written and committed
 - [ ] Google Drive image URL added to artwork record
-- [ ] Records pushed to Notion (Art Pieces + Products)
+- [ ] Records pushed to Notion (Artwork + Products)
 - [ ] Workflow Status updated in artwork record
 - [ ] Product Studio notified — ready for Printful + mockups + listing

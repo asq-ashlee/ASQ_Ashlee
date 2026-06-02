@@ -19,3 +19,9 @@ AppData/
 
 # Arts of August Notion exports
 ASQ_Freelance/Arts_of_August_System/AOA_exports/Notion/
+
+# Artwork source images — working files, not tracked in git
+ASQ_Freelance/Arts_of_August_System/AOA_artwork-lab/New_Art/
+
+# VS Code workspace settings
+**/.vscode/

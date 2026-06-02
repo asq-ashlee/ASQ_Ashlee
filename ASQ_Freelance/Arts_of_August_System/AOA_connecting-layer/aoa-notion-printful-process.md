@@ -1,10 +1,10 @@
 aoa-notion-printful-process
 
 I have opened notion 
-In notion i got to the Art Pieces dataset
+In notion i got to the Artwork dataset
 I look in the status column to find the first row of art marked approved. 
 in this example that is Title Light Through the Clouds. 
-For this art I find the column in the Art Pieces dataset in notion for products linked. 
+For this art I find the column in the Artwork dataset in notion for products linked. 
 I click on the first product one in the list. 
 In this example it is Light Through the Clouds — Framed Canvas Print Large Black
 In the product dataset for Light Through the Clouds — Framed Canvas Print Large Black I look at the format
@@ -19,7 +19,7 @@ from the notion product database I find column orientation and see that it is ho
 for the size and color selections notion had a row for each product and each color frame combination. For the printful > etsy listings these will be one product housing all variations. I look at all art of this title, with the same format, the same printful product to find my frame color and size variations for this product and select them from the product options
 for this example the frame colors will be black, blue and white. The size options will be 24x32, 16x20, and 8x10
 I now click on the uploads option in the navigation of the customization screen 
-To find the print-ready file for this example I refer to the art pieces notion dataset in the field image. The image is hosted via google drive. I download the image and back in printful I click on upload and select the recently downloaded image. 
+To find the print-ready file for this example I refer to the artworks notion dataset in the field image. The image is hosted via google drive. I download the image and back in printful I click on upload and select the recently downloaded image. 
 Once the image is uploaded I click Apply on the image to insert it into my customization 
 once applied you are moved to the layers tab of the customization and the file should be selected and shown on the right column. 
 It is important to make sure you have selected the right file, and that the print quality is Good / 300+ DPI according to printful 
@@ -49,13 +49,13 @@ in the set price table I am going to reference the prices indicated in the notio
 for this example the 24x32 is $230, the 11x14 is $180, the 8x10 is $95.
 all frame color variations are the same price for each size in printful. 
 I am going to click continue to move on to publish product 3 details
-I am going to reference the notion art piece dataset for details. product title in printful is title in notion. 
+I am going to reference the notion artwork dataset for details. product title in printful is title in notion. 
 In the Description box I remove the standard opening sentences from printful but keep the specs and disclamers.
-Above the specs and disclaimers from printful I am going to put the description, story, subject, location and light description from the art piece dataset. 
+Above the specs and disclaimers from printful I am going to put the description, story, subject, location and light description from the artwork dataset. 
 Under Benefits of on-demand manufacturing I am going to uncheck this, I do not like how printful points out your shipment might take awile to the customer. 
 I leave EU GPSR Compliance unchecked as we are not shipping internationally. 
 I leave size guide unchecked as we used mockup to show this and I go not like the design of it from printful. 
-I am going to reference the art piece data set in notion for the tags (max 13). I ask my llm to separate the tags by comma so I can easily paste them all at once in the field. For product selection I pick canvas prints as this is not original art and we are only using those two categories on etsy currently. 
+I am going to reference the artwork data set in notion for the tags (max 13). I ask my llm to separate the tags by comma so I can easily paste them all at once in the field. For product selection I pick canvas prints as this is not original art and we are only using those two categories on etsy currently. 
 I then click publish.
 Printful will publish the product to my store, which automatically syncs it to the etsy store as a draft. 
 I am automatically brought to the my products section of my dashboard in printful and see the new product I just created at the top of the product list. Beneath the title I am going to click on the Edit in Etsy link to finish editing the product there. 

@@ -202,7 +202,7 @@ If the required size is not in the Framed Canvas catalog, default to Canvas (in)
 
 | Ratio | Family name | Printful canvas sizes |
 |---|---|---|
-| 1:1 | Square | 8×8 / 12×12 / 20×20 |
+| 1:1 | Square | 12×12 / 16×16 (confirmed in Printful 2026-06-02 — 8×8 and 20×20 not available) |
 | 4:3 | Standard landscape | 16×12 / 20×16 / 24×18 |
 | 3:4 | Standard portrait | 12×16 / 16×20 / 18×24 |
 | 5:4 | Standard wide | 10×8 / 20×16 / 30×24 |

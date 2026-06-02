@@ -8,7 +8,7 @@ Status: active
 
 ## Overview
 
-This spec defines the end-to-end process for publishing a Printful print listing from a Notion-approved art piece to a live Etsy listing.
+This spec defines the end-to-end process for publishing a Printful print listing from a Notion-approved artwork to a live Etsy listing.
 
 Pipeline shape: **automated → HUMAN → automated**
 
@@ -23,9 +23,9 @@ Everything else is data-driven and automatable via Printful API + Etsy API.
 
 ## Trigger Condition
 
-**Source:** Notion Art Pieces dataset
+**Source:** Notion Artwork dataset
 **Filter:** `Status = approved`
-**Scope:** Only process `Product Type = Printful Print` product records linked to the approved art piece
+**Scope:** Only process `Product Type = Printful Print` product records linked to the approved artwork
 
 ---
 
@@ -33,14 +33,14 @@ Everything else is data-driven and automatable via Printful API + Etsy API.
 
 ### Input
 Notion Products dataset, filtered to:
-- `artwork_id` matching the approved art piece
+- `artwork_id` matching the approved artwork
 - `Product Type = Printful Print`
 - `Status = ready-for-review`
 
 ### Grouping Rule
 Group product records by:
 ```
-artwork_id + Format + Printful Product
+artwork_id + Finish + Printful Product
 ```
 
 Each group = **one Printful listing**.
@@ -56,19 +56,19 @@ Within each group, collect:
 ```
 {
   artwork_id: string,
-  title: string,                    // from Art Pieces > Title
+  title: string,                    // from Artwork > Title
   orientation: horizontal|vertical|square,
   printful_product: string,         // e.g. "Framed Canvas (in)"
   sizes: [string],                  // e.g. ["8×10", "16×20", "24×32"]
   frame_colors: [string],           // e.g. ["White", "Brown", "Black"]
   price_by_size: { size: price },   // e.g. { "8×10": 95, "16×20": 180, "24×32": 230 }
-  image_url: string,                // Google Drive link from Art Pieces > Image field
-  description: string,              // Art Pieces > Description
-  story: string,                    // Art Pieces > Story
-  subject: string,                  // Art Pieces > Subject
-  location: string,                 // Art Pieces > Location
-  light_description: string,        // Art Pieces > Light Description
-  tags: [string]                    // Art Pieces > Tags (max 13)
+  image_url: string,                // Google Drive link from Artwork > Image field
+  description: string,              // Artwork > Description
+  story: string,                    // Artwork > Story
+  subject: string,                  // Artwork > Subject
+  location: string,                 // Artwork > Location
+  light_description: string,        // Artwork > Light Description
+  tags: [string]                    // Artwork > Tags (max 13)
 }
 ```
 
@@ -159,12 +159,12 @@ Click Continue when done.
 
 | Field | Source | Rule |
 |---|---|---|
-| Product Title | Art Pieces > Title | Use as-is |
-| Description | Assembled from Art Pieces fields | See assembly rule below |
+| Product Title | Artwork > Title | Use as-is |
+| Description | Assembled from Artwork fields | See assembly rule below |
 | Benefits of on-demand manufacturing | — | Uncheck |
 | EU GPSR Compliance | — | Uncheck (no international shipping) |
 | Size guide | — | Uncheck |
-| Tags | Art Pieces > Tags | Comma-separated, max 13 |
+| Tags | Artwork > Tags | Comma-separated, max 13 |
 | Product Category | — | Canvas Prints |
 
 **Description Assembly Order:**
@@ -239,15 +239,15 @@ Click Publish with Changes.
 
 | Notion Field | Notion Dataset | Maps To | Stage |
 |---|---|---|---|
-| Status | Art Pieces | Trigger condition | Phase 1 |
-| Title | Art Pieces | Printful product title | Phase 5 |
-| Image | Art Pieces | Print file upload | Phase 2 |
-| Description | Art Pieces | Description block | Phase 5 |
-| Story | Art Pieces | Description block | Phase 5 |
-| Subject | Art Pieces | Description block | Phase 5 |
-| Location | Art Pieces | Description block | Phase 5 |
-| Light Description | Art Pieces | Description block | Phase 5 |
-| Tags | Art Pieces | Etsy tags | Phase 5 |
+| Status | Artwork | Trigger condition | Phase 1 |
+| Title | Artwork | Printful product title | Phase 5 |
+| Image | Artwork | Print file upload | Phase 2 |
+| Description | Artwork | Description block | Phase 5 |
+| Story | Artwork | Description block | Phase 5 |
+| Subject | Artwork | Description block | Phase 5 |
+| Location | Artwork | Description block | Phase 5 |
+| Light Description | Artwork | Description block | Phase 5 |
+| Tags | Artwork | Etsy tags | Phase 5 |
 | Orientation | Products | Printful orientation setting | Phase 2 |
 | Printful Product | Products | Printful catalog selection | Phase 2 |
 | Size | Products | Variant size selection | Phase 2 |
