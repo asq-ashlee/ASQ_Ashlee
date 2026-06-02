@@ -11,7 +11,16 @@
       "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\" | ForEach-Object { try { $msg = $_ | ConvertFrom-Json; $content = $msg.message.content; if \\($content\\) { foreach \\($c in $content\\) { if \\($c.type -eq 'text' -and $c.text -match 'artwork_id|page_id|art-piece'\\) { Write-Output $c.text; break } } } } catch {} } | Select-Object -First 10)",
       "PowerShell(Get-Content \"C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\" | ForEach-Object { try { $obj = $_ | ConvertFrom-Json; $content = $obj.message.content; if \\($content\\) { foreach \\($c in $content\\) { if \\($c.type -eq 'tool_use' -and $c.name -match 'query'\\) { Write-Output \"TOOL: $\\($c.name\\)\"; Write-Output \"INPUT: $\\(\\($c.input | ConvertTo-Json -Compress\\).Substring\\(0, [Math]::Min\\(300, \\($c.input | ConvertTo-Json -Compress\\).Length\\)\\)\\)\"; break } } } } catch {} } | Select-Object -First 40)",
       "Bash(grep -o 'object\\\\\\\\\\\\\":\\\\\\\\\\\\\"page\\\\\\\\\\\\\",\\\\\\\\\\\\\"id\\\\\\\\\\\\\":\\\\\\\\\\\\\"[^\\\\\\\\]*\\\\\\\\\\\\\"' \"C:/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/c412f069-809e-4b3d-9577-567f113b35f7/tool-results/bhreo9oqi.txt\")",
-      "Bash(grep -o 'object\\\\\\\\\":\\\\\\\\\"page\\\\\\\\\",\\\\\\\\\"id\\\\\\\\\":\\\\\\\\\"[^\\\\\\\\]*\\\\\\\\\"' \"C:/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\")"
+      "Bash(grep -o 'object\\\\\\\\\":\\\\\\\\\"page\\\\\\\\\",\\\\\\\\\"id\\\\\\\\\":\\\\\\\\\"[^\\\\\\\\]*\\\\\\\\\"' \"C:/Users/ajsc1/.claude/projects/c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee/cec736bf-1f1c-47ad-9a6b-b0ec28cae305.jsonl\")",
+      "mcp__notionApi__API-get-self",
+      "Bash(python3 -c \"print\\(open\\('C:\\\\\\\\Users\\\\\\\\ajsc1\\\\\\\\.claude\\\\\\\\projects\\\\\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\\\\\1d59b944-b052-4885-bfd6-84e1e87fff37\\\\\\\\tool-results\\\\\\\\mcp-notionApi-API-post-search-1780340654667.txt'\\).read\\(\\)[0:80000]\\)\")",
+      "PowerShell(\\(Get-Content 'C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\1d59b944-b052-4885-bfd6-84e1e87fff37\\\\tool-results\\\\mcp-notionApi-API-post-search-1780340654667.txt' -Raw\\).Substring\\(0, 80000\\))",
+      "PowerShell(\\(Get-Content 'C:\\\\Users\\\\ajsc1\\\\.claude\\\\projects\\\\c--Users-ajsc1-OneDrive-Desktop-ASQ-Ashlee\\\\1d59b944-b052-4885-bfd6-84e1e87fff37\\\\tool-results\\\\mcp-notionApi-API-post-search-1780340654667.txt' -Raw\\).Substring\\(80000, 80000\\))",
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" status)",
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" diff --stat)",
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" log --oneline -5)",
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" diff .gitignore)",
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" ls-files --others --exclude-standard ASQ_Freelance/Arts_of_August_System/logs/ ASQ_Freelance/Arts_of_August_System/prompts/)"
     ]
   }
 }

@@ -30,6 +30,17 @@ This handoff is triggered when:
 
 When an artwork is approved, rename all associated files to match the approved artwork ID and title slug.
 
+### Where the artwork ID comes from
+
+The artwork ID is sourced from Notion — not generated locally.
+
+- If the artwork already has a record in the Art Pieces database: use the number from that record (e.g. the `0002` in `AOA-ART-0002`)
+- If the artwork is new: check the Art Pieces database in Notion for the highest existing number and use the next one
+
+The full ID format is always: `AOA-ART-[four-digit-number]` (e.g. `AOA-ART-0026`)
+
+Do not assign an ID independently. The number lives in Notion first.
+
 ### File naming convention
 `[artwork-id]-[title-slug]-[file-type].[ext]`
 
@@ -78,7 +89,7 @@ Transfer approved metadata from the draft file into the artworks dataset.
 File: `AOA_datasets/artworks/artwork_records/AOA_ART_[XXXX].csv`
 
 Fields to populate from the approved draft:
-- artwork_id (assign next sequential ID)
+- artwork_id (sourced from Notion — use the existing record number, or the next unused number in the Art Pieces database)
 - Title (approved title only — not title suggestions)
 - Status: approved
 - Category
