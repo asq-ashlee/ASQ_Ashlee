@@ -27,14 +27,21 @@ Do not ask every tool to do everything.
 
 Use each tool for its strongest role:
 
-* ChatGPT thinks, frames, reviews, and writes strategy.
-* Codex or Claude Code implement scoped repo changes.
+* The repo is the source of truth.
+* Google Workspace (Gmail, Calendar, Drive) feeds real-world business inputs.
+* Gemini extracts and summarizes Google-native content.
+* ChatGPT thinks, frames, synthesizes, and writes strategy and handoff prompts.
+* Codex or Claude Code implement scoped repo changes, scripts, and validation.
 * Markdown stores stable instructions and system knowledge.
-* Notion stores live records.
-* Lovable displays approved public outputs.
+* Notion is an optional dashboard and export layer.
+* Lovable displays approved public outputs and powers the customer chatbot.
+* Square handles transactions (original checkout links and in-person POS).
+* Printful and Printify fulfill print-on-demand orders.
 * Canva and mockup tools create visual assets.
-* Google Drive or external storage holds large assets and deliverables.
+* Google Drive holds large assets and deliverables.
 * GitHub tracks version history.
+
+See `AOA_SYSTEM/SYSTEM_MAP.md` for the full architecture overview.
 
 ## Tool Roles
 
@@ -244,10 +251,15 @@ Use either Codex or Claude Code for a task, not both at the same time unless int
 
 ### Primary Role
 
-Live operational database.
+Optional dashboard and export layer.
+
+Notion is not required in the publishing path. The repo holds the source records.
 
 ### Use Notion for
 
+* viewing structured records in a visual database interface
+* exporting or sharing records externally
+* surfacing status views for review
 * artwork records
 * product records
 * content records
@@ -259,7 +271,6 @@ Live operational database.
 * publish state
 * review state
 * performance notes
-* structured context that should be reused across outputs
 
 ### Do not use Notion for
 
@@ -269,10 +280,13 @@ Live operational database.
 * raw chat history
 * large file libraries
 * replacing markdown instruction files
+* acting as a required publishing gate
 
 ### Standard Pattern
 
-If the object changes during business operation, it probably belongs in Notion.
+Notion is available as a view and export layer. Publishing workflows can complete without writing to Notion.
+
+Existing Notion fields and schemas are preserved. See `AOA_SYSTEM/NOTION_OPERATING_SCHEMA.md`.
 
 ## Lovable
 
@@ -432,6 +446,105 @@ Marketplace channel, if used.
 
 Etsy is a channel. Notion is the record source.
 
+## Google Workspace
+
+### Primary Role
+
+Business input layer.
+
+### Use Google Workspace for
+
+* Gmail: capturing opportunities, inquiries, and event invitations
+* Google Calendar: tracking event and deadline dates
+* Google Drive: storing master artwork images, print files, exports, and synced context packets
+* Gemini: extracting and summarizing Google-native content
+
+### Do not use Google Workspace for
+
+* replacing the repo as the source of truth
+* storing system rules or workflow docs as the primary copy
+* sending automated responses without human approval
+
+### Standard Pattern
+
+Google Workspace captures real-world business inputs. Those inputs are extracted (by Gemini or manually) and brought into the repo or Notion for structured processing.
+
+See `AOA_SYSTEM/GOOGLE_WORKSPACE_OPERATING_MAP.md`
+
+## Gemini
+
+### Primary Role
+
+Google-native extraction and summarization.
+
+### Use Gemini for
+
+* extracting structured fields from Gmail messages
+* summarizing Google Calendar events for planning context
+* processing Google Docs or Sheets within the Google ecosystem
+* Drive file summarization when the task is native to Google Workspace
+
+### Do not use Gemini for
+
+* repo editing or file implementation
+* final architecture decisions
+* replacing ChatGPT for strategy and synthesis
+* replacing Claude Code for implementation
+
+### Standard Pattern
+
+Gemini output is passed to ChatGPT or Claude Code for the next action.
+
+See `AOA_SYSTEM/AI_OPERATOR_COST_RULES.md`
+
+## Printful
+
+### Primary Role
+
+Print-on-demand fulfillment provider.
+
+### Use Printful for
+
+* fulfilling print orders (canvas prints, framed prints, paper prints)
+* managing product variants by size and substrate
+* order routing when a POD sale is triggered
+
+### Do not use Printful for
+
+* storing artwork records or metadata
+* acting as the product database
+* replacing the repo as the source of truth for product information
+
+### Standard Pattern
+
+Printful technical details (product IDs, variant IDs, sync status) are tracked in `data/pod/printful-map.csv`, not in artwork records.
+
+## Printify
+
+### Primary Role
+
+Alternative or concurrent print-on-demand fulfillment provider.
+
+### Use Printify for
+
+* fulfilling print orders, particularly for specific product types or price points
+* managing product variants per Printify catalog
+* concurrent POD fulfillment when both Printful and Printify are active
+
+### Do not use Printify for
+
+* storing artwork records or metadata
+* acting as the product database
+* replacing the repo as the source of truth
+
+### Standard Pattern
+
+Printify technical details are tracked in `data/pod/printify-map.csv`.
+
+Printful and Printify may both be active providers. The provider map determines which products route to which provider.
+
+See `AOA_SYSTEM/COMMERCE_MAP.md`
+
 ## Tool Chain by Workflow
 
 ## Artwork Intake
@@ -473,19 +586,21 @@ Primary tools:
 
 Recommended tool chain:
 
-1. Notion holds approved artwork/product records.
+1. Repo holds approved artwork/product records (CSV).
 2. Mockup tools or Canva create approved visuals.
 3. Lovable displays shop and product pages.
-4. Square handles checkout.
+4. Square handles checkout (original artwork) or Printful/Printify handles POD fulfillment.
 5. Kaleigh approves publication.
+6. Notion may optionally mirror approved records.
 
 Primary tools:
 
-* Notion
+* Repo (CSV records)
 * Lovable
 * Square
+* Printful / Printify (POD)
 * Canva or mockup tools
-* External asset storage
+* Google Drive (asset storage)
 
 ## Content Workflow
 
@@ -700,15 +815,23 @@ If the question is “Where should this live?” use ICM rules and ChatGPT.
 
 If the question is “Can you edit these files?” use Codex or Claude Code.
 
-If the question is “What is the current status of this artwork/product/content/event?” use Notion.
+If the question is “What is the current record for this artwork/product?” use the repo CSV.
+
+If the question is “What is the current status of this artwork/product/content/event?” use the repo CSV or Notion (optional view).
 
 If the question is “What should the public see?” use Lovable after approval.
 
 If the question is “What visual should we use?” use Canva or mockup tools.
 
-If the question is “Where is the master file?” use external asset storage.
+If the question is “Where is the master file?” use Google Drive.
 
 If the question is “What changed?” use GitHub diff/history.
+
+If the question is “What opportunities came in?” use Gmail / Gemini extraction.
+
+If the question is “What events are coming up?” use Google Calendar.
+
+If the question is “Which AI should do this?” use `AOA_SYSTEM/AI_OPERATOR_COST_RULES.md`.
 
 ## Operating Standard
 

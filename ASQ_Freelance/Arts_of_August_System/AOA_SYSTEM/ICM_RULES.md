@@ -33,6 +33,23 @@ AI should read the smallest useful context packet, complete the bounded task, pr
 
 ## Source of Truth Rules
 
+### The repo is the source of truth
+
+The GitHub repo holds all authoritative records, instructions, and operational data for the Arts of August system.
+
+This includes:
+
+* system rules and ICM docs (markdown)
+* schema definitions (markdown)
+* artwork records (CSV)
+* product records (CSV)
+* data placeholders for sales, campaigns, POD maps, and channels
+* workflow docs, prompt templates, and approved AI drafts
+
+No content is considered permanent until it exists in the repo.
+
+Notion is an optional view and export layer. It is not required in the publishing path.
+
 ### Markdown is the source of truth for system instructions
 
 Use markdown files for:
@@ -54,10 +71,15 @@ Do not bury stable operating rules in chat history.
 
 Do not make AI infer system behavior from scattered notes.
 
-### Notion is the source of truth for live business records
+### Notion is an optional dashboard and export layer
 
-Use Notion for records that change during operation, including:
+Notion is not required in the publishing path.
 
+Use Notion optionally for:
+
+* viewing structured records in a visual database interface
+* exporting or sharing records with collaborators
+* surfacing status views for review
 * artworks
 * products
 * events
@@ -72,7 +94,22 @@ Use Notion for records that change during operation, including:
 
 Notion should hold structured objects, not long system philosophy.
 
-If a record needs to be reused across shop pages, content, events, or applications, it should live in Notion.
+Existing Notion fields and schemas are preserved. See `AOA_SYSTEM/NOTION_OPERATING_SCHEMA.md`.
+
+### Google Workspace is the business input layer
+
+Use Google Workspace for real-world business inputs:
+
+* Gmail: opportunities, inquiries, and event invitations
+* Google Calendar: event and deadline dates
+* Google Drive: master artwork images, print files, and exports
+* Gemini: extraction and summarization of Google-native content
+
+Google Workspace inputs are extracted and brought into the repo for structured processing.
+
+Google Workspace is not the source of truth for system rules or artwork records.
+
+See `AOA_SYSTEM/GOOGLE_WORKSPACE_OPERATING_MAP.md`
 
 ### Lovable is the public output layer
 
@@ -88,6 +125,17 @@ Lovable should display or transform approved system data.
 
 Lovable should not be treated as the source of truth for artwork, product, event, or content records.
 
+### Gemini is the Google-native extraction layer
+
+Use Gemini for:
+
+* extracting structured fields from Gmail messages
+* summarizing Google Calendar events
+* processing Google Docs or Sheets within the Google ecosystem
+* Drive file summarization when the task is native to Google Workspace
+
+Gemini output is passed to ChatGPT or Claude Code for the next action.
+
 ### ChatGPT is the strategy and orchestration layer
 
 Use ChatGPT for:
@@ -97,11 +145,12 @@ Use ChatGPT for:
 * offer framing
 * client-facing language
 * case study writing
-* prompt writing
+* prompt writing and handoff prompt authoring
 * reviewing outputs from Codex, Claude Code, Lovable, or Notion
 * turning messy ideas into structured plans
+* QA review of implementation outputs
 
-ChatGPT may help design system files, but final operating files should be saved in the repo or Notion, not left only in chat.
+ChatGPT may help design system files, but final operating files should be saved in the repo, not left only in chat.
 
 ### Codex and Claude Code are implementation agents
 
@@ -203,7 +252,7 @@ Ashlee approves system architecture, workflow design, context structure, repo ch
 
 AI outputs should be written back only when the destination is clear.
 
-Write to markdown when the output is:
+Write to the repo (markdown) when the output is:
 
 * an instruction
 * a workflow
@@ -213,16 +262,22 @@ Write to markdown when the output is:
 * a reusable prompt
 * a decision log
 
-Write to Notion when the output is:
+Write to the repo (CSV) when the output is:
 
 * an artwork record
 * a product record
-* a content item
-* an event record
-* an opportunity record
-* a status update
-* a performance note
-* a review note
+* a sales record
+* a POD map entry
+* a campaign record
+* a channel data record
+
+Write to Notion (optional) when the output is:
+
+* an artwork record for dashboard view
+* a product, event, opportunity, or content record for Notion-based review
+* a status update or performance note for Notion tracking
+
+Notion write-back is not required for the workflow to advance.
 
 Write to Lovable only when the output is:
 
