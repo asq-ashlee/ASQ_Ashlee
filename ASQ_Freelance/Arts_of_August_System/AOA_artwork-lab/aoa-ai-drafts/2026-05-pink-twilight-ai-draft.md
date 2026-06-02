@@ -199,8 +199,6 @@ Review notes:
 
 **For Listing Team**: Use opening paragraph as primary description. Emphasize "color" and "light saturation" as key emotional carriers. Tags are SEO-only; do not mix with poetic voice. Title follows [Poetic Anchor] + [SEO Clarifier] format.
 
-**For Content Team**: Emphasize the drama of color and the precision of the moment. This piece is visually striking and has strong social media potential. Focus on the contrast between warmth (rocks) and coolness (sky). Avoid narrative framing; stay atmospheric.
+**For Content Team**: Emphasize the moment, light, and precision of the moment. Avoid narrative framing; stay atmospheric.
 
-**Marketing Note**: This artwork has strong visual appeal and repost potential. Consider as a "hero image" for seasonal campaigns or featured collections.
-
-**Workflow Stage**: Ready for product mapping, listing copy, and content calendar integration upon approval.
+**Workflow Stage**: Draft — Pending Human Review

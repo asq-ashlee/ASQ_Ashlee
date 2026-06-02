@@ -298,7 +298,7 @@ Those belong in Artwork.
 | Source Artwork      | Relation             | Relation to Artwork.                                                  |
 | artwork_id          | Rollup or Text       | Pull from related Artwork if possible.                                 |
 | Product Type        | Select               | Original, Canvas Print, Framed Print, Paper Print, Card, Digital, Other. |
-| Finish              | Select               | Frame (Original), Gallery Wrap (Original), Floating Frame (Printful), Canvas Unframed (Printful). |
+| Finish              | Select               | Framed (Original), Gallery Wrap (Original), Floating Frame (Printful), Canvas Unframed (Printful). |
 | Size                | Text                 | Example: `16" × 20"`.                                                    |
 | Price               | Number               | Product price.                                                           |
 | Sales Channels      | Multi-select         | Etsy, Printful, Lovable, Square, In-person, Other.                       |
@@ -312,6 +312,18 @@ Those belong in Artwork.
 | Notes               | Text                 | Product-specific notes.                                                  |
 | Next Action         | Text                 | Next operational step.                                                   |
 | POC Product         | Checkbox             | Used for POC filtering.                                                  |
+
+## Finish field rules
+
+**Valid Finish values for original painting product records:**
+  - Framed (Original) — painting has a frame
+  - Gallery Wrap (Original) — painting is unframed, gallery wrapped
+  Do not use: 'Framed', 'framed', 'Framed (show frame)', or any other variant. The exact string must match the Notion select option.
+
+**Valid Finish values for Printful print product records:**
+  - Floating Frame (Printful) — framed canvas prints
+  - Canvas Unframed (Printful) — unframed canvas prints
+  Every Printful product record must have a Finish value. Do not leave Finish blank on any product record.
 
 ## Recommended select values
 

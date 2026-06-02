@@ -104,6 +104,7 @@ File: `AOA_datasets/artworks/artwork_records/AOA_ART_[XXXX].csv`
 Fields to populate from the approved draft:
 - artwork_id (sourced from Notion — use the existing record number, or the next unused number in the Artwork database)
 - Title (approved title only — not title suggestions)
+  - **Title field rule:** The Title field in the Artwork database is the clean artwork title only. Example: 'What the Garden Kept' — not 'What the Garden Kept — Terracotta Pot Floral Original Oil Painting'. The long SEO/Etsy-optimized title belongs on the product or listing record. Never write the long title to the Artwork database Title field.
 - Status: approved
 - Category
 - Orientation
@@ -148,6 +149,18 @@ Using the approved artwork record, generate product records in:
 - Framed canvas prints = 3 sizes × 3 frame colors = 9 records (standard landscape/portrait/square)
 - Panoramic artworks = 3 unframed canvas sizes = 3 records
 - Status: ready-for-review (not live until owner confirms)
+
+### Finish field rules
+
+**Valid Finish values for original painting product records:**
+  - Framed (Original) — painting has a frame
+  - Gallery Wrap (Original) — painting is unframed, gallery wrapped
+  Do not use: 'Framed', 'framed', 'Framed (show frame)', or any other variant. The exact string must match the Notion select option.
+
+**Valid Finish values for Printful print product records:**
+  - Floating Frame (Printful) — framed canvas prints
+  - Canvas Unframed (Printful) — unframed canvas prints
+  Every Printful product record must have a Finish value. Do not leave Finish blank on any product record.
 
 ### Product record ID convention
 `AOA-PRD-[artwork-number]-[variant-number]`
@@ -269,3 +282,27 @@ Use this checklist for every artwork from approval to Notion:
 - [ ] Records pushed to Notion (Artwork + Products)
 - [ ] Workflow Status updated in artwork record
 - [ ] Product Studio notified — ready for Printful + mockups + listing
+
+---
+
+## Recent Handoff Example — 2026-06-02
+
+- Source image (local): `AOA_artwork-lab/New_Art/AOA-ART-0061-where-the-water-waits-master.jpg` (rename local file and upload to Drive)
+- Draft file (historical): `AOA_artwork-lab/aoa-ai-drafts/2026-06-where-the-water-waits-ai-draft.md`
+- Approved artifact (operational): `AOA_artwork-lab/aoa-approved/AOA-ART-0061-where-the-water-waits-approved.md`
+
+Owner action completed: draft approved on June 2, 2026 and Notion Artwork ID assigned: `AOA-ART-0061`.
+
+Immediate next actions (operational):
+
+1. Rename local master file to `AOA-ART-0061-where-the-water-waits-master.jpg` and upload to Google Drive.
+2. Product Studio: create Printful-spec `print` file `AOA-ART-0061-where-the-water-waits-print.jpg` and web-optimized `AOA-ART-0061-where-the-water-waits-web.jpg`.
+3. Populate artwork CSV and product CSV records with owner-confirmed fields only; include `AOA-ART-0061` in the artwork_id field. Leave `Image` blank until Drive URL available.
+4. Once `Image` field is populated with Drive URL and records are reviewed, human confirms and then Notion push may proceed per Step 6.
+
+Contact points (replace placeholders with real contacts):
+- Product Studio: product@artsofaugust.example
+- Listing Owner: owner@artsofaugust.example
+- Content Lead: content@artsofaugust.example
+
+Reminder: `AOA-ART-0061` is the canonical artwork ID. Use it in filenames, CSV artwork_id fields, and Notion records.

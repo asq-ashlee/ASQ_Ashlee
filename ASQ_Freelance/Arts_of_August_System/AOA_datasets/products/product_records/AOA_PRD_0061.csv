@@ -1,0 +1,11 @@
+product_id,artwork_id,product_type,finish,size_inches,size_label,aspect_ratio,material,frame_color,fulfillment,recommended_retail_price,status,notes
+AOA-PRD-0061-001,AOA-ART-0061,Original,Gallery Wrap (Original),11x14,Original,11:14,Canvas,,manual,249,ready-for-review,"Original painting record; confirm framing and edge finish before sale."
+AOA-PRD-0061-002,AOA-ART-0061,Print,Floating Frame (Printful),11x14,Small,11:14,Canvas,White,Printful,,ready-for-review,"Printful variant: floating frame, portrait — confirm Printful SKU and retail price."
+AOA-PRD-0061-003,AOA-ART-0061,Print,Floating Frame (Printful),11x14,Small,11:14,Canvas,Natural,Printful,,ready-for-review,"Printful variant: floating frame, portrait — confirm Printful SKU and retail price."
+AOA-PRD-0061-004,AOA-ART-0061,Print,Floating Frame (Printful),11x14,Small,11:14,Canvas,Black,Printful,,ready-for-review,"Printful variant: floating frame, portrait — confirm Printful SKU and retail price."
+AOA-PRD-0061-005,AOA-ART-0061,Print,Floating Frame (Printful),22x28,Medium,11:14,Canvas,White,Printful,,ready-for-review,"Medium size — confirm Printful SKU and retail price."
+AOA-PRD-0061-006,AOA-ART-0061,Print,Floating Frame (Printful),22x28,Medium,11:14,Canvas,Natural,Printful,,ready-for-review,"Medium size — confirm Printful SKU and retail price."
+AOA-PRD-0061-007,AOA-ART-0061,Print,Floating Frame (Printful),22x28,Medium,11:14,Canvas,Black,Printful,,ready-for-review,"Medium size — confirm Printful SKU and retail price."
+AOA-PRD-0061-008,AOA-ART-0061,Print,Floating Frame (Printful),33x42,Large,11:14,Canvas,White,Printful,,ready-for-review,"Large size — confirm Printful SKU and retail price."
+AOA-PRD-0061-009,AOA-ART-0061,Print,Floating Frame (Printful),33x42,Large,11:14,Canvas,Natural,Printful,,ready-for-review,"Large size — confirm Printful SKU and retail price."
+AOA-PRD-0061-010,AOA-ART-0061,Print,Floating Frame (Printful),33x42,Large,11:14,Canvas,Black,Printful,,ready-for-review,"Large size — confirm Printful SKU and retail price."

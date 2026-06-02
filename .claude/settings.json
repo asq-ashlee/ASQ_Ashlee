@@ -20,7 +20,12 @@
       "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" diff --stat)",
       "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" log --oneline -5)",
       "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" diff .gitignore)",
-      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" ls-files --others --exclude-standard ASQ_Freelance/Arts_of_August_System/logs/ ASQ_Freelance/Arts_of_August_System/prompts/)"
+      "Bash(git -C \"c:\\\\Users\\\\ajsc1\\\\OneDrive\\\\Desktop\\\\ASQ_Ashlee\" ls-files --others --exclude-standard ASQ_Freelance/Arts_of_August_System/logs/ ASQ_Freelance/Arts_of_August_System/prompts/)",
+      "mcp__notionApi__API-retrieve-a-database",
+      "mcp__notionApi__API-get-block-children",
+      "mcp__notionApi__API-retrieve-a-page",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

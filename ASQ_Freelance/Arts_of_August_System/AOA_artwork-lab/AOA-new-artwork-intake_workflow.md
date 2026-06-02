@@ -64,12 +64,16 @@ Outputs should align with:
 Generate:
 
 - Title Suggestions
+  - **Title field rule:** The Title field in the Artwork database is the clean artwork title only. Example: 'What the Garden Kept' — not 'What the Garden Kept — Terracotta Pot Floral Original Oil Painting'. The long SEO/Etsy-optimized title belongs on the product or listing record. Never write the long title to the Artwork database Title field.
 - Slug (URL-safe version of approved title — lowercase, hyphens, no special characters)
+  - **Slug rule:** Use the approved title with hyphens between words, no punctuation, and all lowercase.
 - Category
 - Orientation
 - Medium (multi-select: Oil / Gold Leaf / Silver Leaf — default: Oil)
 - Support (text — always Canvas unless explicitly told otherwise)
 - Source (text — record where the artwork data came from)
+- Date Created
+  - **Date Created rule:** Date Created = the date Kaleigh painted the artwork. This is not the intake date, the processing date, or today's date. If the paint date is not known or not provided, leave this field blank. Do not default to the current date. Flag it as missing instead.
 - Mood
 - Colors
 - Tags
@@ -96,6 +100,18 @@ Suggest:
 - likely home placement
 - likely customer environments
 - likely sales channels
+
+When suggesting framing or finish, use only valid Finish values for product records:
+
+**Valid Finish values for original painting product records:**
+  - Framed (Original) — painting has a frame
+  - Gallery Wrap (Original) — painting is unframed, gallery wrapped
+  Do not use: 'Framed', 'framed', 'Framed (show frame)', or any other variant. The exact string must match the Notion select option.
+
+**Valid Finish values for Printful print product records:**
+  - Floating Frame (Printful) — framed canvas prints
+  - Canvas Unframed (Printful) — unframed canvas prints
+  Every Printful product record must have a Finish value. Do not leave Finish blank on any product record.
 
 Examples:
 - Etsy
