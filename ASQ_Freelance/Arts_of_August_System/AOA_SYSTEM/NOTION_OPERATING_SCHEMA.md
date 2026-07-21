@@ -1,5 +1,7 @@
 # AOA Notion Operating Schema
 
+> Historical migration reference — superseded for active operations on 2026-07-21. Master CSVs in `AOA_datasets/` are the portable record source of truth, and Firestore project `stoked-proxy-502319-c4` is the live application database. Do not create a new Notion dependency from this document. See `../AOA_DATABASE_MAP.md` and `../AOA_UPDATE_WORKFLOW.md`.
+
 ## Scope
 
 This file defines the operating schema for the Arts of August Notion system.

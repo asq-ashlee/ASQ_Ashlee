@@ -2,7 +2,7 @@
 
 The Arts of August system turns an artist's body of work into structured, reusable sales and marketing infrastructure.
 
-The repo is the source of truth. Google Workspace is the business input layer. Lovable is the public storefront and customer chatbot. Square is the transaction layer. Printful and Printify are POD fulfillment providers. Notion is an optional dashboard and export layer.
+The repo master CSVs are the portable source of truth. Firestore is the live application database. Google Workspace is the business input layer. Lovable is the public storefront and customer chatbot. Square is the transaction layer. Printful and Printify are POD fulfillment providers. Notion is a historical migration and optional export layer, not an active dependency.
 
 Use this README as the front door to the system. Start with the governance files to understand the operating rules, tool roles, and proof-of-concept boundary. Then open the relevant workspace for the task at hand.
 
@@ -12,6 +12,7 @@ Use this README as the front door to the system. Start with the governance files
 * To understand tool roles: start with [AOA_SYSTEM/TOOL_MAP.md](AOA_SYSTEM/TOOL_MAP.md)
 * To intake new artwork: start with [AOA_artwork-lab/](AOA_artwork-lab/)
 * To update records: start with [AOA_datasets/](AOA_datasets/)
+* To synchronize master records with Firestore: start with [AOA_UPDATE_WORKFLOW.md](AOA_UPDATE_WORKFLOW.md)
 * To create content: start with [AOA_distribution-studio/](AOA_distribution-studio/)
 * To prepare products: start with [AOA_product-studio/](AOA_product-studio/)
 * To review sales or POD data: start with [data/](data/)
@@ -26,7 +27,9 @@ Use this README as the front door to the system. Start with the governance files
 * [Google Workspace operating map](AOA_SYSTEM/GOOGLE_WORKSPACE_OPERATING_MAP.md) - Gmail, Calendar, Drive, and Gemini as the business input layer.
 * [AI operator cost rules](AOA_SYSTEM/AI_OPERATOR_COST_RULES.md) - which AI tool to use for which task.
 * [POC definition of done](AOA_SYSTEM/POC_DEFINITION_OF_DONE.md) - what must be true before the proof of concept is considered complete.
-* [Notion operating schema](AOA_SYSTEM/NOTION_OPERATING_SCHEMA.md) - Notion field definitions (optional layer).
+* [Database map](AOA_DATABASE_MAP.md) - master CSV and Firestore collection mapping.
+* [Relation rules](AOA_RELATION_RULES.md) - stable-ID relationships between system objects.
+* [Notion operating schema](AOA_SYSTEM/NOTION_OPERATING_SCHEMA.md) - historical Notion field definitions retained for migration reference.
 
 ## Source Intelligence
 
@@ -35,7 +38,7 @@ Use this README as the front door to the system. Start with the governance files
 ## Workspaces
 
 * [Artwork lab](AOA_artwork-lab/) - artwork intake, image editing, SOPs, templates, and draft outputs.
-* [Datasets](AOA_datasets/) - structured artwork, product, and content records with schemas.
+* [Datasets](AOA_datasets/) - master CSV records for artwork, products, content, events, and opportunities.
 * [Distribution studio](AOA_distribution-studio/) - content workflows, platform notes, drafts, approvals, and submissions.
 * [Product studio](AOA_product-studio/) - product-generation workflow and product outputs.
 * [Connecting layer](AOA_connecting-layer/) - placement rules, pipeline specs, readiness reviews, and post-approval handoffs.

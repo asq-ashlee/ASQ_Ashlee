@@ -16,6 +16,12 @@ Create artwork → structure it → generate products → generate listings → 
 
 ## How to Use
 
+### Structured Data Route
+
+Brand and generation guidance lives in this source-intelligence folder. Structured operational records live in the master CSVs under `../AOA_datasets/` and are synchronized to Firestore project `stoked-proxy-502319-c4` after validation and human review. Notion is not part of the active update loop.
+
+See `../AOA_UPDATE_WORKFLOW.md` and `../AOA_DATABASE_MAP.md`.
+
 When generating anything:
 
 1. Follow **Voice & Expression** rules first

@@ -21,6 +21,20 @@ Read alongside:
 
 ## Architecture Principle
 
+### Firestore Operating Model — Effective 2026-07-21
+
+This section supersedes older Notion-era architecture statements elsewhere in this file.
+
+* Master CSVs in `AOA_datasets/` are the portable structured-record source of truth.
+* Firestore project `stoked-proxy-502319-c4` is the live application database.
+* Live collections are `artworks`, `products`, `content`, `events`, and `opportunities`.
+* Every governed Firestore document ID equals its stable master CSV ID.
+* Approved CSV changes reach Firestore through validated stable-ID upserts.
+* Missing CSV rows never authorize automatic Firestore deletion.
+* Notion and dated Notion exports are historical migration references, not active workflow dependencies.
+
+See `../AOA_DATABASE_MAP.md`, `../AOA_UPDATE_WORKFLOW.md`, and `../AOA_RELATION_RULES.md`.
+
 The repo is the source of truth.
 
 Notion is not required in the publishing path. It is an optional dashboard and export layer.

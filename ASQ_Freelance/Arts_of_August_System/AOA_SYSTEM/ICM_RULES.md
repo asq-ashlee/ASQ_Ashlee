@@ -33,6 +33,21 @@ AI should read the smallest useful context packet, complete the bounded task, pr
 
 ## Source of Truth Rules
 
+### Firestore Supersession — Effective 2026-07-21
+
+This section overrides older Notion-era source-of-truth and write-back instructions elsewhere in this file.
+
+* Markdown remains authoritative for rules, schemas, workflows, and approvals.
+* Master CSVs in `AOA_datasets/` are authoritative portable structured records.
+* Firestore project `stoked-proxy-502319-c4` is the live application database synchronized from approved masters.
+* Stable CSV IDs are also Firestore document IDs and relation keys.
+* Imports are validated upserts; deletion always requires a separate exact target and explicit human approval.
+* Notion is not an active write-back destination. Dated exports and the Notion schema are historical migration references only.
+
+Write-back sequence: edit master CSV → validate → human review where required → Firestore upsert → read-back verification.
+
+See `../AOA_DATABASE_MAP.md`, `../AOA_UPDATE_WORKFLOW.md`, and `../AOA_RELATION_RULES.md`.
+
 ### The repo is the source of truth
 
 The GitHub repo holds all authoritative records, instructions, and operational data for the Arts of August system.

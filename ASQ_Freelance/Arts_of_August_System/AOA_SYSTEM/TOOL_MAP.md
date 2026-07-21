@@ -23,6 +23,18 @@ Each tool should do the job it is best suited for.
 
 ## Core Tool Principle
 
+### Firestore Supersession — Effective 2026-07-21
+
+This section overrides older Notion-era tool-routing statements elsewhere in this file.
+
+* Repo master CSVs are the portable structured-record source of truth.
+* Firestore is the live application database for approved artwork, product, content, event, and opportunity records.
+* Codex or another approved implementation tool validates master CSVs, performs stable-ID upserts, and verifies Firestore by reading it back.
+* Firestore is not used for Markdown instructions, secrets, unreviewed drafts, or automatic deletion.
+* Notion is no longer part of the active update loop. Its schemas and exports are retained only for migration provenance and historical comparison.
+
+For a record update, follow `../AOA_UPDATE_WORKFLOW.md`. For ownership and identifiers, follow `../AOA_DATABASE_MAP.md` and `../AOA_RELATION_RULES.md`.
+
 Do not ask every tool to do everything.
 
 Use each tool for its strongest role:

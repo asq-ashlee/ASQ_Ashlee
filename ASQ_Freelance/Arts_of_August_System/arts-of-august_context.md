@@ -1,6 +1,6 @@
 # Arts of August — CONTEXT
 
-Last updated: 2026-05-20
+Last updated: 2026-07-21
 Status: active
 
 ## Purpose
@@ -104,6 +104,18 @@ Avoid:
 - `AOA_connecting-layer/` — placement rules, schema mapping, channel mapping, design rules, and export logic
 - `AOA_datasets/` — portable structured records mirrored from or pushed to Notion
 - `AOA_exports/` — raw exports, channel-ready files, and publishing/archive snapshots
+
+## Data Operating Model
+
+- Markdown defines system rules and workflows.
+- Master CSV files in `AOA_datasets/` are the portable record source of truth.
+- Firestore project `stoked-proxy-502319-c4` is the live application database.
+- Stable record IDs are shared between CSV rows, Firestore document IDs, and relations.
+- Notion is no longer required for active operations; old exports are migration evidence only.
+- CSV changes must be validated and human-reviewed before Firestore synchronization.
+- Firestore synchronization is an upsert and never implies deletion.
+
+See `AOA_UPDATE_WORKFLOW.md`, `AOA_DATABASE_MAP.md`, and `AOA_RELATION_RULES.md`.
 
 ## Placement Rules
 
