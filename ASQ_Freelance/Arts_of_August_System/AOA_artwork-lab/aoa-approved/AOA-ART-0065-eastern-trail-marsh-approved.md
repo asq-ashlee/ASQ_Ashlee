@@ -19,6 +19,9 @@
 - Payment Link: https://square.link/u/SsU9kE52
 - Canonical Master: approved
 - Presentation Mockup: approved
+- Original Available: yes
+- Canonical Master Drive URL: https://drive.google.com/file/d/1vwT2JO0q7fK-2SJMZySRak22g8mPnPtz/view?usp=drivesdk
+- Presentation Mockup Drive URL: https://drive.google.com/file/d/1wSC2apFIqsjBVpIfaH1t8CuzwHiMiFHI/view?usp=drivesdk
 
 ## Approved Operational Metadata
 
@@ -28,6 +31,7 @@
 - Colors: meadow green; deep green; pale blue; soft blue-gray; muted lavender; warm ivory
 - Primary Use: Original artwork
 - Image Status: Master Image Approved
+- Drive Asset Binding: complete
 - Workflow Status: Metadata Complete
 
 ### Alt Text
@@ -65,6 +69,8 @@ Maine landscape painting; Scarborough Maine art; marsh landscape painting; coast
 - Physical facts, price, location, year, medium, support, and payment link were supplied by the owner.
 - Canonical master and presentation mockup were explicitly approved by the owner.
 - Public-facing description, alt text, tags, mood, colors, subject, and light description were reviewed and then approved by the owner as part of intake approval.
-- The master Image URL remains blank until the exact approved canonical master is uploaded to Google Drive and bound through the separately governed asset handoff.
+- Canonical master is stored in Google Drive as `AOA-ART-0065-eastern-trail-marsh-master.png` and bound to the master artwork record: https://drive.google.com/file/d/1vwT2JO0q7fK-2SJMZySRak22g8mPnPtz/view?usp=drivesdk
+- Approved presentation mockup is stored in Google Drive as `AOA-ART-0065-eastern-trail-marsh-mockup.png`: https://drive.google.com/file/d/1wSC2apFIqsjBVpIfaH1t8CuzwHiMiFHI/view?usp=drivesdk
+- The artwork master schema has one canonical `Image` field, so that field is bound to the canonical master; the mockup URL is preserved here as an approved derivative asset reference.
 - Product relationships, website publication, Etsy/Printful actions, Notion synchronization, and Firestore promotion are not authorized by intake approval alone.
-- Status is recorded as `approved`; Original_Available remains blank until availability is explicitly confirmed as a lifecycle field.
+- Status is recorded as `approved`; Original_Available is `yes` based on owner confirmation that the original is currently available for sale at $250 through the confirmed Square payment link.
