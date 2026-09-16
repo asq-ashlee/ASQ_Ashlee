@@ -1,3 +1,7 @@
+# Historical IAP runbook — superseded
+
+The Firebase sign-in proof succeeded. Do not use the IAP steps below to deploy the current artist-facing bridge. Follow `bridge-cloud-run.md` for the Firebase-token architecture. This section is retained as historical planning context.
+
 # First private read-only bridge test — operator runbook
 
 Status: superseded as a deployment sequence pending the authentication decision in `bridge-auth-decision.md`. Use the fixed values as reference only. No Cloud Run service, secrets, or Site connection exists yet. The IAP setup below remains an optional private technical rehearsal, not the chosen artist-facing browser path.
