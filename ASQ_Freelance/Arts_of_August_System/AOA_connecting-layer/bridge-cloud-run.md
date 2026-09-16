@@ -18,10 +18,10 @@ For Arts of August, use the Google Cloud project shown in the client's console:
 
 The final IAP audience can be filled in after choosing the region and Cloud Run
 service name: `/projects/1032949592191/locations/REGION/services/SERVICE_NAME`.
-These identifiers are configuration values, not credentials. Ashlee confirms the existing Firestore setup is also in the client's Google
-Cloud account. Its exact project ID has not yet been verified against the
-Arts of August OS project above. Verify that match before adding Firestore
-access or deploying.
+These identifiers are configuration values, not credentials. Ashlee's Firestore console screenshot shows the active `(default)` Firestore
+Native database in this exact project (`stoked-proxy-502319-c4`), location
+`nam5`. This confirms the project match, not service access or a Firestore
+write authorization. The current bridge has no Firestore access.
 
 Each future artist/customer should own a separate Google Cloud project (or
 isolated account under their control), service identity, IAM policy, secrets,
@@ -71,8 +71,7 @@ listing for Eastern Trail Marsh is the existing-artwork test case.
 
 The WSGI entry point is `bridge_service:application`. Build
 `bridge-Dockerfile` with this directory as the Docker build context. Before
-deployment, confirm this project is the intended owner and verify its existing
-Firestore relationship. Confirm IAP OAuth setup for Kaleigh's account, GitHub credential ownership, region,
+deployment, confirm this client project is the intended owner. Confirm IAP OAuth setup for Kaleigh's account, GitHub credential ownership, region,
 and browser access strategy. Configure Secret Manager and IAP in Google Cloud
 outside the code review. Do not route the Sites prototype to this endpoint until
 cross-origin sign-in and request authorization are verified.
