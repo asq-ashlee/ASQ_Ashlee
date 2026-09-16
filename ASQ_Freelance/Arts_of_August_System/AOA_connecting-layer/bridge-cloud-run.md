@@ -18,9 +18,10 @@ For Arts of August, use the Google Cloud project shown in the client's console:
 
 The final IAP audience can be filled in after choosing the region and Cloud Run
 service name: `/projects/1032949592191/locations/REGION/services/SERVICE_NAME`.
-These identifiers are configuration values, not credentials. The screenshot does
-not establish whether the existing Firestore database lives in this project;
-verify that before adding Firestore access or deploying.
+These identifiers are configuration values, not credentials. Ashlee confirms the existing Firestore setup is also in the client's Google
+Cloud account. Its exact project ID has not yet been verified against the
+Arts of August OS project above. Verify that match before adding Firestore
+access or deploying.
 
 Each future artist/customer should own a separate Google Cloud project (or
 isolated account under their control), service identity, IAM policy, secrets,
