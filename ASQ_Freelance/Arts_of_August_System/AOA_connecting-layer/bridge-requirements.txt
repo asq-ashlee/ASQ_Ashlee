@@ -1,2 +1,2 @@
 gunicorn>=22,<24
-google-auth>=2,<3
+firebase-admin>=6,<8
