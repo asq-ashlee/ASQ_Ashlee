@@ -20,6 +20,7 @@
 - Canonical Master: approved
 - Presentation Mockup: approved
 - Original Available: yes
+- Status: available
 - Canonical Master Drive URL: https://drive.google.com/file/d/1vwT2JO0q7fK-2SJMZySRak22g8mPnPtz/view?usp=drivesdk
 - Presentation Mockup Drive URL: https://drive.google.com/file/d/1wSC2apFIqsjBVpIfaH1t8CuzwHiMiFHI/view?usp=drivesdk
 
@@ -73,4 +74,4 @@ Maine landscape painting; Scarborough Maine art; marsh landscape painting; coast
 - Approved presentation mockup is stored in Google Drive as `AOA-ART-0065-eastern-trail-marsh-mockup.png`: https://drive.google.com/file/d/1wSC2apFIqsjBVpIfaH1t8CuzwHiMiFHI/view?usp=drivesdk
 - The artwork master schema has one canonical `Image` field, so that field is bound to the canonical master; the mockup URL is preserved here as an approved derivative asset reference.
 - Product relationships, website publication, Etsy/Printful actions, Notion synchronization, and Firestore promotion are not authorized by intake approval alone.
-- Status is recorded as `approved`; Original_Available is `yes` based on owner confirmation that the original is currently available for sale at $250 through the confirmed Square payment link.
+- Status is recorded as `available`; Original_Available is `yes` based on owner confirmation that the original is currently available for sale at $250 through the confirmed Square payment link.
