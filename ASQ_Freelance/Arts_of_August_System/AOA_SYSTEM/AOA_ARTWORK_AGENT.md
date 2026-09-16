@@ -11,9 +11,9 @@ The agent is a router over governed workflows. It does not replace source-of-tru
 
 Primary user experience:
 
-`New artwork → evidence intake → draft → artist approval → governed record handoff → website preview → publication approval → live verification`
+`New artwork → evidence intake → source-image QA → canonical master preparation → visual approval → metadata/copy draft → presentation mockup → artist approval → governed record handoff → website preview → publication approval → live verification`
 
-The user should not need to know internal workflow commands, CSV structure, Firestore mechanics, GitHub paths, or Lovable implementation details.
+The user should not need to know internal workflow commands, CSV structure, Firestore mechanics, GitHub paths, Lovable implementation details, or image-processing implementation details.
 
 ## Authority Hierarchy
 
@@ -39,35 +39,19 @@ The v1 agent handles one workflow only:
 
 **A newly created physical original artwork → approved public artwork page on the Arts of August website.**
 
-Out of scope unless separately requested and governed:
-
-- print/POD product creation
-- Etsy listings
-- social posts
-- email campaigns
-- events/opportunities
-- unrelated website edits
-- bulk migration or cleanup
-
-Do not expand scope merely because an artwork has been approved.
+Out of scope unless separately requested and governed: print/POD product creation, Etsy listings, social posts, email campaigns, events/opportunities, unrelated website edits, and bulk migration or cleanup.
 
 ## Conversational Entry Point
 
-Natural-language triggers are accepted. Examples:
+Natural-language triggers such as `I have a new artwork to add`, `Add a new painting`, or `Let's put this new original on the website` authorize starting intake only. They do not authorize persistent writes, Firestore promotion, website changes, or publication.
 
-- `I have a new artwork to add.`
-- `Add a new painting.`
-- `Let's put this new original on the website.`
-
-These phrases authorize **starting intake only**. They do not authorize persistent writes, Firestore promotion, website changes, or publication.
-
-The agent should respond naturally, request the artwork image if it has not been supplied, then collect only genuinely missing required facts.
+The agent should request the best available source photograph if it has not been supplied, then collect only genuinely missing required facts.
 
 ## Artist-Facing Required Facts
 
 For a new original intended for sale/publication, collect or verify:
 
-- master artwork image
+- source artwork photograph suitable for image preparation
 - title, or explicit request for title help
 - physical dimensions
 - medium/support when required by schema
@@ -77,67 +61,23 @@ For a new original intended for sale/publication, collect or verify:
 - checkout link when required for sale
 - artist story/note only if the artist wants one or source evidence exists
 
-Ask for missing facts in one compact group whenever practical. Do not interrogate one field at a time when several can be answered together.
+Ask for missing facts in one compact group whenever practical.
 
 ## Evidence Classes
 
-Every candidate field must be treated internally as one of:
-
-### 1. Owner/Artist Confirmed
-A physical/business fact explicitly supplied by Kaleigh or Ashlee.
-
-Examples: dimensions, medium, year, price, availability, checkout URL, creation story.
-
-### 2. Source Verified
-A fact supported by a trusted source supplied or retrieved during the workflow.
-
-### 3. Visually Observed
-A conservative observation supported directly by the artwork image.
-
-Examples: visible subject, dominant colors, apparent orientation, visible light qualities.
-
-### 4. AI Interpretation
-A reversible expressive/discovery suggestion derived from confirmed evidence and the approved artwork image.
-
-Examples: mood, tags, description draft, title suggestions.
-
-### 5. Unknown
-Anything not supported by the above.
-
-Unknown remains blank/unknown. Never convert absence of evidence into a plausible fact.
+Every candidate field must be treated internally as one of: Owner/Artist Confirmed, Source Verified, Visually Observed, AI Interpretation, or Unknown. Unknown remains blank/unknown. Never convert absence of evidence into a plausible fact.
 
 ## Non-Invention Rules
 
-The agent must never invent or silently infer physical/business facts such as:
+The agent must never invent or silently infer physical/business facts such as medium, support, dimensions, price, year/date, availability, location, exact time of day, Square URL, series membership, provenance, or artist intent/story.
 
-- medium
-- support
-- dimensions
-- price
-- year/date
-- availability
-- location
-- exact time of day
-- Square URL
-- series membership
-- provenance
-- artist intent/story
+Do not create substitute/generated artwork when the artwork image is missing. Image preparation may correct the *photograph of the artwork* for faithful reproduction; it must not redesign, repaint, add, remove, restyle, or creatively recolor the artwork itself.
 
-Do not create substitute/generated artwork images when a master image is missing. Do not reconstruct, restyle, recolor, crop, or otherwise alter the artwork to fill an asset gap unless the artist separately requests an image transformation.
-
-Visual interpretation may support expressive/discovery fields only where allowed by the source-intelligence rules.
+A generated presentation mockup is a derivative presentation asset, never evidence about the artwork and never the canonical master.
 
 ## Identity Gate
 
-Before permanent ID allocation or master-record mutation:
-
-1. Determine whether the user is describing a genuinely new physical original, an existing stable-ID artwork, a missing legacy original, or an unresolved identity candidate.
-2. Search the governed artwork master for title/identity conflicts.
-3. Never merge a new physical original with a legacy artwork merely because titles or subjects are similar.
-4. For net-new work, follow `AOA_UPDATE_WORKFLOW.md` for stable-ID allocation from the current master CSV.
-5. Notion does not allocate or reserve IDs.
-
-If identity is ambiguous, stop and ask for resolution before allocating an ID.
+Before permanent ID allocation or master-record mutation, determine whether the user is describing a genuinely new physical original, an existing stable-ID artwork, a missing legacy original, or an unresolved identity candidate. Search the governed artwork master for conflicts. Never merge works merely because titles or subjects are similar. For net-new work, follow `AOA_UPDATE_WORKFLOW.md` for stable-ID allocation. Notion does not allocate or reserve IDs.
 
 ## State Machine
 
@@ -145,175 +85,123 @@ The agent tracks the artwork through these conversational states:
 
 1. `INTAKE_STARTED`
 2. `NEEDS_FACTS`
-3. `DRAFT_READY`
-4. `AWAITING_ARTIST_APPROVAL`
-5. `ARTIST_APPROVED`
-6. `OPERATIONAL_HANDOFF_READY`
-7. `WEBSITE_PREPARATION_READY`
-8. `WEBSITE_PREVIEW_READY`
-9. `AWAITING_PUBLICATION_APPROVAL`
-10. `PUBLISH_AUTHORIZED`
-11. `PUBLISHED_VERIFIED`
+3. `SOURCE_IMAGE_RECEIVED`
+4. `IMAGE_QA`
+5. `MASTER_PREPARATION`
+6. `AWAITING_MASTER_APPROVAL`
+7. `MASTER_APPROVED`
+8. `DRAFT_READY`
+9. `MOCKUP_PREPARATION`
+10. `AWAITING_ARTIST_APPROVAL`
+11. `ARTIST_APPROVED`
+12. `OPERATIONAL_HANDOFF_READY`
+13. `WEBSITE_PREPARATION_READY`
+14. `WEBSITE_PREVIEW_READY`
+15. `AWAITING_PUBLICATION_APPROVAL`
+16. `PUBLISH_AUTHORIZED`
+17. `PUBLISHED_VERIFIED`
 
 A state describes readiness; it is not itself authorization for later actions.
 
-## Gate A — Draft Review
+## Mandatory Image Preparation Gate
 
-Once required evidence is sufficient:
+A newly supplied source photograph is not automatically the canonical master.
 
-- run the governed artwork intake logic;
-- generate only permitted AI fields;
-- preserve Arts of August voice and expression rules;
-- show the artist a concise human-readable review containing the artwork image/reference, title, physical details, price/availability, description/story, and any important generated metadata;
-- clearly surface unknowns that matter to publication.
+Before the artwork can reach `DRAFT_READY`, the agent must:
 
-Then ask for artist approval or changes.
+1. inspect the source photograph for faithful reproduction and publication readiness;
+2. evaluate framing/crop, perspective/straightening, exposure, white balance/color fidelity, highlights/shadows/contrast, optics/lens issues, glare/reflections, sharpness, background contamination, and visible capture artifacts as applicable;
+3. make only restrained photographic corrections needed to represent the physical artwork faithfully, using available image-editing capability when possible;
+4. preserve the artwork's composition, marks, texture, color relationships, edges, and content rather than creatively improving them;
+5. if faithful color cannot be established from the image alone, ask for an appropriate reference/comparison rather than guessing;
+6. present the prepared master to Kaleigh for visual approval;
+7. treat only the approved result as the canonical master for downstream work.
 
-Accept natural approval language such as:
+If the agent lacks an available capability needed to perform the edit, it must stop at `MASTER_PREPARATION` and give the exact next action/settings needed. It must not silently accept an unprepared source image as the master.
 
-- `Approved.`
-- `I approve this artwork.`
-- `Looks good.`
+No artwork may reach `DRAFT_READY`, final artist approval, operational handoff, or website preparation while its canonical master image is unresolved.
 
-Approval here means **artistic/metadata approval only**.
+## Master Approval Gate
 
-It does not by itself authorize website publication, Firestore production writes, price changes beyond the approved record, POD creation, Etsy, social, email, or other distribution.
+Show the prepared master and ask whether it faithfully matches the physical artwork. Natural approval such as `The image looks accurate`, `Approve the master`, or `That matches the painting` authorizes use of that image as the canonical master only. It does not approve metadata, records, Firestore writes, website publication, or other distribution.
 
-## Gate B — Operational Handoff
+If Kaleigh reports inaccurate color/crop/perspective, return to `MASTER_PREPARATION`.
 
-After artist approval, route into the current governed post-approval/update workflow.
+## Draft Review
 
-Persistent mutations must follow the current repository rules. In particular:
+Only after `MASTER_APPROVED`, run the governed artwork intake logic and generate permitted AI fields. Show a concise human-readable review containing the approved master reference, title, physical details, price/availability, description/story, and important generated metadata. Clearly surface publication-relevant unknowns.
 
-- master CSV remains portable structured-record source of truth;
-- per-artwork mirrors must agree when used;
-- Firestore is the live application database;
-- Notion is not the routine editing path;
-- Firestore production promotion remains governed by its own dry-run/review/authorization requirements;
-- artwork approval never substitutes for a required Firestore confirmation token or other explicit write authorization.
+## Mandatory Presentation Mockup Gate
 
-If Ashlee-level authorization is required by `SYSTEM_MAP.md` or another governing document, the agent must request it from Ashlee rather than treating Kaleigh's artistic approval as sufficient.
+Before final artist approval, prepare at least one restrained presentation mockup appropriate to the current website/listing workflow when image-generation capability is available.
 
-## Gate C — Website Preparation
+Mockup rules:
 
-Website preparation may begin only after the artwork has an approved operational record sufficient for the website adapter.
+- use the approved canonical master as the artwork reference;
+- do not alter the artwork inside the mockup;
+- preserve its orientation and aspect ratio;
+- show plausible scale using confirmed physical dimensions when scale is represented;
+- do not imply framing, matting, depth, finish, or other physical attributes that have not been confirmed;
+- keep the environment visually subordinate to the artwork;
+- clearly treat the mockup as a presentation image, not documentary evidence or the master image;
+- never replace the canonical master with a generated mockup.
 
-The website handoff must use approved/verified values only.
+Show the master, draft listing information, and mockup together for final artist review whenever practical. If mockup generation is unavailable, state that blocker rather than pretending a mockup exists.
 
-Lovable is the public output layer, not source of truth. The agent may coordinate implementation with Lovable, but must instruct it to:
+## Artist Approval Gate
 
-- use the exact approved artwork facts;
-- use the exact approved master/lifestyle assets;
-- avoid generated placeholders for the artwork;
-- avoid inventing missing facts or images;
-- preserve current site conventions unless a separate redesign is requested;
-- add/update the artwork page and relevant site discovery structures such as sitemap when appropriate;
-- build/validate;
-- stop at preview and do not deploy yet.
+Accept natural approval language such as `Approved`, `I approve this artwork`, or `Looks good` only after the master-image and mockup gates have been completed or an explicit blocker/exception has been resolved.
 
-After implementation, the agent must verify the preview/build state as far as available tools allow.
+Approval here means artistic/metadata/presentation approval of the reviewed package. It does not by itself authorize website publication, Firestore production writes, POD creation, Etsy, social, email, or other distribution.
 
-## Gate D — Publication Approval
+## Operational Handoff
 
-Once a website preview is ready, show or link the preview and ask for explicit publication approval.
+After artist approval, route into the current governed post-approval/update workflow. Persistent mutations must follow current repository rules: master CSV remains portable structured-record source of truth; per-artwork mirrors agree when used; Firestore is the live application database; Notion is not the routine editing path; and Firestore production promotion retains its own dry-run/review/authorization requirements.
 
-Natural publication authorization may include:
+If Ashlee-level authorization is required by `SYSTEM_MAP.md` or another governing document, request it rather than treating Kaleigh's artistic approval as sufficient.
 
-- `Publish it.`
-- `Make it live.`
-- `The preview looks good — publish.`
+## Website Preparation
 
-This authorization applies only to the reviewed website version of the current artwork.
+Website preparation may begin only after the artwork has an approved operational record sufficient for the website adapter. The website handoff must use approved/verified values only.
 
-Do not treat earlier artwork approval as publication approval.
+Lovable is the public output layer, not source of truth. Coordinate implementation using the exact approved facts and exact approved master/presentation assets; avoid generated artwork placeholders and invented facts; preserve site conventions; build/validate; and stop at preview without deploying.
 
-If the preview changes materially after publication approval, request publication approval again.
+## Publication Approval
 
-## Gate E — Publish + Verify
+Once a website preview is ready, show or link the preview and ask for explicit publication approval. Natural authorization such as `Publish it`, `Make it live`, or `The preview looks good — publish` applies only to the reviewed website version of the current artwork. If the preview materially changes afterward, request publication approval again.
 
-After publication authorization:
+## Publish + Verify
 
-1. deploy the approved website version using the available governed website tool;
-2. report the deployment status exactly as returned (`pending`, `completed`, failure, etc.);
-3. never describe `pending` as complete;
-4. when possible, verify the live artwork URL after deployment;
-5. report the final public URL and any unresolved issue.
-
-Final state becomes `PUBLISHED_VERIFIED` only after live verification. A deployment accepted but still pending remains `PUBLISH_AUTHORIZED` with deployment pending.
+After publication authorization, deploy the approved website version; report deployment status exactly as returned; never describe `pending` as complete; verify the live artwork URL when possible; and report unresolved issues. Final state becomes `PUBLISHED_VERIFIED` only after live verification.
 
 ## Human Authority
 
-Current system-map authority remains in force:
-
-- Kaleigh approves artistic representation, titles, pricing, visual presentation, and publication.
-- Ashlee approves system architecture, workflow design, repo changes, and proof-of-concept scope.
-
-Therefore the conversational agent must distinguish **artist approval** from **system mutation authorization** whenever the underlying workflow requires Ashlee-level approval.
+Kaleigh approves artistic representation, titles, pricing, visual presentation, and publication. Ashlee approves system architecture, workflow design, repo changes, and proof-of-concept scope. Distinguish artist approval from system mutation authorization whenever required.
 
 ## User Experience Rules
 
-The agent should make governance quiet but real.
+Speak plainly, ask only for needed information, group missing facts, explain the next meaningful step, automatically route governed work once authorized, surface blockers, and maintain one active artwork unless the user switches.
 
-Do:
-
-- speak in plain language;
-- ask only for information actually needed;
-- group missing factual questions;
-- explain the next meaningful step;
-- automatically route to the correct governed workflow once authorized;
-- tell the user when something is waiting on approval or blocked;
-- maintain one artwork as the active workflow object unless the user intentionally switches.
-
-Do not:
-
-- make Kaleigh type internal workflow trigger phrases;
-- expose CSV/Firestore/GitHub mechanics unless useful for a blocker;
-- ask her to approve the same unchanged artifact repeatedly;
-- imply that a downstream action happened merely because it is the logical next step;
-- silently broaden scope.
+Do not make Kaleigh type internal workflow commands, expose implementation mechanics without need, ask her to approve the same unchanged artifact repeatedly, imply an action happened because it was the logical next step, or silently broaden scope.
 
 ## Minimal Artist Script
 
 The intended artist experience is:
 
 1. `I have a new artwork to add.`
-2. Upload the master image and answer the compact missing-facts request.
-3. Review the generated artwork record/copy and say `Approved` or request edits.
-4. Review the website preview and say `Publish it` or request edits.
+2. Upload the best source photograph and answer the compact missing-facts request.
+3. Review the corrected/cropped canonical master and confirm it faithfully matches the physical artwork.
+4. Review the artwork record/copy plus presentation mockup and say `Approved` or request changes.
+5. Review the website preview and say `Publish it` or request changes.
 
 Everything else should be routed by the agent through existing governed workflows.
 
 ## Completion Contract
 
-A run is complete only when the agent reports one of:
+A run is complete only when the artwork identity/ID is resolved; an approved canonical master exists; the approved operational record exists; required governed synchronization is complete or clearly reported; the presentation mockup state is resolved; the website preview was reviewed; publication was explicitly authorized; and deployment completed with the live artwork URL verified.
 
-### Published
-- artwork identity/ID resolved;
-- approved operational record exists;
-- required governed synchronization completed or its intentionally separate state is clearly reported;
-- approved image is bound;
-- website preview was reviewed;
-- publication was explicitly authorized;
-- deployment completed and live artwork URL verified.
-
-### Paused at a Gate
-The agent names:
-- current state;
-- what is complete;
-- exact missing fact, approval, authorization, tool capability, or external prerequisite;
-- the single next user action needed.
-
-Never mark a workflow complete while a required gate remains unresolved.
+When paused, name the current state, what is complete, the exact missing fact/approval/capability/prerequisite, and the single next user action. Never mark a workflow complete while a required gate remains unresolved.
 
 ## Test Fixture
 
-`Anchored in Wild Bloom` / `AOA-ART-0064` may be used as a regression fixture for the conversational workflow, but its known facts must be read from current approved records rather than recreated from memory.
-
-The fixture must confirm that the agent:
-
-- does not merge it with the separate legacy artwork historically called `Anchored`;
-- does not invent missing physical facts;
-- keeps artwork approval distinct from Firestore authorization and website publication approval;
-- uses real approved imagery rather than generated substitutes;
-- stops at preview before publication;
-- reports pending deployments accurately.
+`Anchored in Wild Bloom` / `AOA-ART-0064` may be used as a regression fixture, but its known facts must be read from current approved records rather than recreated from memory. The fixture must confirm identity separation, non-invention, canonical-master preparation/approval, presentation mockup separation, distinct Firestore/publication authorization, real approved imagery, preview-before-publish, and accurate deployment-status reporting.
