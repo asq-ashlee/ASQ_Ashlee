@@ -1,6 +1,6 @@
 # Artwork Studio authentication decision
 
-Status: Google provider enabled in the client project; browser integration remains unimplemented and untested.
+Status: Google sign-in verified on the private Studio Site for Ashlee. The read-only bridge now verifies Firebase tokens in code; it has not been deployed or connected to the Site.
 Date: 2026-09-16
 
 ## Goal
@@ -32,11 +32,9 @@ The response must not expose privileged backend credentials.
 
 ## Existing IAP prototype
 
-The current draft `bridge_service.py` verifies signed Cloud Run IAP
-assertions. It is useful as a private server-side read-only test, but
-cross-origin IAP login from the Sites domain has not been validated.
-Do not deploy it as the final artist-facing integration or wire the Site to
-it on an assumption that browser sign-in will work.
+The initial `bridge_service.py` draft used signed Cloud Run IAP assertions.
+It has been replaced on this draft branch with Firebase ID-token verification.
+Do not deploy an older IAP version for the artist-facing integration.
 
 A simpler same-origin IAP design could instead host the artist UI behind IAP,
 but that would change the chosen Sites deployment boundary. Keep the Sites UI
@@ -49,11 +47,13 @@ where it is for this first integration and validate Google sign-in tokens.
    `Arts of August` and Ashlee's monitored address is the support email.
    The `Artwork Studio` web app is registered and the exact Sites hostname
    `arts-of-august-artwork-studio.dohertyashlee.chatgpt.site` is listed as
-   an authorized domain. Browser sign-in has not yet been exercised.
+   an authorized domain. Browser sign-in was successfully exercised for `ashlee@asqashlee.xyz` on the live private Site.
 2. Confirm Kaleigh's Google account for the future artist allowlist. Ashlee
    (`ashlee@asqashlee.xyz`) is the first tester.
-3. Make a narrow sign-in and read-only identity proof using Eastern Trail Marsh.
-   Deny an unapproved account and verify the signed token server-side.
+3. Deploy the read-only bridge in the client project. Prove that a verified
+   Ashlee token can access the session and Eastern Trail Marsh check, while
+   a missing or unapproved token is denied. The local tests alone do not
+   prove production access.
 4. Only after that proof, add the first governed write action. Preserve the
    separate Approve Master, Approve Artwork, and Publish approvals.
 
