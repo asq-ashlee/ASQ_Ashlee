@@ -43,7 +43,8 @@ billable service; this draft does not create resources or incur cloud charges.
   with public access or disable IAP.
 - Set `AOA_IAP_AUDIENCE` to the signed-header audience for this exact Cloud Run
   service: `/projects/PROJECT_NUMBER/locations/REGION/services/SERVICE_NAME`.
-- Set `AOA_ALLOWED_EMAILS` to the explicitly permitted Google account emails.
+- For the first read-only test, set `AOA_ALLOWED_EMAILS=ashlee@asqashlee.xyz`.
+  Add Kaleigh's email later when she is ready to use the interface.
   Both IAP policy and the service's signed-JWT verification/allowlist must pass.
   A missing audience or allowlist makes the data endpoint unavailable.
 - Supply `AOA_GITHUB_TOKEN` from Google Secret Manager to the Cloud Run service
@@ -71,7 +72,7 @@ listing for Eastern Trail Marsh is the existing-artwork test case.
 
 The WSGI entry point is `bridge_service:application`. Build
 `bridge-Dockerfile` with this directory as the Docker build context. Before
-deployment, confirm this client project is the intended owner. Confirm IAP OAuth setup for Kaleigh's account, GitHub credential ownership, region,
+deployment, confirm this client project is the intended owner. Confirm IAP OAuth setup for Ashlee's external account, GitHub credential ownership, region,
 and browser access strategy. Configure Secret Manager and IAP in Google Cloud
 outside the code review. Do not route the Sites prototype to this endpoint until
 cross-origin sign-in and request authorization are verified.
