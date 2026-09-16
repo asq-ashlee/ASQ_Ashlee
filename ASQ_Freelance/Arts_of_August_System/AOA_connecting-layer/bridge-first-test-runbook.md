@@ -1,6 +1,6 @@
 # First private read-only bridge test — operator runbook
 
-Status: prepared, not executed. No Cloud Run service, secrets, or Site connection exists yet.
+Status: superseded as a deployment sequence pending the authentication decision in `bridge-auth-decision.md`. Use the fixed values as reference only. No Cloud Run service, secrets, or Site connection exists yet. The IAP setup below remains an optional private technical rehearsal, not the chosen artist-facing browser path.
 
 ## Fixed values
 
