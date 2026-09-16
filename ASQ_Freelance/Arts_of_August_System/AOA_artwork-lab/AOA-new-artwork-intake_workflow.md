@@ -27,6 +27,19 @@ If the image has not been through the editing workflow, begin there first:
 
 ---
 
+## Processing Path
+
+Select exactly one governed identity path before operational promotion:
+
+- `Net-New Physical Original Intake` — use when the owner/artist confirms a newly created distinct physical original that is not represented in the governed master and is not a legacy-gap candidate.
+- `Existing Stable-ID Re-intake` — use when the physical original already has a stable artwork ID.
+- `Confirmed Missing Physical Original Intake` — use for a legacy-only candidate human-confirmed as a distinct original absent from the master.
+- `Unresolved Candidate Identity Review` — use when identity or relationship to an existing original remains unresolved.
+
+A net-new intake may be drafted without a permanent ID. Permanent ID allocation happens only after owner approval through `AOA_UPDATE_WORKFLOW.md`: read the current master CSV, use the next sequential unused ID after the highest current suffix, and collision-check before writing. Notion does not allocate or reserve artwork IDs.
+
+---
+
 ## Read First
 
 Before processing artwork, review:
@@ -69,9 +82,9 @@ Generate:
   - **Slug rule:** Use the approved title with hyphens between words, no punctuation, and all lowercase.
 - Category
 - Orientation
-- Medium (multi-select: Oil / Gold Leaf / Silver Leaf — default: Oil)
-- Support (text — always Canvas unless explicitly told otherwise)
-- Source (text — record where the artwork data came from)
+- Medium
+- Support
+- Source
 - Date Created
   - **Date Created rule:** Date Created = the date Kaleigh painted the artwork. This is not the intake date, the processing date, or today's date. If the paint date is not known or not provided, leave this field blank. Do not default to the current date. Flag it as missing instead.
 - Mood
@@ -81,7 +94,7 @@ Generate:
 - Story
 - Alt Text (one literal sentence describing the image — for SEO and accessibility, not poetic)
 - Subject
-- Location (if identifiable)
+- Location (if identifiable and approved for public use)
 - Time of Day
 - Light Description
 - Primary Use
@@ -90,106 +103,47 @@ Generate:
 - Suggested Sales Channels
 - Suggested Content Opportunities
 
+Physical facts such as medium, support, date, price, dimensions, availability, and public location must come from trusted evidence or owner/artist confirmation. Do not fill them from AI inference.
+
 ---
 
 ## Product Exploration
 
-Suggest:
-- likely print formats
-- likely framing styles
-- likely home placement
-- likely customer environments
-- likely sales channels
-
-When suggesting framing or finish, use only valid Finish values for product records:
-
-**Valid Finish values for original painting product records:**
-  - Framed (Original) — painting has a frame
-  - Gallery Wrap (Original) — painting is unframed, gallery wrapped
-  Do not use: 'Framed', 'framed', 'Framed (show frame)', or any other variant. The exact string must match the Notion select option.
-
-**Valid Finish values for Printful print product records:**
-  - Floating Frame (Printful) — framed canvas prints
-  - Canvas Unframed (Printful) — unframed canvas prints
-  Every Printful product record must have a Finish value. Do not leave Finish blank on any product record.
-
-Examples:
-- Etsy
-- Website
-- Gallery
-- Art Show
-- Market
+Suggest likely print formats, framing styles, home placement, customer environments, and sales channels. Product suggestions are non-authoritative until Product Studio review.
 
 ---
 
 ## Content Exploration
 
-Suggest:
-- Instagram opportunities
-- Pinterest opportunities
-- email concepts
-- launch hooks
-- storytelling angles
-- seasonal positioning
+Suggest Instagram opportunities, Pinterest opportunities, email concepts, launch hooks, storytelling angles, and seasonal positioning.
 
 ---
 
 ## Important Constraints
 
-Avoid:
-- generic AI phrasing
-- keyword stuffing
-- corporate language
-- exaggerated emotional language
-- over-written poetry
+Avoid generic AI phrasing, keyword stuffing, corporate language, exaggerated emotional language, and over-written poetry.
 
-Preserve:
-- emotional grounding
-- familiarity
-- calm warmth
-- visual specificity
-- quiet nostalgia
-- human tone
+Preserve emotional grounding, familiarity, calm warmth, visual specificity, quiet nostalgia, and human tone.
 
 ---
 
 ## Human Review Required
 
-All generated outputs require human review before:
-- publishing
-- product generation
-- listing creation
-- content scheduling
+All generated outputs require human review before operational promotion, publishing, product generation, listing creation, or content scheduling.
+
+The intake itself does not write the master CSV or Firestore. Owner approval makes the artwork eligible for the separately governed post-approval handoff.
 
 ---
 
 ## Final Workflow Update
 
-After metadata is complete:
-
-Set Artwork Workflow Status:
-- Metadata Complete
-
-If products are ready to begin:
-- Ready for Products
+After metadata is complete, use a schema-supported Workflow Status such as `Metadata Complete`. Do not mark `Ready for Products` until the image and product prerequisites are actually satisfied.
 
 ---
 
 ## After Approval — Next Steps
 
-When an artwork draft is approved, the post-approval handoff begins.
+When an artwork draft is approved, read and follow:
+`AOA_connecting-layer/post-approval-handoff.md`
 
-Read and follow:
-  AOA_connecting-layer/post-approval-handoff.md
-
-That document defines:
-- file renaming convention
-- draft file movement
-- artwork dataset record creation
-- product dataset record creation
-- Google Drive image field population
-- Notion push sequence
-- Product Studio handoff
-
-Do not begin product records, Notion push, or distribution work
-until the post-approval handoff document has been read.
+That handoff resolves stable ID allocation from the current master CSV, writes and validates the master/per-artwork records, and routes any separately authorized Firestore promotion. Notion is not the routine operational editing or ID-allocation path.
