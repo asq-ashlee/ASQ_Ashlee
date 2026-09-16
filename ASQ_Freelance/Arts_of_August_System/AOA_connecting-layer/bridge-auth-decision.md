@@ -47,7 +47,9 @@ where it is for this first integration and validate Google sign-in tokens.
 1. Completed: Firebase Authentication was initialized in
    `stoked-proxy-502319-c4`; Google sign-in is enabled. Public-facing name is
    `Arts of August` and Ashlee's monitored address is the support email.
-   Next, inspect existing web app registrations before creating any new one.
+   The `Artwork Studio` web app is registered and the exact Sites hostname
+   `arts-of-august-artwork-studio.dohertyashlee.chatgpt.site` is listed as
+   an authorized domain. Browser sign-in has not yet been exercised.
 2. Confirm Kaleigh's Google account for the future artist allowlist. Ashlee
    (`ashlee@asqashlee.xyz`) is the first tester.
 3. Make a narrow sign-in and read-only identity proof using Eastern Trail Marsh.
