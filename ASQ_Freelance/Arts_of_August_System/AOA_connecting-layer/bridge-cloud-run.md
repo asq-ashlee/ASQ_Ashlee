@@ -1,78 +1,71 @@
-# Artwork Studio bridge: private read-only Cloud Run slice
+# Artwork Studio bridge: Firebase authenticated, read-only Cloud Run slice
 
-Status: draft code, not deployed. This service is not connected to the Artwork Studio.
+Status: draft code in review, not deployed. The Site's Google sign-in has been
+verified for Ashlee, but the bridge is not connected to the Site.
 
-The only data endpoint is `GET /v1/artworks/identity` with at least one of
-`artwork_id`, `title`, or `slug`. It returns `existing`, `ambiguous`,
-or `clear` and the GitHub blob SHA checked. `clear` is **not** approval to
-create artwork. There are no write, image, Firestore, Lovable, or publish routes.
+## Contract
+
+- `GET /v1/session`: validates the Firebase ID token and approved identity;
+  returns a minimal ready state and email. No GitHub credential is needed.
+- `GET /v1/artworks/identity?title=...`: verifies the same identity, then
+  checks the current governed GitHub `artworks.csv`. Returns `existing`,
+  `ambiguous`, or `clear` and the GitHub blob SHA. `clear` is not
+  permission to create an artwork.
+- `GET /healthz`: process health only, with no data.
+- No write, image, Firestore, Drive, Lovable, or publish routes exist.
 
 ## Client-owned deployment
 
-For Arts of August, use the Google Cloud project shown in the client's console:
+Use project `stoked-proxy-502319-c4` (number `1032949592191`) in the
+Arts of August account. The existing Firestore `(default)` database in this
+project is unaffected. Set:
 
-- Organization shown: `artsofaugust.org`
-- Project display name: `Arts of August OS`
-- Project ID: `stoked-proxy-502319-c4`
-- Project number: `1032949592191`
+| Variable | Value |
+| --- | --- |
+| `AOA_FIREBASE_PROJECT_ID` | `stoked-proxy-502319-c4` |
+| `AOA_STUDIO_ORIGIN` | `https://arts-of-august-artwork-studio.dohertyashlee.chatgpt.site` |
+| `AOA_ALLOWED_EMAILS` | `ashlee@asqashlee.xyz` for the first test |
+| `AOA_GITHUB_TOKEN` | Secret Manager binding to a repo-scoped read-only GitHub credential |
 
-The final IAP audience can be filled in after choosing the region and Cloud Run
-service name: `/projects/1032949592191/locations/REGION/services/SERVICE_NAME`.
-These identifiers are configuration values, not credentials. Ashlee's Firestore console screenshot shows the active `(default)` Firestore
-Native database in this exact project (`stoked-proxy-502319-c4`), location
-`nam5`. This confirms the project match, not service access or a Firestore
-write authorization. The current bridge has no Firestore access.
+Later add Kaleigh's confirmed Google email to the allowlist. Do not infer it.
+The Cloud Run service identity needs access to that one Secret Manager secret.
+The bridge does not inherit GitHub access from Codex. It needs no Firestore or
+Drive permissions for this slice.
 
-Each future artist/customer should own a separate Google Cloud project (or
-isolated account under their control), service identity, IAM policy, secrets,
-billing, and data/asset permissions. Reuse the reviewed bridge code as a
-versioned template, with explicit customer-specific configuration. Do not
-share a GitHub credential, IAP allowlist, Drive folder, Firestore instance, or
-operational artwork data across customers. A customer's public site remains
-their presentation layer, and their existing governed records remain their
-source of truth.
+The browser sends `Authorization: Bearer <Firebase ID token>` over HTTPS.
+Firebase Admin verifies signature, expiry, and client project. The service
+also checks project audience/issuer, verified email, Google provider, and the
+explicit email allowlist. It allows browser cross-origin requests only from
+the exact Studio origin, with `GET` and `Authorization`. Origin checks are
+an additional browser boundary, never a substitute for token verification.
+Tokens and GitHub credentials must not be logged or returned in responses.
 
-The console screenshot shows a free-trial balance and 26 days remaining at
-capture time. Confirm the billing plan and expected spend before deploying a
-billable service; this draft does not create resources or incur cloud charges.
+Cloud Run's ingress endpoint must be reachable from the Site's browser. For
+this Firebase-token architecture, **do not enable IAP**: it would require a
+second browser authentication flow. If the Cloud Run service allows unauthenticated
+invocation at the platform layer, every data endpoint still verifies a Firebase
+ID token and allowlist before returning data. `/healthz` is public but has no
+artwork data. Prefer a dedicated bridge service with request logging configured
+to avoid sensitive authorization headers. Restrict who can deploy or change
+configuration with client-owned IAM.
 
-## Security boundary
+Build `bridge-Dockerfile` with this directory as context and deploy the
+WSGI entrypoint `bridge_service:application`. Before deployment, review
+billing, region, service account, and the read-only GitHub credential. Store
+the GitHub credential directly in Secret Manager, never in the Site or repo.
+No Cloud Run resources or secrets have been created by this code change.
 
-- Deploy Cloud Run with **Require authentication → Identity-Aware Proxy (IAP)**.
-  Grant IAP access only to the intended artist/operator accounts. Do not deploy
-  with public access or disable IAP.
-- Set `AOA_IAP_AUDIENCE` to the signed-header audience for this exact Cloud Run
-  service: `/projects/PROJECT_NUMBER/locations/REGION/services/SERVICE_NAME`.
-- For the first read-only test, set `AOA_ALLOWED_EMAILS=ashlee@asqashlee.xyz`.
-  Add Kaleigh's email later when she is ready to use the interface.
-  Both IAP policy and the service's signed-JWT verification/allowlist must pass.
-  A missing audience or allowlist makes the data endpoint unavailable.
-- Supply `AOA_GITHUB_TOKEN` from Google Secret Manager to the Cloud Run service
-  identity. Use a read-only, repository-scoped credential and give the service
-  identity access to that secret only. Do not commit or browser-expose the token.
-- The fixed GitHub path is the existing governed `artworks.csv` on `main`.
-  Each request fetches the current file; a failed read returns an error, never
-  an assumed `clear`.
-- Cloud Run's service account does not inherit the current ChatGPT connection's
-  access to GitHub or Drive.
+## Verification sequence
 
-## Local check
+1. Run `python -m unittest -v test_bridge_identity.py test_github_artwork_source.py test_bridge_service.py`.
+2. Deploy and confirm unauthenticated `/v1/session` returns 401,
+   disallowed Google accounts return 403, and Ashlee's signed-in session returns
+   200. A spoofed email header must not grant access.
+3. Supply the read-only GitHub secret and check Eastern Trail Marsh returns
+   `existing` from the governed index. A GitHub outage must yield an error,
+   never `clear`.
+4. Only after this proof, connect a small read-only Site action. Do not add
+   artwork writes or publishing until their separate review and approval gates
+   have been designed and verified.
 
-From this directory, run:
-
-```sh
-python -m unittest -v test_bridge_identity.py test_github_artwork_source.py test_bridge_service.py
-```
-
-Tests mock the GitHub read and IAP assertion. They do not prove deployment
-settings, browser sign-in, or live GitHub permissions. The reviewed Lovable
-listing for Eastern Trail Marsh is the existing-artwork test case.
-
-## Deployment readiness
-
-The WSGI entry point is `bridge_service:application`. Build
-`bridge-Dockerfile` with this directory as the Docker build context. Before
-deployment, confirm this client project is the intended owner. Confirm IAP OAuth setup for Ashlee's external account, GitHub credential ownership, region,
-and browser access strategy. Configure Secret Manager and IAP in Google Cloud
-outside the code review. Do not route the Sites prototype to this endpoint until
-cross-origin sign-in and request authorization are verified.
+Firebase reference: https://firebase.google.com/docs/auth/admin/verify-id-tokens
