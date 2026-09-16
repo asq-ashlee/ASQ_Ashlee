@@ -1,6 +1,6 @@
 # Artwork Studio authentication decision
 
-Status: proposed after UX review; validate before deployment.
+Status: Google provider enabled in the client project; browser integration remains unimplemented and untested.
 Date: 2026-09-16
 
 ## Goal
@@ -44,9 +44,10 @@ where it is for this first integration and validate Google sign-in tokens.
 
 ## Before implementing the change
 
-1. Check whether Firebase Authentication or Identity Platform is already
-   configured in `stoked-proxy-502319-c4`; the Firestore screenshot alone does
-   not establish this.
+1. Completed: Firebase Authentication was initialized in
+   `stoked-proxy-502319-c4`; Google sign-in is enabled. Public-facing name is
+   `Arts of August` and Ashlee's monitored address is the support email.
+   Next, inspect existing web app registrations before creating any new one.
 2. Confirm Kaleigh's Google account for the future artist allowlist. Ashlee
    (`ashlee@asqashlee.xyz`) is the first tester.
 3. Make a narrow sign-in and read-only identity proof using Eastern Trail Marsh.
