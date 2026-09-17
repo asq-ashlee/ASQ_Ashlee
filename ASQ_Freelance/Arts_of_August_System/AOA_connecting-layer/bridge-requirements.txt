@@ -1,0 +1,2 @@
+gunicorn>=22,<24
+firebase-admin>=6,<8
