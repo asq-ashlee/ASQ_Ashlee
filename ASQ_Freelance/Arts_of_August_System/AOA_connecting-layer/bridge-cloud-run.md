@@ -49,8 +49,8 @@ artwork data. Prefer a dedicated bridge service with request logging configured
 to avoid sensitive authorization headers. Restrict who can deploy or change
 configuration with client-owned IAM.
 
-Build `bridge-Dockerfile` with this directory as context and deploy the
-WSGI entrypoint `bridge_service:application`. Before deployment, review
+Deploy this directory as source with its standard `Dockerfile`; the container
+starts the WSGI entrypoint `bridge_service:application`. Before deployment, review
 billing, region, service account, and the read-only GitHub credential. Store
 the GitHub credential directly in Secret Manager, never in the Site or repo.
 No Cloud Run resources or secrets have been created by this code change.
